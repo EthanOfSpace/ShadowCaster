@@ -1,10 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://d1mhk3prnqywk"]
+[gd_scene load_steps=13 format=3 uid="uid://d1mhk3prnqywk"]
 
-[ext_resource type="Material" uid="uid://brpu7xylrg2l2" path="res://example_scene/materials/material_basic_blue.tres" id="1_fb2x7"]
-[ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="2_l16tt"]
-[ext_resource type="PackedScene" uid="uid://nswkrnyepieq" path="res://example_scene/scenes/basic_block.tscn" id="3_nm1m6"]
-[ext_resource type="PackedScene" uid="uid://kqmbae0l4ewu" path="res://example_scene/scenes/basic_block_2.tscn" id="4_1esxm"]
-[ext_resource type="AudioStream" uid="uid://wyenrdnhyi0f" path="res://Audio/hub geetar.mp3" id="5_8mkqu"]
+[ext_resource type="Material" uid="uid://brpu7xylrg2l2" path="res://example_scene/materials/material_basic_blue.tres" id="1_udmpg"]
+[ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="2_kxfv8"]
+[ext_resource type="PackedScene" uid="uid://nswkrnyepieq" path="res://example_scene/scenes/basic_block.tscn" id="3_pr83t"]
+[ext_resource type="PackedScene" uid="uid://kqmbae0l4ewu" path="res://example_scene/scenes/basic_block_2.tscn" id="4_ohlf3"]
+[ext_resource type="AudioStream" uid="uid://wyenrdnhyi0f" path="res://Audio/hub geetar.mp3" id="5_psixa"]
+[ext_resource type="Material" uid="uid://d3rqm77f07tad" path="res://Materials/depthTowerMat.tres" id="6_au7w2"]
+[ext_resource type="ArrayMesh" uid="uid://6fuvp23o2fxn" path="res://Art/DepthTower1.1.obj" id="7_e3d1d"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_r6mis"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -18,9 +20,12 @@ background_mode = 2
 sky = SubResource("Sky_aavk3")
 tonemap_mode = 2
 glow_enabled = true
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0225
+volumetric_fog_ambient_inject = 0.45
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_n6tjd"]
-material = ExtResource("1_fb2x7")
+material = ExtResource("1_udmpg")
 size = Vector2(100, 100)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_h1lgg"]
@@ -36,6 +41,8 @@ transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -
 shadow_enabled = true
 
 [node name="Floor" type="StaticBody3D" parent="."]
+transform = Transform3D(3.935, 0, 0, 0, 3.935, 0, 0, 0, 3.935, 18.4589, 136.886, 98.0994)
+visible = false
 
 [node name="FloorMesh" type="MeshInstance3D" parent="Floor"]
 mesh = SubResource("PlaneMesh_n6tjd")
@@ -44,35 +51,36 @@ skeleton = NodePath("../..")
 [node name="FloorCollision" type="CollisionShape3D" parent="Floor"]
 shape = SubResource("ConvexPolygonShape3D_h1lgg")
 
-[node name="Player" parent="." instance=ExtResource("2_l16tt")]
+[node name="Player" parent="." instance=ExtResource("2_kxfv8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.4589, 136.886, 98.0994)
 walk_back_speed = 3.0
 walk_speed = 3.0
 sprint_speed = 8.0
 
 [node name="Obstacles" type="Node" parent="."]
 
-[node name="BasicBlock" parent="Obstacles" instance=ExtResource("3_nm1m6")]
+[node name="BasicBlock" parent="Obstacles" instance=ExtResource("3_pr83t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, -8)
 
-[node name="BasicBlock2" parent="Obstacles" instance=ExtResource("3_nm1m6")]
+[node name="BasicBlock2" parent="Obstacles" instance=ExtResource("3_pr83t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, -8)
 
-[node name="BasicBlock3" parent="Obstacles" instance=ExtResource("4_1esxm")]
+[node name="BasicBlock3" parent="Obstacles" instance=ExtResource("4_ohlf3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, -8)
 
-[node name="BasicBlock8" parent="Obstacles" instance=ExtResource("4_1esxm")]
+[node name="BasicBlock8" parent="Obstacles" instance=ExtResource("4_ohlf3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 6, -8)
 
-[node name="BasicBlock5" parent="Obstacles" instance=ExtResource("4_1esxm")]
+[node name="BasicBlock5" parent="Obstacles" instance=ExtResource("4_ohlf3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -8)
 
-[node name="BasicBlock6" parent="Obstacles" instance=ExtResource("4_1esxm")]
+[node name="BasicBlock6" parent="Obstacles" instance=ExtResource("4_ohlf3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -7)
 
-[node name="BasicBlock7" parent="Obstacles" instance=ExtResource("4_1esxm")]
+[node name="BasicBlock7" parent="Obstacles" instance=ExtResource("4_ohlf3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -6)
 
-[node name="BasicBlock4" parent="Obstacles" instance=ExtResource("4_1esxm")]
+[node name="BasicBlock4" parent="Obstacles" instance=ExtResource("4_ohlf3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, -12)
 
 [node name="CSGPolygon3D" type="CSGPolygon3D" parent="Obstacles"]
@@ -85,5 +93,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.96672)
 current = true
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("5_8mkqu")
+stream = ExtResource("5_psixa")
 autoplay = true
+
+[node name="FogVolume" type="FogVolume" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.90768, 0, 0, 0, 1, -12.04, 95.3799, 111.324)
+size = Vector3(115.3, 48.83, 81.86)
+
+[node name="DepthTower1_1" type="MeshInstance3D" parent="."]
+transform = Transform3D(60, 0, 0, 0, 60, 0, 0, 0, 60, -2.09605, 85.4413, 98.0685)
+material_override = ExtResource("6_au7w2")
+mesh = ExtResource("7_e3d1d")
