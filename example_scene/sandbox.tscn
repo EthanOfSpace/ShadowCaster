@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://d1mhk3prnqywk"]
+[gd_scene load_steps=11 format=3 uid="uid://d1mhk3prnqywk"]
 
 [ext_resource type="Material" uid="uid://brpu7xylrg2l2" path="res://example_scene/materials/material_basic_blue.tres" id="1_fb2x7"]
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="2_l16tt"]
 [ext_resource type="PackedScene" uid="uid://nswkrnyepieq" path="res://example_scene/scenes/basic_block.tscn" id="3_nm1m6"]
 [ext_resource type="PackedScene" uid="uid://kqmbae0l4ewu" path="res://example_scene/scenes/basic_block_2.tscn" id="4_1esxm"]
+[ext_resource type="AudioStream" uid="uid://wyenrdnhyi0f" path="res://Audio/hub geetar.mp3" id="5_8mkqu"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_r6mis"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -81,3 +82,8 @@ polygon = PackedVector2Array(0, 0, 2.08165e-12, 2, 6, 2, 10, 2.08165e-12)
 
 [node name="AudioListener3D" type="AudioListener3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.96672)
+current = true
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("5_8mkqu")
+autoplay = true
