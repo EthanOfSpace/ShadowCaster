@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://d3rqm77f07tad"]
+
+[ext_resource type="Texture2D" uid="uid://gwcr1sysc3ys" path="res://Art/DepthTowerBrickWork.jpg" id="1_bft78"]
+
+[resource]
+albedo_texture = ExtResource("1_bft78")
+uv1_scale = Vector3(20, 20, 20)
+uv1_triplanar = true
