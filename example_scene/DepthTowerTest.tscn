@@ -1,11 +1,13 @@
-[gd_scene load_steps=20 format=3 uid="uid://d1mhk3prnqywk"]
+[gd_scene load_steps=24 format=3 uid="uid://d1mhk3prnqywk"]
 
 [ext_resource type="Material" uid="uid://brpu7xylrg2l2" path="res://example_scene/materials/material_basic_blue.tres" id="1_udmpg"]
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="2_kxfv8"]
 [ext_resource type="Script" path="res://example_scene/PlayerMeleeWeapon.gd" id="3_4xyap"]
-[ext_resource type="AudioStream" uid="uid://wyenrdnhyi0f" path="res://Audio/hub geetar.mp3" id="5_psixa"]
+[ext_resource type="Script" path="res://example_scene/WeaponHitbox.gd" id="3_dht6s"]
+[ext_resource type="AudioStream" uid="uid://3vhb13vxdxq3" path="res://Audio/wind.mp3" id="5_o78cm"]
 [ext_resource type="Material" uid="uid://d3rqm77f07tad" path="res://Art/Materials/depthTowerMat.tres" id="6_au7w2"]
 [ext_resource type="ArrayMesh" uid="uid://6fuvp23o2fxn" path="res://Art/DepthTower1.1.obj" id="7_e3d1d"]
+[ext_resource type="Script" path="res://example_scene/EnemyHealth.gd" id="8_tmoji"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_r6mis"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -31,6 +33,9 @@ size = Vector2(100, 100)
 points = PackedVector3Array(-50, 0, -50, -50, 0, 50, 50, 0, -50, 50, 0, 50)
 
 [sub_resource type="BoxMesh" id="BoxMesh_cufxb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_24ff2"]
+size = Vector3(1.88501, 1.16846, 1)
 
 [sub_resource type="Animation" id="Animation_6xqlu"]
 length = 0.001
@@ -175,6 +180,9 @@ _data = {
 "return": SubResource("Animation_t2pq2")
 }
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_rl8di"]
+size = Vector3(1.04077, 2.37134, 1)
+
 [sub_resource type="BoxMesh" id="BoxMesh_yldo8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_if4q1"]
@@ -193,6 +201,7 @@ shadow_enabled = true
 transform = Transform3D(0.325, 0, 0, 0, 0.325, 0, 0, 0, 0.325, 12.342, 136.886, 84.9354)
 
 [node name="FloorMesh" type="MeshInstance3D" parent="Floor"]
+visible = false
 mesh = SubResource("PlaneMesh_n6tjd")
 skeleton = NodePath("../..")
 
@@ -211,6 +220,14 @@ transform = Transform3D(0.994831, 0.101543, 0, -0.101543, 0.994831, 0, 0, 0, 1, 
 transform = Transform3D(0.138974, -0.207349, 0, 0.0294563, 0.978268, 0, 0, 0, 0.180589, 0.353401, 0.912079, -0.823708)
 mesh = SubResource("BoxMesh_cufxb")
 
+[node name="Hitbox" type="Area3D" parent="Player/Weapon Point/WeaponMesh"]
+transform = Transform3D(1, -1.19209e-07, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+script = ExtResource("3_dht6s")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player/Weapon Point/WeaponMesh/Hitbox"]
+transform = Transform3D(1, -2.02656e-06, 0, 0, 1, 0, 0, 0, 1, 0.0543365, -0.0178528, 0)
+shape = SubResource("BoxShape3D_24ff2")
+
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="Player"]
 libraries = {
 "": SubResource("AnimationLibrary_sp1wu")
@@ -226,7 +243,7 @@ current = true
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 127.25, 72.3439, 109.535)
 visible = false
-stream = ExtResource("5_psixa")
+stream = ExtResource("5_o78cm")
 autoplay = true
 
 [node name="FogVolume" type="FogVolume" parent="."]
@@ -238,7 +255,16 @@ transform = Transform3D(60, 0, 0, 0, 60, 0, 0, 0, 60, -2.09605, 85.4413, 98.0685
 material_override = ExtResource("6_au7w2")
 mesh = ExtResource("7_e3d1d")
 
-[node name="Basic Ground Enemy Prototype" type="MeshInstance3D" parent="."]
+[node name="RigidBody3D" type="RigidBody3D" parent="." groups=["Damageable"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.126309, 0.00483704, 0.325905)
+script = ExtResource("8_tmoji")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.8615, 137.994, 89.2011)
+shape = SubResource("BoxShape3D_rl8di")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
 transform = Transform3D(0.751124, 0, 0, 0, 2.3111, 0, 0, 0, 0.708205, 17.8615, 137.994, 89.2011)
 mesh = SubResource("BoxMesh_yldo8")
+skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_if4q1")
