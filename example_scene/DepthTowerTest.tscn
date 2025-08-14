@@ -1,13 +1,15 @@
-[gd_scene load_steps=21 format=3 uid="uid://d1mhk3prnqywk"]
+[gd_scene load_steps=23 format=3 uid="uid://d1mhk3prnqywk"]
 
-[ext_resource type="Script" path="res://example_scene/DepthTowerTest.gd" id="1_5n5p3"]
+[ext_resource type="Script" uid="uid://crra1f8kcfyth" path="res://example_scene/DepthTowerTest.gd" id="1_5n5p3"]
 [ext_resource type="Material" uid="uid://brpu7xylrg2l2" path="res://example_scene/materials/material_basic_blue.tres" id="1_udmpg"]
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="2_kxfv8"]
-[ext_resource type="Script" path="res://example_scene/PlayerMeleeWeapon.gd" id="3_4xyap"]
-[ext_resource type="Script" path="res://example_scene/WeaponHitbox.gd" id="3_dht6s"]
+[ext_resource type="Script" uid="uid://6sg5hu3jjl6g" path="res://example_scene/PlayerMeleeWeapon.gd" id="3_4xyap"]
+[ext_resource type="Script" uid="uid://bpkbe3xct3suh" path="res://example_scene/WeaponHitbox.gd" id="3_dht6s"]
+[ext_resource type="Material" uid="uid://cfsq4oheuvfuq" path="res://Art/Materials/depthTowerMatNewArches.tres" id="4_wrslw"]
+[ext_resource type="Material" uid="uid://mw6aj4yendvt" path="res://Art/Materials/depthTowerBridges.tres" id="5_8ifsc"]
 [ext_resource type="AudioStream" uid="uid://3vhb13vxdxq3" path="res://Audio/wind.mp3" id="5_o78cm"]
-[ext_resource type="Material" uid="uid://d3rqm77f07tad" path="res://Art/Materials/depthTowerMat.tres" id="6_au7w2"]
-[ext_resource type="ArrayMesh" uid="uid://6fuvp23o2fxn" path="res://Art/DepthTower1.1.obj" id="7_e3d1d"]
+[ext_resource type="PackedScene" uid="uid://76rifsmrghju" path="res://Art/DepthTowerFBXDemo.fbx" id="7_5lbmj"]
+[ext_resource type="Material" uid="uid://cuydbbidn63ia" path="res://Art/Materials/depthTowerMatNew.tres" id="7_y8egi"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_r6mis"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -167,10 +169,10 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_sp1wu"]
 _data = {
-"RESET": SubResource("Animation_6xqlu"),
-"attack": SubResource("Animation_bik76"),
-"meleeWeaponIdle": SubResource("Animation_xmws0"),
-"return": SubResource("Animation_t2pq2")
+&"RESET": SubResource("Animation_6xqlu"),
+&"attack": SubResource("Animation_bik76"),
+&"meleeWeaponIdle": SubResource("Animation_xmws0"),
+&"return": SubResource("Animation_t2pq2")
 }
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_n6tjd"]
@@ -190,11 +192,312 @@ environment = SubResource("Environment_aaj73")
 transform = Transform3D(-0.866024, -0.433016, 0.250001, 0, 0.499998, 0.866026, -0.500003, 0.749999, -0.43301, 127.25, 72.3439, 109.535)
 shadow_enabled = true
 
+[node name="DepthTowerFBXDemo" parent="." instance=ExtResource("7_5lbmj")]
+transform = Transform3D(42.915, 0, 0, 0, 42.915, 0, 0, 0, 42.915, 0.371305, 22.8879, 99.3787)
+
+[node name="ReferenceBlock" parent="DepthTowerFBXDemo/Tower/TowerTop" index="0"]
+surface_material_override/0 = ExtResource("7_y8egi")
+
+[node name="cylinder" parent="DepthTowerFBXDemo/Tower/TowerTop" index="1"]
+surface_material_override/0 = ExtResource("7_y8egi")
+
+[node name="cylinder_1" parent="DepthTowerFBXDemo/Tower/TowerTop" index="2"]
+material_override = ExtResource("4_wrslw")
+surface_material_override/0 = ExtResource("7_y8egi")
+
+[node name="cylinder_2" parent="DepthTowerFBXDemo/Tower/TowerTop" index="3"]
+material_override = ExtResource("4_wrslw")
+surface_material_override/0 = ExtResource("7_y8egi")
+
+[node name="cylinder_3" parent="DepthTowerFBXDemo/Tower/TowerTop" index="4"]
+material_override = ExtResource("4_wrslw")
+surface_material_override/0 = ExtResource("7_y8egi")
+
+[node name="cylinder_4" parent="DepthTowerFBXDemo/Tower/TowerTop" index="5"]
+material_override = ExtResource("4_wrslw")
+surface_material_override/0 = ExtResource("7_y8egi")
+
+[node name="cylinder_5" parent="DepthTowerFBXDemo/Tower/TowerTop" index="6"]
+material_override = ExtResource("4_wrslw")
+surface_material_override/0 = ExtResource("7_y8egi")
+
+[node name="cylinder_6" parent="DepthTowerFBXDemo/Tower/TowerTop" index="7"]
+material_override = ExtResource("4_wrslw")
+surface_material_override/0 = ExtResource("7_y8egi")
+
+[node name="cylinder_7" parent="DepthTowerFBXDemo/Tower/TowerTop" index="8"]
+material_override = ExtResource("4_wrslw")
+surface_material_override/0 = ExtResource("7_y8egi")
+
+[node name="cylinder_8" parent="DepthTowerFBXDemo/Tower/TowerTop" index="9"]
+material_override = ExtResource("4_wrslw")
+surface_material_override/0 = ExtResource("7_y8egi")
+
+[node name="SingleArchWallS" parent="DepthTowerFBXDemo/Tower/TowerMidTop/bone" index="0"]
+material_override = ExtResource("7_y8egi")
+
+[node name="SingleArch_2" parent="DepthTowerFBXDemo/Tower/TowerMidTop/bone" index="1"]
+material_override = ExtResource("4_wrslw")
+
+[node name="SingleArch_3" parent="DepthTowerFBXDemo/Tower/TowerMidTop/bone" index="2"]
+material_override = ExtResource("4_wrslw")
+
+[node name="SingleArch_4" parent="DepthTowerFBXDemo/Tower/TowerMidTop/bone" index="3"]
+material_override = ExtResource("4_wrslw")
+
+[node name="SingleArch_5" parent="DepthTowerFBXDemo/Tower/TowerMidTop/bone" index="4"]
+material_override = ExtResource("4_wrslw")
+
+[node name="SingleArch_6" parent="DepthTowerFBXDemo/Tower/TowerMidTop/bone" index="5"]
+material_override = ExtResource("4_wrslw")
+
+[node name="SingleArch_7" parent="DepthTowerFBXDemo/Tower/TowerMidTop/bone" index="6"]
+material_override = ExtResource("4_wrslw")
+
+[node name="SingleArch_8" parent="DepthTowerFBXDemo/Tower/TowerMidTop/bone" index="7"]
+material_override = ExtResource("4_wrslw")
+
+[node name="SingleArch_9" parent="DepthTowerFBXDemo/Tower/TowerMidTop/bone" index="8"]
+material_override = ExtResource("4_wrslw")
+
+[node name="tower" parent="DepthTowerFBXDemo/Tower/TowerMidTop" index="1"]
+material_override = ExtResource("7_y8egi")
+
+[node name="SingleArch_1" parent="DepthTowerFBXDemo/Tower/TowerMidLower/SingleArch" index="0"]
+surface_material_override/0 = ExtResource("4_wrslw")
+
+[node name="SingleArchWallL" parent="DepthTowerFBXDemo/Tower/TowerMidLower/SingleArch" index="1"]
+material_override = ExtResource("7_y8egi")
+
+[node name="SingleArchWallL_1" parent="DepthTowerFBXDemo/Tower/TowerMidLower/SingleArch2" index="0"]
+material_override = ExtResource("7_y8egi")
+
+[node name="SingleArch_10" parent="DepthTowerFBXDemo/Tower/TowerMidLower/SingleArch2" index="1"]
+material_override = ExtResource("4_wrslw")
+
+[node name="DoubleArch_3" parent="DepthTowerFBXDemo/Tower/TowerMidLower/DoubleArch3" index="0"]
+material_override = ExtResource("4_wrslw")
+
+[node name="DoubleArchWall_2" parent="DepthTowerFBXDemo/Tower/TowerMidLower/DoubleArch3" index="1"]
+material_override = ExtResource("7_y8egi")
+
+[node name="DoubleArch_4" parent="DepthTowerFBXDemo/Tower/TowerMidLower/DoubleArch4" index="0"]
+material_override = ExtResource("4_wrslw")
+
+[node name="DoubleArchWall_3" parent="DepthTowerFBXDemo/Tower/TowerMidLower/DoubleArch4" index="1"]
+material_override = ExtResource("7_y8egi")
+
+[node name="tower_1" parent="DepthTowerFBXDemo/Tower/TowerMidLower" index="4"]
+material_override = ExtResource("7_y8egi")
+
+[node name="DoubleArch_1" parent="DepthTowerFBXDemo/Tower/TowerMidLower2/DoubleArch" index="0"]
+material_override = ExtResource("4_wrslw")
+
+[node name="DoubleArchWall" parent="DepthTowerFBXDemo/Tower/TowerMidLower2/DoubleArch" index="1"]
+material_override = ExtResource("7_y8egi")
+
+[node name="DoubleArch_2" parent="DepthTowerFBXDemo/Tower/TowerMidLower2/DoubleArch2" index="0"]
+material_override = ExtResource("4_wrslw")
+
+[node name="DoubleArchWall_1" parent="DepthTowerFBXDemo/Tower/TowerMidLower2/DoubleArch2" index="1"]
+material_override = ExtResource("7_y8egi")
+
+[node name="SingleArchWallL_4" parent="DepthTowerFBXDemo/Tower/TowerMidLower2/SingleArch5" index="0"]
+material_override = ExtResource("7_y8egi")
+
+[node name="SingleArch_13" parent="DepthTowerFBXDemo/Tower/TowerMidLower2/SingleArch5" index="1"]
+material_override = ExtResource("4_wrslw")
+
+[node name="SingleArchWallL_5" parent="DepthTowerFBXDemo/Tower/TowerMidLower2/SingleArch6" index="0"]
+material_override = ExtResource("7_y8egi")
+
+[node name="SingleArch_14" parent="DepthTowerFBXDemo/Tower/TowerMidLower2/SingleArch6" index="1"]
+material_override = ExtResource("4_wrslw")
+
+[node name="tower_2" parent="DepthTowerFBXDemo/Tower/TowerMidLower2" index="4"]
+material_override = ExtResource("7_y8egi")
+
+[node name="SingleArchWallL_2" parent="DepthTowerFBXDemo/Tower/TowerMidLower3/SingleArch3" index="0"]
+material_override = ExtResource("7_y8egi")
+
+[node name="SingleArch_11" parent="DepthTowerFBXDemo/Tower/TowerMidLower3/SingleArch3" index="1"]
+material_override = ExtResource("4_wrslw")
+
+[node name="SingleArchWallL_3" parent="DepthTowerFBXDemo/Tower/TowerMidLower3/SingleArch4" index="0"]
+material_override = ExtResource("7_y8egi")
+
+[node name="SingleArch_12" parent="DepthTowerFBXDemo/Tower/TowerMidLower3/SingleArch4" index="1"]
+material_override = ExtResource("4_wrslw")
+
+[node name="DoubleArch_5" parent="DepthTowerFBXDemo/Tower/TowerMidLower3/DoubleArch5" index="0"]
+material_override = ExtResource("4_wrslw")
+
+[node name="DoubleArchWall_4" parent="DepthTowerFBXDemo/Tower/TowerMidLower3/DoubleArch5" index="1"]
+material_override = ExtResource("7_y8egi")
+
+[node name="DoubleArch_6" parent="DepthTowerFBXDemo/Tower/TowerMidLower3/DoubleArch6" index="0"]
+material_override = ExtResource("4_wrslw")
+
+[node name="DoubleArchWall_5" parent="DepthTowerFBXDemo/Tower/TowerMidLower3/DoubleArch6" index="1"]
+material_override = ExtResource("7_y8egi")
+
+[node name="tower_3" parent="DepthTowerFBXDemo/Tower/TowerMidLower3" index="4"]
+material_override = ExtResource("7_y8egi")
+
+[node name="SingleArchWallL_6" parent="DepthTowerFBXDemo/Tower/TowerMidLower4/SingleArch7" index="0"]
+material_override = ExtResource("7_y8egi")
+
+[node name="SingleArch_15" parent="DepthTowerFBXDemo/Tower/TowerMidLower4/SingleArch7" index="1"]
+material_override = ExtResource("4_wrslw")
+
+[node name="SingleArchWallL_7" parent="DepthTowerFBXDemo/Tower/TowerMidLower4/SingleArch8" index="0"]
+material_override = ExtResource("7_y8egi")
+
+[node name="SingleArch_16" parent="DepthTowerFBXDemo/Tower/TowerMidLower4/SingleArch8" index="1"]
+material_override = ExtResource("4_wrslw")
+
+[node name="DoubleArch_7" parent="DepthTowerFBXDemo/Tower/TowerMidLower4/DoubleArch7" index="0"]
+material_override = ExtResource("4_wrslw")
+
+[node name="DoubleArch_8" parent="DepthTowerFBXDemo/Tower/TowerMidLower4/DoubleArch8" index="0"]
+material_override = ExtResource("4_wrslw")
+
+[node name="DoubleArchWall_7" parent="DepthTowerFBXDemo/Tower/TowerMidLower4/DoubleArch8" index="1"]
+material_override = ExtResource("7_y8egi")
+
+[node name="tower_4" parent="DepthTowerFBXDemo/Tower/TowerMidLower4" index="4"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cylinder_9" parent="DepthTowerFBXDemo/Tower/TowerBase" index="0"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid" parent="DepthTowerFBXDemo/Tower/Bridges/topbridge" index="0"]
+material_override = ExtResource("5_8ifsc")
+
+[node name="cuboid_1" parent="DepthTowerFBXDemo/Tower/Bridges/topbridge" index="1"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_8" parent="DepthTowerFBXDemo/Tower/Bridges/topbridge" index="2"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_9" parent="DepthTowerFBXDemo/Tower/Bridges/topbridge" index="3"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_10" parent="DepthTowerFBXDemo/Tower/Bridges/topbridge" index="4"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_11" parent="DepthTowerFBXDemo/Tower/Bridges/topbridge" index="5"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_12" parent="DepthTowerFBXDemo/Tower/Bridges/topbridge" index="6"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_13" parent="DepthTowerFBXDemo/Tower/Bridges/topbridge" index="7"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_14" parent="DepthTowerFBXDemo/Tower/Bridges/topbridge" index="8"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_15" parent="DepthTowerFBXDemo/Tower/Bridges/topbridge" index="9"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_2" parent="DepthTowerFBXDemo/Tower/Bridges/midupperbridge" index="0"]
+material_override = ExtResource("5_8ifsc")
+
+[node name="cuboid_3" parent="DepthTowerFBXDemo/Tower/Bridges/midupperbridge" index="1"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_16" parent="DepthTowerFBXDemo/Tower/Bridges/midupperbridge" index="2"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_17" parent="DepthTowerFBXDemo/Tower/Bridges/midupperbridge" index="3"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_18" parent="DepthTowerFBXDemo/Tower/Bridges/midupperbridge" index="4"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_19" parent="DepthTowerFBXDemo/Tower/Bridges/midupperbridge" index="5"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_20" parent="DepthTowerFBXDemo/Tower/Bridges/midupperbridge" index="6"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_21" parent="DepthTowerFBXDemo/Tower/Bridges/midupperbridge" index="7"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_22" parent="DepthTowerFBXDemo/Tower/Bridges/midupperbridge" index="8"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_23" parent="DepthTowerFBXDemo/Tower/Bridges/midupperbridge" index="9"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_4" parent="DepthTowerFBXDemo/Tower/Bridges/midlowerbridge" index="0"]
+material_override = ExtResource("5_8ifsc")
+
+[node name="cuboid_5" parent="DepthTowerFBXDemo/Tower/Bridges/midlowerbridge" index="1"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_24" parent="DepthTowerFBXDemo/Tower/Bridges/midlowerbridge" index="2"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_25" parent="DepthTowerFBXDemo/Tower/Bridges/midlowerbridge" index="3"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_26" parent="DepthTowerFBXDemo/Tower/Bridges/midlowerbridge" index="4"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_27" parent="DepthTowerFBXDemo/Tower/Bridges/midlowerbridge" index="5"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_28" parent="DepthTowerFBXDemo/Tower/Bridges/midlowerbridge" index="6"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_29" parent="DepthTowerFBXDemo/Tower/Bridges/midlowerbridge" index="7"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_30" parent="DepthTowerFBXDemo/Tower/Bridges/midlowerbridge" index="8"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_31" parent="DepthTowerFBXDemo/Tower/Bridges/midlowerbridge" index="9"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_6" parent="DepthTowerFBXDemo/Tower/Bridges/lowbridge" index="0"]
+material_override = ExtResource("5_8ifsc")
+
+[node name="cuboid_7" parent="DepthTowerFBXDemo/Tower/Bridges/lowbridge" index="1"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_32" parent="DepthTowerFBXDemo/Tower/Bridges/lowbridge" index="2"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_33" parent="DepthTowerFBXDemo/Tower/Bridges/lowbridge" index="3"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_34" parent="DepthTowerFBXDemo/Tower/Bridges/lowbridge" index="4"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_35" parent="DepthTowerFBXDemo/Tower/Bridges/lowbridge" index="5"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_36" parent="DepthTowerFBXDemo/Tower/Bridges/lowbridge" index="6"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_37" parent="DepthTowerFBXDemo/Tower/Bridges/lowbridge" index="7"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_38" parent="DepthTowerFBXDemo/Tower/Bridges/lowbridge" index="8"]
+material_override = ExtResource("7_y8egi")
+
+[node name="cuboid_39" parent="DepthTowerFBXDemo/Tower/Bridges/lowbridge" index="9"]
+material_override = ExtResource("7_y8egi")
+
 [node name="Player" parent="." instance=ExtResource("2_kxfv8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.4589, 136.886, 98.0994)
-walk_speed = 1.5
-sprint_speed = 4.0
-view_bobbing_amount = 0.5
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.165226, 138.062, 94.952)
+walk_back_speed = 3.0
+walk_speed = 3.0
+sprint_speed = 8.0
+jump_height = 2.0
+view_bobbing_amount = 0.7
 allow_climb = false
 
 [node name="Weapon Point" type="Node3D" parent="Player"]
@@ -214,22 +517,17 @@ shape = SubResource("BoxShape3D_24ff2")
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="Player"]
 libraries = {
-"": SubResource("AnimationLibrary_sp1wu")
+&"": SubResource("AnimationLibrary_sp1wu")
 }
 autoplay = "meleeWeaponIdle"
 script = ExtResource("3_4xyap")
 
 [node name="FogVolume" type="FogVolume" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.90768, 0, 0, 0, 1, -11.2403, 117.732, 110.729)
+transform = Transform3D(1, 0, 0, 0, 0.90768, 0, 0, 0, 1, -11.2403, 77.9304, 110.729)
 size = Vector3(115.3, 8.89408, 102.741)
 
-[node name="DepthTower" type="MeshInstance3D" parent="."]
-transform = Transform3D(60, 0, 0, 0, 60, 0, 0, 0, 60, -2.09605, 85.4413, 98.0685)
-material_override = ExtResource("6_au7w2")
-mesh = ExtResource("7_e3d1d")
-
 [node name="Floor" type="StaticBody3D" parent="."]
-transform = Transform3D(0.544026, 0, 0, 0, 0.325, 0, 0, 0, 0.0164175, 29.2535, 137.085, 98.0928)
+transform = Transform3D(0.10785, 0, 0, 0, 0.325, 0, 0, 0, 1.68834, -0.252752, 138.268, 39.6845)
 
 [node name="FloorMesh" type="MeshInstance3D" parent="Floor"]
 visible = false
@@ -249,3 +547,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 127.25, 72.3439, 109.535)
 visible = false
 stream = ExtResource("5_o78cm")
 autoplay = true
+
+[editable path="DepthTowerFBXDemo"]
