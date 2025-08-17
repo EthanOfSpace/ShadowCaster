@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://crra1f8kcfyth" path="res://example_scene/DepthTowerTest.gd" id="1_5n5p3"]
 [ext_resource type="Material" uid="uid://brpu7xylrg2l2" path="res://example_scene/materials/material_basic_blue.tres" id="1_udmpg"]
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="2_kxfv8"]
-[ext_resource type="Script" uid="uid://6sg5hu3jjl6g" path="res://example_scene/PlayerMeleeWeapon.gd" id="3_4xyap"]
-[ext_resource type="Script" uid="uid://bpkbe3xct3suh" path="res://example_scene/WeaponHitbox.gd" id="3_dht6s"]
+[ext_resource type="Script" uid="uid://b7hx2jer37kqq" path="res://example_scene/PlayerMeleeWeapon.gd" id="3_4xyap"]
+[ext_resource type="Script" uid="uid://bpkbe3xct3suh" path="res://weapons/essential/weapon_hitbox.gd" id="3_dht6s"]
 [ext_resource type="Material" uid="uid://cfsq4oheuvfuq" path="res://Art/Materials/depthTowerMatNewArches.tres" id="4_wrslw"]
 [ext_resource type="Material" uid="uid://mw6aj4yendvt" path="res://Art/Materials/depthTowerBridges.tres" id="5_8ifsc"]
 [ext_resource type="AudioStream" uid="uid://3vhb13vxdxq3" path="res://Audio/wind.mp3" id="5_o78cm"]
@@ -237,6 +237,7 @@ surface_material_override/0 = ExtResource("7_y8egi")
 material_override = ExtResource("7_y8egi")
 
 [node name="SingleArch_2" parent="DepthTowerFBXDemo/Tower/TowerMidTop/bone" index="1"]
+transform = Transform3D(-1, 1.22461e-16, 0, 1.22461e-16, 1, 1.22461e-16, 1.49966e-32, 1.22461e-16, -1, 9.4045e-05, -0.105108, 0.0011766)
 material_override = ExtResource("4_wrslw")
 
 [node name="SingleArch_3" parent="DepthTowerFBXDemo/Tower/TowerMidTop/bone" index="2"]
@@ -501,10 +502,12 @@ view_bobbing_amount = 0.7
 allow_climb = false
 
 [node name="Weapon Point" type="Node3D" parent="Player"]
+process_mode = 4
 transform = Transform3D(0.994831, 0.101543, 0, -0.101543, 0.994831, 0, 0, 0, 1, 0, 0.199738, 0)
+visible = false
 
 [node name="WeaponMesh" type="MeshInstance3D" parent="Player/Weapon Point"]
-transform = Transform3D(0.138974, -0.207349, 0, 0.0294563, 0.978268, 0, 0, 0, 0.180589, 0.353401, 0.912079, -0.823708)
+transform = Transform3D(0.138974, -0.207349, 0, 0.0294562, 0.978268, 0, 0, 0, 0.180589, 0.353401, 0.912079, -0.823708)
 mesh = SubResource("BoxMesh_cufxb")
 
 [node name="Hitbox" type="Area3D" parent="Player/Weapon Point/WeaponMesh"]
@@ -516,6 +519,7 @@ transform = Transform3D(1, -2.02656e-06, 0, 0, 1, 0, 0, 0, 1, 0.0543365, -0.0178
 shape = SubResource("BoxShape3D_24ff2")
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="Player"]
+process_mode = 4
 libraries = {
 &"": SubResource("AnimationLibrary_sp1wu")
 }
