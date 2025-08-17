@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc2sdnopv7ibh"
-path.s3tc="res://.godot/imported/greywall_1.png-c357bebc39d1a06b85fdbeb3d95edd30.s3tc.ctex"
+uid="uid://c8o4y8jc3k3wx"
+path.s3tc="res://.godot/imported/cyanlegendsword.png-eb536e0e0d62650eee1b2932638becb7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Art/Materials/greywall_1.png"
-dest_files=["res://.godot/imported/greywall_1.png-c357bebc39d1a06b85fdbeb3d95edd30.s3tc.ctex"]
+source_file="res://Art/Textures/cyanlegendsword.png"
+dest_files=["res://.godot/imported/cyanlegendsword.png-eb536e0e0d62650eee1b2932638becb7.s3tc.ctex"]
 
 [params]
 

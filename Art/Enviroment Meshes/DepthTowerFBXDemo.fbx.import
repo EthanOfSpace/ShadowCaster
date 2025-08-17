@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://d35d2wef6bair"
-path="res://.godot/imported/DepthTower.fbx-cbbf27a16669211290fd6b1981515569.scn"
+uid="uid://76rifsmrghju"
+path="res://.godot/imported/DepthTowerFBXDemo.fbx-ec073946a628b58b745e10f7dffeb83b.scn"
 
 [deps]
 
-source_file="res://Art/DepthTower.fbx"
-dest_files=["res://.godot/imported/DepthTower.fbx-cbbf27a16669211290fd6b1981515569.scn"]
+source_file="res://Art/Enviroment Meshes/DepthTowerFBXDemo.fbx"
+dest_files=["res://.godot/imported/DepthTowerFBXDemo.fbx-ec073946a628b58b745e10f7dffeb83b.scn"]
 
 [params]
 

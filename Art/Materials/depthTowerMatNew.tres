@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cuydbbidn63ia"]
 
-[ext_resource type="Texture2D" uid="uid://cc2sdnopv7ibh" path="res://Art/Materials/greywall_1.png" id="1_vcck1"]
+[ext_resource type="Texture2D" uid="uid://cc2sdnopv7ibh" path="res://Art/Textures/greywall_1.png" id="1_vcck1"]
 
 [resource]
 cull_mode = 2

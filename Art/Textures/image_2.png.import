@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gwcr1sysc3ys"
-path.s3tc="res://.godot/imported/DepthTowerBrickWork.jpg-685029e95e863237fb7061ecf365ea09.s3tc.ctex"
+uid="uid://cd6uslclga8v6"
+path.s3tc="res://.godot/imported/image_2.png-8922755075c1c72abfdb30fe8d180cc4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Art/DepthTowerBrickWork.jpg"
-dest_files=["res://.godot/imported/DepthTowerBrickWork.jpg-685029e95e863237fb7061ecf365ea09.s3tc.ctex"]
+source_file="res://Art/Textures/image_2.png"
+dest_files=["res://.godot/imported/image_2.png-8922755075c1c72abfdb30fe8d180cc4.s3tc.ctex"]
 
 [params]
 
