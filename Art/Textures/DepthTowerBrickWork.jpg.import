@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1vcb7y11rne1"
-path.s3tc="res://.godot/imported/whitestonewall2.jpg-90f78394b3da4eaee97845decc9706a6.s3tc.ctex"
+uid="uid://gwcr1sysc3ys"
+path.s3tc="res://.godot/imported/DepthTowerBrickWork.jpg-868d8407ba8eeeadc715001e3f9f7610.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Art/Materials/whitestonewall2.jpg"
-dest_files=["res://.godot/imported/whitestonewall2.jpg-90f78394b3da4eaee97845decc9706a6.s3tc.ctex"]
+source_file="res://Art/Textures/DepthTowerBrickWork.jpg"
+dest_files=["res://.godot/imported/DepthTowerBrickWork.jpg-868d8407ba8eeeadc715001e3f9f7610.s3tc.ctex"]
 
 [params]
 
