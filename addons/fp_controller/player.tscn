@@ -1,7 +1,7 @@
 [gd_scene load_steps=23 format=3 uid="uid://dlbkch6iuy8gn"]
 
 [ext_resource type="Script" uid="uid://cwwdpo4hxd2m8" path="res://addons/fp_controller/scripts/player.gd" id="1_5ras8"]
-[ext_resource type="Script" uid="uid://dkicyfyjhrb4c" path="res://addons/fp_controller/scripts/smooth_camera.gd" id="2_1py82"]
+[ext_resource type="Script" uid="uid://bg3yypedv4af7" path="res://addons/fp_controller/scripts/smooth_camera.gd" id="2_1py82"]
 [ext_resource type="Script" uid="uid://cer2cebxsldr7" path="res://addons/fp_controller/scripts/player_state_machine.gd" id="2_wwa58"]
 [ext_resource type="PackedScene" uid="uid://dugb1cgyj11b8" path="res://weapons/basic_sword.tscn" id="3_njw88"]
 [ext_resource type="Script" uid="uid://7vp2ks1gp3fe" path="res://addons/fp_controller/scripts/player_move_state/idle.gd" id="3_xe000"]
@@ -315,8 +315,11 @@ skeleton = NodePath("../..")
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 1.5, 2.08165e-12)
 
-[node name="SmoothCamera" type="Camera3D" parent="CameraPivot"]
+[node name="SmoothCamera" type="Camera3D" parent="CameraPivot" node_paths=PackedStringArray("hand")]
 script = ExtResource("2_1py82")
+hand = NodePath("Hand")
+weapon_sway_amount = 0.07
+weapon_rotation_amount = 0.01
 
 [node name="ReflectionProbe" type="ReflectionProbe" parent="CameraPivot/SmoothCamera"]
 

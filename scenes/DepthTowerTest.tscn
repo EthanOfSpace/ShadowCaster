@@ -1,10 +1,8 @@
-[gd_scene load_steps=23 format=3 uid="uid://d1mhk3prnqywk"]
+[gd_scene load_steps=14 format=3 uid="uid://d1mhk3prnqywk"]
 
 [ext_resource type="Script" uid="uid://crra1f8kcfyth" path="res://scripts/DepthTowerTest.gd" id="1_5n5p3"]
 [ext_resource type="Material" uid="uid://brpu7xylrg2l2" path="res://Art/Materials/material_basic_blue.tres" id="1_udmpg"]
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="2_kxfv8"]
-[ext_resource type="Script" uid="uid://6sg5hu3jjl6g" path="res://scripts/PlayerMeleeWeapon.gd" id="3_4xyap"]
-[ext_resource type="Script" uid="uid://bpkbe3xct3suh" path="res://weapons/essential/weapon_hitbox.gd" id="3_dht6s"]
 [ext_resource type="Material" uid="uid://cfsq4oheuvfuq" path="res://Art/Materials/depthTowerMatNewArches.tres" id="4_wrslw"]
 [ext_resource type="Material" uid="uid://mw6aj4yendvt" path="res://Art/Materials/depthTowerBridges.tres" id="5_8ifsc"]
 [ext_resource type="AudioStream" uid="uid://3vhb13vxdxq3" path="res://Audio/Ambience/wind.mp3" id="5_o78cm"]
@@ -26,154 +24,6 @@ glow_enabled = true
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.0225
 volumetric_fog_ambient_inject = 0.45
-
-[sub_resource type="BoxMesh" id="BoxMesh_cufxb"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_24ff2"]
-size = Vector3(1.88501, 1.16846, 1)
-
-[sub_resource type="Animation" id="Animation_6xqlu"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Weapon Point:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, -0.101718)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Weapon Point/WeaponMesh:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0.353401, 0.912079, -0.823708)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Weapon Point/WeaponMesh:rotation")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0.208864)]
-}
-
-[sub_resource type="Animation" id="Animation_bik76"]
-resource_name = "attack"
-length = 0.7
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Weapon Point/WeaponMesh:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.7),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector3(0.353401, 0.912079, -0.823708), Vector3(0.541167, 1.19557, -0.971169), Vector3(-0.835154, 0.815887, -1.24602)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Weapon Point/WeaponMesh:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.7),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector3(0, 0, 0.208864), Vector3(-0.338115, 0.235075, -1.20138), Vector3(-0.140234, 2.15038, -1.80641)]
-}
-
-[sub_resource type="Animation" id="Animation_xmws0"]
-resource_name = "meleeWeaponIdle"
-length = 3.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Weapon Point:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
-"update": 0,
-"values": []
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Weapon Point/WeaponMesh:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0.3534, 0.912079, -0.823708)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Weapon Point/WeaponMesh:rotation")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-0.249502, 0.773052, -3.05083)]
-}
-
-[sub_resource type="Animation" id="Animation_t2pq2"]
-resource_name = "return"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Weapon Point/WeaponMesh:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(1),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0.86, -0.824)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Weapon Point/WeaponMesh:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(1),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-0.139626, 0, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_sp1wu"]
-_data = {
-&"RESET": SubResource("Animation_6xqlu"),
-&"attack": SubResource("Animation_bik76"),
-&"meleeWeaponIdle": SubResource("Animation_xmws0"),
-&"return": SubResource("Animation_t2pq2")
-}
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_n6tjd"]
 material = ExtResource("1_udmpg")
@@ -500,31 +350,6 @@ sprint_speed = 8.0
 jump_height = 2.0
 view_bobbing_amount = 0.7
 allow_climb = false
-
-[node name="Weapon Point" type="Node3D" parent="Player"]
-process_mode = 4
-transform = Transform3D(0.994831, 0.101543, 0, -0.101543, 0.994831, 0, 0, 0, 1, 0, 0.199738, 0)
-visible = false
-
-[node name="WeaponMesh" type="MeshInstance3D" parent="Player/Weapon Point"]
-transform = Transform3D(0.138974, -0.207349, 0, 0.0294562, 0.978268, 0, 0, 0, 0.180589, 0.353401, 0.912079, -0.823708)
-mesh = SubResource("BoxMesh_cufxb")
-
-[node name="Hitbox" type="Area3D" parent="Player/Weapon Point/WeaponMesh"]
-transform = Transform3D(1, -1.19209e-07, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
-script = ExtResource("3_dht6s")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Player/Weapon Point/WeaponMesh/Hitbox"]
-transform = Transform3D(1, -2.02656e-06, 0, 0, 1, 0, 0, 0, 1, 0.0543365, -0.0178528, 0)
-shape = SubResource("BoxShape3D_24ff2")
-
-[node name="AnimationPlayer2" type="AnimationPlayer" parent="Player"]
-process_mode = 4
-libraries = {
-&"": SubResource("AnimationLibrary_sp1wu")
-}
-autoplay = "meleeWeaponIdle"
-script = ExtResource("3_4xyap")
 
 [node name="FogVolume" type="FogVolume" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.90768, 0, 0, 0, 1, -11.2403, 77.9304, 110.729)
