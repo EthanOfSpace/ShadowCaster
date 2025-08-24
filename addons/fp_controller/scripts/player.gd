@@ -82,6 +82,7 @@ var can_pause: bool = true
 func _ready() -> void:
 	default_view_bobbing_amount = view_bobbing_amount
 	check_controls()
+	Manager.player = self
 	if can_pause:
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
@@ -130,7 +131,6 @@ func _unhandled_input(event: InputEvent) -> void:
 	if can_pause:
 		if event.is_action_pressed(PAUSE):
 			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-
 
 func _physics_process(delta: float) -> void:
 	if can_move:

@@ -15,6 +15,10 @@ run/main_scene="res://scenes/DepthTowerTest.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Manager="*res://scripts/manager.gd"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/anthonyec.camera_preview/plugin.cfg")
