@@ -1,6 +1,6 @@
 [gd_scene load_steps=23 format=3 uid="uid://dlbkch6iuy8gn"]
 
-[ext_resource type="Script" uid="uid://cwwdpo4hxd2m8" path="res://addons/fp_controller/scripts/player.gd" id="1_5ras8"]
+[ext_resource type="Script" uid="uid://cigv0n5jvforp" path="res://addons/fp_controller/scripts/player.gd" id="1_5ras8"]
 [ext_resource type="Script" uid="uid://bg3yypedv4af7" path="res://addons/fp_controller/scripts/smooth_camera.gd" id="2_1py82"]
 [ext_resource type="Script" uid="uid://cer2cebxsldr7" path="res://addons/fp_controller/scripts/player_state_machine.gd" id="2_wwa58"]
 [ext_resource type="PackedScene" uid="uid://dugb1cgyj11b8" path="res://weapons/basic_sword.tscn" id="3_njw88"]

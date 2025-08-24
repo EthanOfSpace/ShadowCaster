@@ -15,9 +15,9 @@ run/main_scene="res://scenes/DepthTowerTest.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
-[display]
+[autoload]
 
-window/size/mode=3
+Manager="*res://scripts/manager.gd"
 
 [editor_plugins]
 
