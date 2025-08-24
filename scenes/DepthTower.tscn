@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://d1mhk3prnqywk"]
+[gd_scene load_steps=28 format=3 uid="uid://d1mhk3prnqywk"]
 
 [ext_resource type="Script" uid="uid://crra1f8kcfyth" path="res://scripts/DepthTowerTest.gd" id="1_5n5p3"]
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="2_kxfv8"]
@@ -9,7 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://76rifsmrghju" path="res://Art/Enviroment Meshes/DepthTowerFBXDemo.fbx" id="7_5lbmj"]
 [ext_resource type="Material" uid="uid://cuydbbidn63ia" path="res://Art/Materials/depthTowerMatNew.tres" id="7_y8egi"]
 [ext_resource type="PackedScene" uid="uid://cmih1i1ptbjq1" path="res://Art/Enviroment Meshes/DepthTowerElevatorPlatform1.1.fbx" id="9_vsi1p"]
+[ext_resource type="PackedScene" uid="uid://b6rvkmug6eg34" path="res://Level Elements/levelTrigger.tscn" id="11_gg5tc"]
 [ext_resource type="Script" uid="uid://d1yq0o4t6rlej" path="res://scripts/depthTowerElevatorLever.gd" id="11_r8c12"]
+[ext_resource type="PackedScene" uid="uid://k2cji3e3regl" path="res://scenes/AbyssSecondToTopBridgeEntrance.tscn" id="12_gg5tc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_r6mis"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -489,5 +491,13 @@ visible = false
 stream = ExtResource("5_o78cm")
 autoplay = true
 
+[node name="AbyssSceneTrigger1" parent="." instance=ExtResource("11_gg5tc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 138.887, 50.0152)
+
+[node name="AbyssSceneTrigger" parent="." instance=ExtResource("11_gg5tc")]
+transform = Transform3D(-0.0326318, 0, 0.999467, 0, 1, 0, -0.999467, 0, -0.0326318, 57.3489, 124.124, 98.5816)
+scene_to_load = ExtResource("12_gg5tc")
+
 [editable path="DepthTowerFBXDemo"]
 [editable path="Elevator/Mesh"]
+[editable path="AbyssSceneTrigger"]
