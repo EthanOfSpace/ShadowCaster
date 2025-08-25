@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6rvkmug6eg34"]
+
+[ext_resource type="Script" uid="uid://dx4jthbytcsi8" path="res://scripts/sceneLoad.gd" id="1_umcug"]
+[ext_resource type="PackedScene" uid="uid://p4jd0uq0wwmu" path="res://scenes/AbyssTopBridgeEntrance.tscn" id="2_qldih"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r8c12"]
+size = Vector3(34.9589, 10.7482, 1)
+
+[node name="Area3D" type="Area3D"]
+disable_mode = 2
+script = ExtResource("1_umcug")
+scene_to_load = ExtResource("2_qldih")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.52728, 4.87408, 0)
+shape = SubResource("BoxShape3D_r8c12")
