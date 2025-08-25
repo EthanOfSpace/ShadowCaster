@@ -478,14 +478,7 @@ size = Vector3(115.3, 8.89408, 102.741)
 
 [node name="AUDIO -------" type="Node3D" parent="."]
 
-[node name="AudioListener3D" type="AudioListener3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 127.25, 72.3439, 114.501)
-visible = false
-current = true
-
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 127.25, 72.3439, 109.535)
-visible = false
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_o78cm")
 autoplay = true
 

@@ -176,6 +176,8 @@ func _handle_camera_motion() -> void:
 	
 	mouse_motion = Vector2.ZERO
 
+func get_target_position() -> Vector3:
+	return global_position + (global_transform.basis * Vector3.FORWARD * 1.5) + Vector3(0,camera_pivot.global_position.y,0)
 
 func _handle_joy_camera_motion() -> void:
 	var x_axis = Input.get_joy_axis(0, JOY_AXIS_RIGHT_X)
