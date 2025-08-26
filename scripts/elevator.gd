@@ -5,6 +5,8 @@ extends AnimatableBody3D
 @onready var lever_anim = lever.get_node("AnimationPlayer")
 
 var isMoving = false
+var current_floor : int = 0
+const MAX_FLOORS : int = 5
 
 func move_elevator_up_floor():
 	if isMoving:
@@ -21,6 +23,7 @@ func move_elevator_up_floor():
 	tween.finished.connect(on_elevator_finished_moving)
 
 func move_elevator_down_floor():
+	current_floor -= 1
 	if isMoving:
 		return
 	isMoving = true

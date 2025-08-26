@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsubsb4c026xc"]
+
+[ext_resource type="Script" uid="uid://cgl4vem4q4wq6" path="res://nodes/interactable.gd" id="1_su8st"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_j576i"]
+radius = 2.17463
+
+[node name="Interactable" type="Area3D" node_paths=PackedStringArray("interaction_popup")]
+script = ExtResource("1_su8st")
+interaction_popup = NodePath("Label")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_j576i")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -24.0
+offset_top = -210.0
+offset_right = 25.0
+offset_bottom = -187.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "splorp"
+horizontal_alignment = 1
