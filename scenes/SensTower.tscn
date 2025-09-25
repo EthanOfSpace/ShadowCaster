@@ -1,0 +1,162 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcsrfw34n7ciw"]
+
+[ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="1_iji4g"]
+[ext_resource type="PackedScene" uid="uid://cancih2cpkuai" path="res://Art/Enviroment Meshes/rampSensTowerc.gltf" id="3_issbk"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="blockbench_export" parent="." instance=ExtResource("3_issbk")]
+transform = Transform3D(16, 0, 0, 0, 16, 0, 0, 0, 16, 0, 0.5, 0)
+
+[node name="blockbench_export3" parent="." instance=ExtResource("3_issbk")]
+transform = Transform3D(16, 0, 0, 0, 16, 0, 0, 0, 16, 0, 0.5, -31.6)
+
+[node name="blockbench_export2" parent="." instance=ExtResource("3_issbk")]
+transform = Transform3D(16, 0, 0, 0, 16, 0, 0, 0, 16, 0, 0.5, 31.636873)
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
+size = Vector3(70, 1, 70)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D"]
+operation = 2
+size = Vector3(40, 1, 40)
+
+[node name="CSGCombiner3D2" type="CSGCombiner3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, 0)
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D2"]
+size = Vector3(70, 1, 70)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D2"]
+operation = 2
+size = Vector3(40, 1, 40)
+
+[node name="CSGCombiner3D3" type="CSGCombiner3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 40, 0)
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D3"]
+size = Vector3(70, 1, 70)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D3"]
+operation = 2
+size = Vector3(40, 1, 40)
+
+[node name="CSGCombiner3D4" type="CSGCombiner3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 60, 0)
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D4"]
+size = Vector3(70, 1, 70)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D4"]
+operation = 2
+size = Vector3(40, 1, 40)
+
+[node name="SensTowerWall" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.35991, 10.5, 0)
+use_collision = true
+size = Vector3(1, 20, 70)
+
+[node name="SensTowerWall2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -111.35991, 10.5, 0)
+use_collision = true
+size = Vector3(1, 20, 70)
+
+[node name="SensTowerWall3" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -75.89489, 10.5, -35)
+use_collision = true
+size = Vector3(1, 20, 70)
+
+[node name="SensTowerWall4" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -75.89489, 10.5, 35)
+use_collision = true
+size = Vector3(1, 20, 70)
+
+[node name="SensTowerWall5" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.35991, 30.5, 0)
+use_collision = true
+size = Vector3(1, 20, 70)
+
+[node name="SensTowerWall6" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -111.35991, 30.5, 0)
+use_collision = true
+size = Vector3(1, 20, 70)
+
+[node name="SensTowerWall7" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -75.89489, 30.5, -35)
+use_collision = true
+size = Vector3(1, 20, 70)
+
+[node name="SensTowerWall8" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -75.89489, 30.5, 35)
+use_collision = true
+size = Vector3(1, 20, 70)
+
+[node name="SensTowerWall9" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.35991, 50.5, 0)
+use_collision = true
+size = Vector3(1, 20, 70)
+
+[node name="SensTowerWall10" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -111.35991, 50.5, 0)
+use_collision = true
+size = Vector3(1, 20, 70)
+
+[node name="SensTowerWall11" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -75.89489, 50.5, -35)
+use_collision = true
+size = Vector3(1, 20, 70)
+
+[node name="SensTowerWall12" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -75.89489, 50.5, 35)
+use_collision = true
+size = Vector3(1, 20, 70)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="."]
+use_collision = true
+size = Vector3(40, 1, 15)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 8, 20, 0)
+use_collision = true
+size = Vector3(40, 1, 5)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9.48678, 20, 0)
+use_collision = true
+size = Vector3(40, 1, 5)
+
+[node name="Player" parent="." instance=ExtResource("1_iji4g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.49137, 0.5, 27.061298)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 18.444977, 0)
+light_color = Color(0.6833872, 0.7029363, 1, 1)
+light_energy = 7.268
+light_indirect_energy = 4.189
+light_size = 0.016
+light_specular = 0.0
+omni_range = 239.3965
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.818674, 14.608986)
+light_color = Color(0.68147415, 0, 0.27778563, 1)
+light_energy = 7.268
+light_indirect_energy = 4.189
+light_size = 0.016
+light_specular = 0.0
+omni_range = 239.3965
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.818674, -16.088226)
+light_color = Color(0.68147415, 0, 0.27778563, 1)
+light_energy = 7.268
+light_indirect_energy = 4.189
+light_size = 0.016
+light_specular = 0.0
+omni_range = 239.3965

@@ -475,7 +475,7 @@ libraries = {
 autoplay = "Idle"
 
 [node name="Interactable" type="Area3D" parent="Elevator" node_paths=PackedStringArray("interaction_popup")]
-transform = Transform3D(1, 0, -3.4119e-40, 0, 1, 0, -7.28675e-44, 0, 1, -0.00547351, 0.0243382, 0)
+transform = Transform3D(1, 0, -3.4119e-40, 0, 1, 0, -7.3e-44, 0, 1, -0.00547351, 0.0243382, 0)
 script = ExtResource("9_xyevo")
 damage_activated = true
 interaction_popup = NodePath("Label")
