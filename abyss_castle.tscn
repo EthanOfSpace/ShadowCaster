@@ -39,7 +39,7 @@ shape = SubResource("ConcavePolygonShape3D_kbnp7")
 [node name="Player" type="Node3D" parent="."]
 
 [node name="Player" parent="Player" instance=ExtResource("2_kbnp7")]
-transform = Transform3D(-0.716996, 0, -0.697078, 0, 1, 0, 0.697078, 0, -0.716996, 86.35743, 48.88623, 18.145248)
+transform = Transform3D(-0.716996, 0, -0.697078, 0, 1, 0, 0.697078, 0, -0.716996, 86.35743, 20.88623, -142.85475)
 walk_back_speed = 3.0
 walk_speed = 3.0
 sprint_speed = 8.0
@@ -54,17 +54,14 @@ environment = SubResource("Environment_ngvdi")
 
 [node name="Lights" type="Node3D" parent="Environment"]
 
-[node name="SpotLight3D" type="SpotLight3D" parent="Environment/Lights"]
-transform = Transform3D(-0.829018, -0.11477945, 0.54731613, 0.3476317, 0.6608568, 0.66514707, -0.4380428, 0.74168324, -0.50796115, 103, 151, -156)
-light_color = Color(0.32941177, 0.4745098, 1, 1)
-light_energy = 19.08
-light_volumetric_fog_energy = 5.278
-light_size = 1.0
-spot_range = 371.207
-
 [node name="OmniLight3D" type="OmniLight3D" parent="Environment/Lights"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.547615, 276.7142, -66.511475)
 light_color = Color(0.5411765, 0.011764706, 1, 1)
 light_energy = 20.52
 light_volumetric_fog_energy = 0.0
 omni_range = 424.497
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Environment/Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71.42592, 162, -132.3529)
+light_color = Color(0, 0.11372549, 1, 1)
+light_energy = 0.33
