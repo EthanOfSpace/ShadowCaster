@@ -1,0 +1,195 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1otohciouq0q"]
+
+[ext_resource type="PackedScene" uid="uid://dp4bq5s07veue" path="res://Art/Enviroment Meshes/walllargeupd.gltf" id="1_sy5k4"]
+
+[node name="Node" type="Node"]
+
+[node name="environment" type="Node3D" parent="."]
+
+[node name="Paths" type="Node3D" parent="environment"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="environment/Paths"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.06588745, 15.9214325)
+size = Vector3(22.411133, 1, 38.842865)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="environment/Paths"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -97.6497, 14.584394, 71.054794)
+size = Vector3(30.831299, 1, 50.96782)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="environment/Paths"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -130.04968, 14.584394, 124.070885)
+size = Vector3(15.2771, 1, 55)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="environment/Paths"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -238.41113, 40.06385, 173.57089)
+size = Vector3(16, 1, 92)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="environment/Paths"]
+transform = Transform3D(-4.222196e-08, 0.25881904, -0.9659258, 1.131334e-08, 0.9659258, 0.25881904, 1, 0, -4.371139e-08, -183.02794, 27.44957, 135.07089)
+size = Vector3(15.2771, 1, 99)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="environment/Paths"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.06298, 14.6, 104.18264)
+size = Vector3(136.73997, 1, 15.36528)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="environment/Paths"]
+transform = Transform3D(1, 0, 0, 0, 0.97225165, 0.23393749, 0, -0.23393749, 0.97225165, 0, 7.3347025, 65.95138)
+size = Vector3(14.520508, 1, 62.833054)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="environment/Paths"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4341125, 0)
+
+[node name="Walls" type="Node3D" parent="environment"]
+
+[node name="blockbench_export" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(-2.1855695e-07, 0, -5, 0, 5, 0, 5, 0, -2.1855695e-07, -53, 0, 53.3058)
+
+[node name="blockbench_export2" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(1.294095, 0, -4.829629, 0, 5, 0, 4.829629, 0, 1.294095, -59, 0, 13.305801)
+
+[node name="blockbench_export3" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(2.4999998, 0, -4.330127, 0, 5.0000005, 0, 4.330127, 0, 2.4999998, -77, 0, -26.694199)
+
+[node name="blockbench_export4" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(3.535534, 0, -3.5355337, 0, 4.9999995, 0, 3.5355337, 0, 3.535534, -105, 0, -63.6942)
+
+[node name="blockbench_export5" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(4.330127, 0, -2.4999998, 0, 5, 0, 2.4999998, 0, 4.330127, -140, 0, -90.6942)
+
+[node name="blockbench_export6" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(4.829629, 0, -1.2940949, 0, 5, 0, 1.2940949, 0, 4.829629, -178, 0, -105.6942)
+
+[node name="blockbench_export7" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(5, 0, 4.7683716e-07, 0, 5, 0, -4.7683716e-07, 0, 5, -219, 0, -110.6942)
+
+[node name="blockbench_export24" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(-5, 0, 4.371139e-07, 0, 5, 0, -4.371139e-07, 0, -5, -74.28571, 21, 201.38185)
+
+[node name="blockbench_export25" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(-4.829629, 0, -1.2940948, 0, 5.0000005, 0, 1.2940948, 0, -4.829629, -34.285713, 21, 195.38185)
+
+[node name="blockbench_export26" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(-4.330127, 0, -2.4999998, 0, 5, 0, 2.4999998, 0, -4.330127, 5.714287, 21, 177.38187)
+
+[node name="blockbench_export27" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(-3.5355341, 0, -3.5355334, 0, 5, 0, 3.5355334, 0, -3.5355341, 42.714287, 21, 149.38185)
+
+[node name="blockbench_export28" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(-2.5, 0, -4.330127, 0, 5, 0, 4.330127, 0, -2.5, 69.71429, 21, 114.38186)
+
+[node name="blockbench_export29" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(-1.294095, 0, -4.829629, 0, 5, 0, 4.829629, 0, -1.294095, 84.714294, 21, 76.38187)
+
+[node name="blockbench_export30" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(2.5828018e-07, 0, -5, 0, 5, 0, 5, 0, 2.5828018e-07, 89.714294, 21, 35.38186)
+
+[node name="blockbench_export31" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(2.5828018e-07, 0, -5, 0, 5, 0, 5, 0, 2.5828018e-07, 89.714294, 21, -11.618141)
+
+[node name="blockbench_export32" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(2.5828018e-07, 0, -5, 0, 5, 0, 5, 0, 2.5828018e-07, 89.714294, 21, -58.61814)
+
+[node name="blockbench_export8" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(4.829629, 0, 1.2940958, 0, 5, 0, -1.2940958, 0, 4.829629, -259, 0, -104.6942)
+
+[node name="blockbench_export9" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(4.330127, 0, 2.5000002, 0, 5, 0, -2.5000002, 0, 4.330127, -300, 0, -87.6942)
+
+[node name="blockbench_export10" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(3.535534, 0, 3.5355349, 0, 5, 0, -3.5355349, 0, 3.535534, -335, 0, -60.6942)
+
+[node name="blockbench_export11" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(2.499999, 0, 4.3301277, 0, 5, 0, -4.3301277, 0, 2.499999, -359, 0, -27.694199)
+
+[node name="blockbench_export12" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(1.294094, 0, 4.8296294, 0, 4.9999995, 0, -4.8296294, 0, 1.294094, -374, 0, 10.305801)
+
+[node name="blockbench_export13" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(-1.0728836e-06, 0, 5, 0, 4.999999, 0, -5, 0, -1.0728836e-06, -379, 0, 51.3058)
+
+[node name="blockbench_export33" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(-5, 0, 4.371139e-07, 0, 5, 0, -4.371139e-07, 0, -5, -209.84619, 14.700989, 515.92114)
+
+[node name="blockbench_export34" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(-4.829629, 0, -1.2940948, 0, 5.0000005, 0, 1.2940948, 0, -4.829629, -169.84619, 14.700989, 509.92114)
+
+[node name="blockbench_export35" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(-4.330127, 0, -2.4999998, 0, 5, 0, 2.4999998, 0, -4.330127, -129.84619, 14.700989, 491.92114)
+
+[node name="blockbench_export36" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(-3.5355341, 0, -3.5355334, 0, 5, 0, 3.5355334, 0, -3.5355341, -92.84619, 14.700989, 463.92114)
+
+[node name="blockbench_export37" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(-2.5, 0, -4.330127, 0, 5, 0, 4.330127, 0, -2.5, -65.84619, 14.700989, 428.92114)
+
+[node name="blockbench_export38" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(-1.294095, 0, -4.829629, 0, 5, 0, 4.829629, 0, -1.294095, -50.84619, 14.700989, 390.92114)
+
+[node name="blockbench_export39" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(2.5828018e-07, 0, -5, 0, 5, 0, 5, 0, 2.5828018e-07, -45.84619, 14.700989, 349.92114)
+
+[node name="blockbench_export40" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(1.2940954, 0, -4.829629, 0, 5, 0, 4.829629, 0, 1.2940954, -51.84619, 47.70099, 309.92114)
+
+[node name="blockbench_export41" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(2.5000002, 0, -4.330127, 0, 5, 0, 4.330127, 0, 2.5000002, -68.84619, 47.70099, 268.92114)
+
+[node name="blockbench_export42" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(3.5355349, 0, -3.535534, 0, 5, 0, 3.535534, 0, 3.5355349, -95.84619, 47.70099, 233.92114)
+
+[node name="blockbench_export43" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(4.3301277, 0, -2.4999993, 0, 4.9999995, 0, 2.4999993, 0, 4.3301277, -128.84619, 47.70099, 209.92114)
+
+[node name="blockbench_export44" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(4.8296294, 0, -1.2940943, 0, 4.999999, 0, 1.2940943, 0, 4.8296294, -166.84619, 47.70099, 194.92114)
+
+[node name="blockbench_export45" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(5, 0, 8.5432674e-07, 0, 4.999999, 0, -8.5432674e-07, 0, 5, -207.84619, 47.70099, 189.92114)
+
+[node name="blockbench_export46" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(1.2940954, 0, -4.829629, 0, 5, 0, 4.829629, 0, 1.2940954, 127.137054, 47.70099, 448.13812)
+
+[node name="blockbench_export47" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(2.5000002, 0, -4.330127, 0, 5, 0, 4.330127, 0, 2.5000002, 110.137054, 47.70099, 407.13812)
+
+[node name="blockbench_export48" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(3.5355349, 0, -3.535534, 0, 5, 0, 3.535534, 0, 3.5355349, 83.137054, 47.70099, 372.13812)
+
+[node name="blockbench_export49" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(4.3301277, 0, -2.4999993, 0, 4.9999995, 0, 2.4999993, 0, 4.3301277, 50.137054, 47.70099, 348.13812)
+
+[node name="blockbench_export50" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(4.8296294, 0, -1.2940943, 0, 4.999999, 0, 1.2940943, 0, 4.8296294, 12.137054, 47.70099, 333.13812)
+
+[node name="blockbench_export51" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(5, 0, 8.5432674e-07, 0, 4.999999, 0, -8.5432674e-07, 0, 5, -28.862946, 47.70099, 328.13812)
+
+[node name="blockbench_export14" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(5, 0, 8.5432674e-07, 0, 4.999999, 0, -8.5432674e-07, 0, 5, -398.59338, 21, 72.31212)
+
+[node name="blockbench_export20" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(4.829629, 0, 1.2940961, 0, 4.999999, 0, -1.2940961, 0, 4.829629, -441.59338, 21, 78.31212)
+
+[node name="blockbench_export21" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(4.330127, 0, 2.500001, 0, 4.999999, 0, -2.500001, 0, 4.330127, -482.59338, 21, 96.31212)
+
+[node name="blockbench_export22" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(3.5355334, 0, 3.5355349, 0, 4.9999995, 0, -3.5355349, 0, 3.5355334, -517.5934, 21, 123.31212)
+
+[node name="blockbench_export23" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(2.499999, 0, 4.3301277, 0, 4.9999995, 0, -4.3301277, 0, 2.499999, -541.0244, 21, 155.31212)
+
+[node name="blockbench_export15" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(5, 0, 8.5432674e-07, 0, 4.999999, 0, -8.5432674e-07, 0, 5, -351.59338, 21, 72.31212)
+
+[node name="blockbench_export16" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(5, 0, 8.5432674e-07, 0, 4.999999, 0, -8.5432674e-07, 0, 5, -306.59338, 21, 72.31212)
+
+[node name="blockbench_export17" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(5, 0, 8.5432674e-07, 0, 4.999999, 0, -8.5432674e-07, 0, 5, -258.59338, 21, 72.31212)
+
+[node name="blockbench_export18" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(5, 0, 8.5432674e-07, 0, 4.999999, 0, -8.5432674e-07, 0, 5, -210.59338, 21, 72.31212)
+
+[node name="blockbench_export19" parent="environment/Walls" instance=ExtResource("1_sy5k4")]
+transform = Transform3D(5, 0, 8.5432674e-07, 0, 4.999999, 0, -8.5432674e-07, 0, 5, -163.59338, 21, 72.31212)

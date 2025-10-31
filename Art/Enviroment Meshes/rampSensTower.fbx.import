@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dbvqwnyql1kl8"
-path="res://.godot/imported/rampSensTower.fbx-926e35f77da2230f9577a8f840a6f126.scn"
+path="res://.godot/imported/rampSensTower.fbx-ec6911933d8f61a91a605ff21e80c417.scn"
 
 [deps]
 
-source_file="res://Art/rampSensTower.fbx"
-dest_files=["res://.godot/imported/rampSensTower.fbx-926e35f77da2230f9577a8f840a6f126.scn"]
+source_file="res://Art/Enviroment Meshes/rampSensTower.fbx"
+dest_files=["res://.godot/imported/rampSensTower.fbx-ec6911933d8f61a91a605ff21e80c417.scn"]
 
 [params]
 

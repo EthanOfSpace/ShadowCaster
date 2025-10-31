@@ -1,12 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://bcsrfw34n7ciw"]
+[gd_scene load_steps=4 format=3 uid="uid://bcsrfw34n7ciw"]
 
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="1_iji4g"]
 [ext_resource type="PackedScene" uid="uid://cancih2cpkuai" path="res://Art/Enviroment Meshes/rampSensTowerc.gltf" id="3_issbk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ggok5"]
+uv1_scale = Vector3(10.055, 10.055, 10.055)
 
 [node name="Node3D" type="Node3D"]
 
 [node name="blockbench_export" parent="." instance=ExtResource("3_issbk")]
 transform = Transform3D(16, 0, 0, 0, 16, 0, 0, 0, 16, 0, 0.5, 0)
+
+[node name="blockbench_export4" parent="." instance=ExtResource("3_issbk")]
+transform = Transform3D(-6.993822e-07, 0, -16, 0, 16, 0, 16, 0, -6.993822e-07, -9.4, 20.6, 0)
+
+[node name="blockbench_export5" parent="." instance=ExtResource("3_issbk")]
+transform = Transform3D(-6.993822e-07, 0, -16, 0, 16, 0, 16, 0, -6.993822e-07, 8.1, 20.6, 0)
 
 [node name="blockbench_export3" parent="." instance=ExtResource("3_issbk")]
 transform = Transform3D(16, 0, 0, 0, 16, 0, 0, 0, 16, 0, 0.5, -31.6)
@@ -33,7 +42,7 @@ size = Vector3(70, 1, 70)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D2"]
 operation = 2
-size = Vector3(40, 1, 40)
+size = Vector3(38, 1, 40)
 
 [node name="CSGCombiner3D3" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 40, 0)
@@ -58,68 +67,79 @@ operation = 2
 size = Vector3(40, 1, 40)
 
 [node name="SensTowerWall" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.35991, 10.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.64009, 10.5, 0)
+material_override = SubResource("StandardMaterial3D_ggok5")
 use_collision = true
 size = Vector3(1, 20, 70)
 
 [node name="SensTowerWall2" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -111.35991, 10.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.35991, 10.5, 0)
 use_collision = true
 size = Vector3(1, 20, 70)
 
 [node name="SensTowerWall3" type="CSGBox3D" parent="."]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -75.89489, 10.5, -35)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.10511017, 10.5, -35)
 use_collision = true
 size = Vector3(1, 20, 70)
 
 [node name="SensTowerWall4" type="CSGBox3D" parent="."]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -75.89489, 10.5, 35)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.10511017, 10.5, 35)
 use_collision = true
 size = Vector3(1, 20, 70)
 
 [node name="SensTowerWall5" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.35991, 30.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.64009, 30.5, 0)
 use_collision = true
 size = Vector3(1, 20, 70)
 
 [node name="SensTowerWall6" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -111.35991, 30.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.35991, 30.5, 0)
 use_collision = true
 size = Vector3(1, 20, 70)
 
 [node name="SensTowerWall7" type="CSGBox3D" parent="."]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -75.89489, 30.5, -35)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.10511017, 30.5, -35)
 use_collision = true
 size = Vector3(1, 20, 70)
 
 [node name="SensTowerWall8" type="CSGBox3D" parent="."]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -75.89489, 30.5, 35)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.10511017, 30.5, 35)
 use_collision = true
 size = Vector3(1, 20, 70)
 
 [node name="SensTowerWall9" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.35991, 50.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.64009, 50.5, 0)
 use_collision = true
 size = Vector3(1, 20, 70)
 
 [node name="SensTowerWall10" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -111.35991, 50.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.35991, 50.5, 0)
 use_collision = true
 size = Vector3(1, 20, 70)
 
 [node name="SensTowerWall11" type="CSGBox3D" parent="."]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -75.89489, 50.5, -35)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.10511017, 50.5, -35)
 use_collision = true
 size = Vector3(1, 20, 70)
 
 [node name="SensTowerWall12" type="CSGBox3D" parent="."]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -75.89489, 50.5, 35)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.10511017, 50.5, 35)
 use_collision = true
 size = Vector3(1, 20, 70)
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="."]
 use_collision = true
 size = Vector3(40, 1, 15)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 40.011333, 0)
+use_collision = true
+size = Vector3(40, 1, 11)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 40, 0)
+use_collision = true
+size = Vector3(40, 1, 11)
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="."]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 8, 20, 0)
@@ -132,12 +152,21 @@ use_collision = true
 size = Vector3(40, 1, 5)
 
 [node name="Player" parent="." instance=ExtResource("1_iji4g")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.49137, 0.5, 27.061298)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.710985, 40.524364, 26.061298)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 18.444977, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.304085, 0)
 light_color = Color(0.6833872, 0.7029363, 1, 1)
 light_energy = 7.268
+light_indirect_energy = 4.189
+light_size = 0.016
+light_specular = 0.0
+omni_range = 239.3965
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 32.615513, 0)
+light_color = Color(0.7707172, 0, 0.119809665, 1)
+light_energy = 9.868
 light_indirect_energy = 4.189
 light_size = 0.016
 light_specular = 0.0
@@ -160,3 +189,83 @@ light_indirect_energy = 4.189
 light_size = 0.016
 light_specular = 0.0
 omni_range = 239.3965
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31, 29.875, 31.962719)
+use_collision = true
+radius = 5.0
+height = 19.75
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31, 29.9375, -31.037281)
+use_collision = true
+radius = 5.0
+height = 19.875
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 29.9375, -31.037281)
+use_collision = true
+radius = 5.0
+height = 19.875
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 29.875, 30.962719)
+use_collision = true
+radius = 5.0
+height = 19.75
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 22.5, 32.46272)
+use_collision = true
+size = Vector3(62, 4, 5)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 22.5, -32.53728)
+use_collision = true
+size = Vector3(62, 4, 5)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 32.5, 22.5, -0.03728106)
+use_collision = true
+size = Vector3(62, 4, 5)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -32.5, 22.5, -0.037281014)
+use_collision = true
+size = Vector3(62, 4, 5)
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 43.6375, 0)
+use_collision = true
+radius = 6.0
+height = 1.875
+
+[node name="CSGCylinder3D9" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 43.16875, 0)
+use_collision = true
+radius = 7.7000003
+height = 0.9375
+
+[node name="CSGCylinder3D7" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 45.4375, 0)
+use_collision = true
+radius = 3.0
+height = 1.875
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 40.2125, 0)
+use_collision = true
+radius = 9.0
+height = 4.875
+
+[node name="CSGCylinder3D8" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 40.058594, 0)
+use_collision = true
+radius = 11.0
+height = 2.9296875
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 52.903927, 0)
+light_color = Color(0.25740993, 0.9903787, 0.99999994, 1)
+light_energy = 12.37
+omni_range = 52.158863
