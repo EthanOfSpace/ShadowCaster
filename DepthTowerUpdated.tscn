@@ -860,8 +860,9 @@ environment = SubResource("Environment_6tn14")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="EnvironmentLighting/Lights"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 344, 177.63525)
-light_color = Color(0.99999994, 0.63274986, 0.2287255, 1)
-light_energy = 1.617
+light_energy = 1.282
 light_volumetric_fog_energy = 0.0
+shadow_enabled = true
+shadow_bias = 0.01
 
 [editable path="EnvironmentMeshes/DepthTowerElevatorFBX"]
