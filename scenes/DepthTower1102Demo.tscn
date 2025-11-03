@@ -1,4 +1,4 @@
-[gd_scene load_steps=110 format=3 uid="uid://ban6sx8l0boa1"]
+[gd_scene load_steps=111 format=3 uid="uid://ban6sx8l0boa1"]
 
 [ext_resource type="PackedScene" uid="uid://c4w6bvhggbg8s" path="res://Art/Enviroment Meshes/DepthTowerElevator1102.fbx" id="1_pjy8i"]
 [ext_resource type="Material" uid="uid://d3rqm77f07tad" path="res://Art/Materials/depthTowerMat.tres" id="2_g7lt4"]
@@ -6,6 +6,7 @@
 [ext_resource type="Material" uid="uid://cfsq4oheuvfuq" path="res://Art/Materials/depthTowerMatNewArches.tres" id="3_fyiqq"]
 [ext_resource type="Material" uid="uid://mw6aj4yendvt" path="res://Art/Materials/depthTowerBridges.tres" id="4_vth84"]
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="5_56pd4"]
+[ext_resource type="PackedScene" uid="uid://c3n44ms6em62u" path="res://Art/Enviroment Meshes/DepthTowerWalls1103.fbx" id="7_56pd4"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_g7lt4"]
 data = PackedVector3Array(0.0063, 0, 0.0063, 0.0063, 0.024999999, 0.0063, 0.0063, 0.024999999, -0.0063, 0.0063, 0.024999999, -0.0063, 0.0063, 0, -0.0063, 0.0063, 0, 0.0063, -0.0063, 0.024999999, -0.0063, -0.0063, 0.024999999, 0.0063, -0.0063, 0, 0.0063, -0.0063, 0, 0.0063, -0.0063, 0, -0.0063, -0.0063, 0.024999999, -0.0063, 0.0063, 0.024999999, -0.0063, 0.0063, 0.024999999, 0.0063, -0.0063, 0.024999999, 0.0063, -0.0063, 0.024999999, 0.0063, -0.0063, 0.024999999, -0.0063, 0.0063, 0.024999999, -0.0063, -0.0063, 0, 0.0063, 0.0063, 0, 0.0063, 0.0063, 0, -0.0063, 0.0063, 0, -0.0063, -0.0063, 0, -0.0063, -0.0063, 0, 0.0063, -0.0063, 0.024999999, 0.0063, 0.0063, 0.024999999, 0.0063, 0.0063, 0, 0.0063, 0.0063, 0, 0.0063, -0.0063, 0, 0.0063, -0.0063, 0.024999999, 0.0063, 0.0063, 0, -0.0063, 0.0063, 0.024999999, -0.0063, -0.0063, 0.024999999, -0.0063, -0.0063, 0.024999999, -0.0063, -0.0063, 0, -0.0063, 0.0063, 0, -0.0063)
@@ -318,6 +319,7 @@ ambient_light_color = Color(0.1637809, 0.00034625264, 0.32195786, 1)
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.0108
 volumetric_fog_albedo = Color(0.6599018, 0.6599018, 0.6599018, 1)
+volumetric_fog_length = 383.31
 
 [sub_resource type="FogMaterial" id="FogMaterial_vth84"]
 
@@ -1130,6 +1132,177 @@ material_override = ExtResource("2_xdcwc")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_39/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_y2cyk")
 
+[node name="DepthTowerWalls1103" parent="EnvironmentMeshes" instance=ExtResource("7_56pd4")]
+transform = Transform3D(80, 0, 0, 0, 80, 0, 0, 0, 80, 0, 45, 0)
+
+[node name="WallLength" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group4/group" index="0"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_1" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group4/group" index="1"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_2" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group4/group" index="2"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_3" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group4/group" index="3"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group4/group2" index="0"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_1" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group4/group2" index="1"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_2" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group4/group2" index="2"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_3" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group4/group2" index="3"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_4" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group4/group2" index="4"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_5" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group4/group2" index="5"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_4" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group4/group3" index="0"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_5" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group4/group3" index="1"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_6" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group4/group3" index="2"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_7" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group4/group3" index="3"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_6" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group5/group6" index="0"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_7" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group5/group6" index="1"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_8" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group5/group6" index="2"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_9" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group5/group6" index="3"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_10" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group5/group6" index="4"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_11" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group5/group6" index="5"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_8" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group5/group7" index="0"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_9" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group5/group7" index="1"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_10" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group5/group7" index="2"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_11" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group5/group7" index="3"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_12" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group5/group8" index="0"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_13" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group5/group8" index="1"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_14" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group5/group8" index="2"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_15" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group5/group8" index="3"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_12" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group9/group10" index="0"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_13" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group9/group10" index="1"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_14" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group9/group10" index="2"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_15" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group9/group10" index="3"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_16" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group9/group10" index="4"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_17" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group9/group10" index="5"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_16" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group9/group11" index="0"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_17" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group9/group11" index="1"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_18" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group9/group11" index="2"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_19" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group9/group11" index="3"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_20" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group9/group12" index="0"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_21" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group9/group12" index="1"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_22" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group9/group12" index="2"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_23" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group9/group12" index="3"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_18" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group13/group14" index="0"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_19" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group13/group14" index="1"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_20" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group13/group14" index="2"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_21" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group13/group14" index="3"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_22" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group13/group14" index="4"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallCorner_23" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group13/group14" index="5"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_24" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group13/group15" index="0"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_25" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group13/group15" index="1"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_26" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group13/group15" index="2"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_27" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group13/group15" index="3"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_28" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group13/group16" index="0"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_29" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group13/group16" index="1"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_30" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group13/group16" index="2"]
+material_override = ExtResource("4_vth84")
+
+[node name="WallLength_31" parent="EnvironmentMeshes/DepthTowerWalls1103/group17/group13/group16" index="3"]
+material_override = ExtResource("4_vth84")
+
 [node name="Player" parent="." instance=ExtResource("5_56pd4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 215, -23.25)
 walk_back_speed = 4.0
@@ -1142,17 +1315,20 @@ sprint_speed = 20.0
 environment = SubResource("Environment_g7lt4")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lighting"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 230, 288, -230)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 230, 407.32666, -230)
 light_color = Color(0.70027095, 0.6756155, 1, 1)
-light_energy = 31.01
+light_energy = 36.25
 light_indirect_energy = 20.955
-light_volumetric_fog_energy = 8.588
+light_volumetric_fog_energy = 4.464
 omni_range = 1816.295
 
 [node name="FogVolume" type="FogVolume" parent="Lighting"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 38.15425, 0)
-size = Vector3(900, 134.36432, 900)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 38.846237, 0)
+top_level = true
+visible = false
+size = Vector3(900, 135.74829, 900)
 material = SubResource("FogMaterial_vth84")
 
 [editable path="EnvironmentMeshes/DepthTowerElevator1102"]
+[editable path="EnvironmentMeshes/DepthTowerWalls1103"]
 [editable path="Player"]
