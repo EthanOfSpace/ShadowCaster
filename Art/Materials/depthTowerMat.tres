@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://gwcr1sysc3ys" path="res://Art/Textures/DepthTowerBrickWork.jpg" id="1_bft78"]
 
 [resource]
+cull_mode = 2
 albedo_texture = ExtResource("1_bft78")
 uv1_scale = Vector3(20, 20, 20)
 uv1_triplanar = true

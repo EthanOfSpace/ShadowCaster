@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dnra77clxv7ij"
-path="res://.godot/imported/DepthTowerElevatorFBX.fbx-18a998013835ad3ca8ad13f267006823.scn"
+uid="uid://dnawkq47qhoel"
+path="res://.godot/imported/skeletonlongsword.fbx-e2a70899bd7f0945f990efdb450f3d75.scn"
 
 [deps]
 
-source_file="res://Art/Enviroment Meshes/DepthTowerElevatorFBX.fbx"
-dest_files=["res://.godot/imported/DepthTowerElevatorFBX.fbx-18a998013835ad3ca8ad13f267006823.scn"]
+source_file="res://Art/Weapon Meshes/skeletonlongsword.fbx"
+dest_files=["res://.godot/imported/skeletonlongsword.fbx-e2a70899bd7f0945f990efdb450f3d75.scn"]
 
 [params]
 

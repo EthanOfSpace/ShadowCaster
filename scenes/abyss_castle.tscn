@@ -15,6 +15,7 @@ sky_material = SubResource("ProceduralSkyMaterial_kbnp7")
 
 [sub_resource type="Environment" id="Environment_ngvdi"]
 background_mode = 1
+background_color = Color(0.01645015, 4.725838e-06, 0.12439328, 1)
 sky = SubResource("Sky_sdvmn")
 tonemap_mode = 2
 glow_enabled = true
@@ -57,11 +58,6 @@ environment = SubResource("Environment_ngvdi")
 [node name="OmniLight3D" type="OmniLight3D" parent="Environment/Lights"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.547615, 276.7142, -66.511475)
 light_color = Color(0.5411765, 0.011764706, 1, 1)
-light_energy = 20.52
+light_energy = 38.49
 light_volumetric_fog_energy = 0.0
 omni_range = 424.497
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Environment/Lights"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71.42592, 162, -132.3529)
-light_color = Color(0, 0.11372549, 1, 1)
-light_energy = 0.33

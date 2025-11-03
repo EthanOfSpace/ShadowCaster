@@ -2,9 +2,7 @@
 
 [ext_resource type="Script" uid="uid://vw5q85i22qw3" path="res://weapons/essential/base_weapon_class.gd" id="1_4aqmg"]
 [ext_resource type="Script" uid="uid://bpkbe3xct3suh" path="res://weapons/essential/weapon_hitbox.gd" id="2_dethn"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_v1ia6"]
-size = Vector3(0.142, 1, 0.181)
+[ext_resource type="PackedScene" uid="uid://dnawkq47qhoel" path="res://Art/Weapon Meshes/skeletonlongsword.fbx" id="3_dethn"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4aqmg"]
 radius = 0.453335
@@ -326,7 +324,6 @@ metadata/_custom_type_script = "uid://vw5q85i22qw3"
 
 [node name="WeaponMesh" type="MeshInstance3D" parent="MeshPivot"]
 transform = Transform3D(-0.700787, 0.0406622, 0.712211, 0.0520763, -0.992794, 0.107923, 0.711467, 0.11272, 0.69362, 0, 0.379039, 0)
-mesh = SubResource("BoxMesh_v1ia6")
 skeleton = NodePath("../..")
 
 [node name="Hitbox" type="Area3D" parent="MeshPivot/WeaponMesh"]
@@ -334,6 +331,21 @@ transform = Transform3D(1, -1.19209e-07, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 monitoring = false
 script = ExtResource("2_dethn")
 knockback = 15.0
+
+[node name="skeletonlongsword" parent="MeshPivot/WeaponMesh/Hitbox" instance=ExtResource("3_dethn")]
+transform = Transform3D(-0.19485569, -6.3329935e-08, -0.11249998, 3.3527613e-08, -0.22499998, 1.6763806e-08, -0.1125, -1.8626451e-09, 0.1948557, 1.8812716e-07, 0.711987, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="MeshPivot/WeaponMesh/Hitbox/skeletonlongsword"]
+transform = Transform3D(-1.9264396, -2.8196769, -2.8445299, -2.819678, -1.2869565, 3.1853206, -2.8445282, 3.185318, -1.2310511, 0.15914479, 3.2242212, -0.3951746)
+light_color = Color(4.7168137e-06, 0.7004967, 0.54295397, 1)
+light_energy = 1.659
+light_volumetric_fog_energy = 0.0
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="MeshPivot/WeaponMesh/Hitbox/skeletonlongsword"]
+transform = Transform3D(-1.9264393, -2.8196754, -2.8445308, -2.8196778, -1.2869548, 3.18532, -2.8445287, 3.1853194, -1.2310511, 0.159, 7.544, -0.395)
+light_color = Color(4.7168137e-06, 0.7004967, 0.54295397, 1)
+light_energy = 1.659
+light_volumetric_fog_energy = 0.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshPivot/WeaponMesh/Hitbox"]
 transform = Transform3D(1, -2.02656e-06, 0, 0, 1, 0, 0, 0, 1, 0.0543365, -0.0178528, 0)
@@ -343,3 +355,5 @@ shape = SubResource("CapsuleShape3D_4aqmg")
 libraries = {
 &"": SubResource("AnimationLibrary_tsogf")
 }
+
+[editable path="MeshPivot/WeaponMesh/Hitbox/skeletonlongsword"]
