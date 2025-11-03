@@ -323,809 +323,811 @@ volumetric_fog_albedo = Color(0.6599018, 0.6599018, 0.6599018, 1)
 
 [node name="Node3D" type="Node3D"]
 
-[node name="DepthTowerElevator1102" parent="." instance=ExtResource("1_pjy8i")]
+[node name="EnvironmentMeshes" type="Node3D" parent="."]
+
+[node name="DepthTowerElevator1102" parent="EnvironmentMeshes" instance=ExtResource("1_pjy8i")]
 transform = Transform3D(80, 0, 0, 0, 80, 0, 0, 0, 80, 0, 0, 0)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerTop/ReferenceBlock" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/ReferenceBlock" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerTop/ReferenceBlock/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/ReferenceBlock/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_g7lt4")
 
-[node name="cylinder" parent="DepthTowerElevator1102/Tower/TowerTop" index="1"]
+[node name="cylinder" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop" index="1"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_vth84")
 
-[node name="cylinder_1" parent="DepthTowerElevator1102/Tower/TowerTop" index="2"]
+[node name="cylinder_1" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop" index="2"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder_1" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder_1" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder_1/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder_1/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_56pd4")
 
-[node name="cylinder_2" parent="DepthTowerElevator1102/Tower/TowerTop" index="3"]
+[node name="cylinder_2" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop" index="3"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder_2" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder_2" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder_2/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder_2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_mrp8i")
 
-[node name="cylinder_3" parent="DepthTowerElevator1102/Tower/TowerTop" index="4"]
+[node name="cylinder_3" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop" index="4"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder_3" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder_3" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder_3/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder_3/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_4q3sh")
 
-[node name="cylinder_4" parent="DepthTowerElevator1102/Tower/TowerTop" index="5"]
+[node name="cylinder_4" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop" index="5"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder_4" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder_4" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder_4/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder_4/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_7luqm")
 
-[node name="cylinder_5" parent="DepthTowerElevator1102/Tower/TowerTop" index="6"]
+[node name="cylinder_5" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop" index="6"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder_5" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder_5" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder_5/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder_5/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_cuhnc")
 
-[node name="cylinder_6" parent="DepthTowerElevator1102/Tower/TowerTop" index="7"]
+[node name="cylinder_6" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop" index="7"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder_6" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder_6" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder_6/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder_6/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_nmasf")
 
-[node name="cylinder_7" parent="DepthTowerElevator1102/Tower/TowerTop" index="8"]
+[node name="cylinder_7" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop" index="8"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder_7" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder_7" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder_7/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder_7/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_77goy")
 
-[node name="cylinder_8" parent="DepthTowerElevator1102/Tower/TowerTop" index="9"]
+[node name="cylinder_8" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop" index="9"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder_8" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder_8" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerTop/cylinder_8/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerTop/cylinder_8/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_vqk84")
 
-[node name="SingleArchWallS" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone" index="0"]
+[node name="SingleArchWallS" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone" index="0"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArchWallS" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArchWallS" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArchWallS/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArchWallS/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_hw8n6")
 
-[node name="SingleArch_1" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone" index="1"]
+[node name="SingleArch_1" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone" index="1"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_1" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_1" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_1/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_1/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_uxojn")
 
-[node name="SingleArch_2" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone" index="2"]
+[node name="SingleArch_2" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone" index="2"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_2" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_2" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_2/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_vwvrr")
 
-[node name="SingleArch_3" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone" index="3"]
+[node name="SingleArch_3" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone" index="3"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_3" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_3" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_3/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_3/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_c0jvm")
 
-[node name="SingleArch_4" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone" index="4"]
+[node name="SingleArch_4" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone" index="4"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_4" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_4" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_4/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_4/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_pj5t5")
 
-[node name="SingleArch_5" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone" index="5"]
+[node name="SingleArch_5" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone" index="5"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_5" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_5" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_5/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_5/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_11q6l")
 
-[node name="SingleArch_6" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone" index="6"]
+[node name="SingleArch_6" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone" index="6"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_6" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_6" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_6/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_6/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_sp4wr")
 
-[node name="SingleArch_7" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone" index="7"]
+[node name="SingleArch_7" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone" index="7"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_7" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_7" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_7/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_7/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_jsnq3")
 
-[node name="SingleArch_8" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone" index="8"]
+[node name="SingleArch_8" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone" index="8"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_8" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_8" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_8/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/bone/SingleArch_8/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_lox5x")
 
-[node name="tower" parent="DepthTowerElevator1102/Tower/TowerMidTop" index="1"]
+[node name="tower" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop" index="1"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/tower" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/tower" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidTop/tower/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidTop/tower/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_y4w5u")
 
-[node name="SingleArchWallL" parent="DepthTowerElevator1102/Tower/TowerMidLower/SingleArch" index="0"]
+[node name="SingleArchWallL" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/SingleArch" index="0"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/SingleArch/SingleArchWallL" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/SingleArch/SingleArchWallL" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/SingleArch/SingleArchWallL/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/SingleArch/SingleArchWallL/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_vo2cc")
 
-[node name="SingleArch_9" parent="DepthTowerElevator1102/Tower/TowerMidLower/SingleArch" index="1"]
+[node name="SingleArch_9" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/SingleArch" index="1"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/SingleArch/SingleArch_9" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/SingleArch/SingleArch_9" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/SingleArch/SingleArch_9/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/SingleArch/SingleArch_9/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_o84ld")
 
-[node name="SingleArchWallL_1" parent="DepthTowerElevator1102/Tower/TowerMidLower/SingleArch2" index="0"]
+[node name="SingleArchWallL_1" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/SingleArch2" index="0"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/SingleArch2/SingleArchWallL_1" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/SingleArch2/SingleArchWallL_1" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/SingleArch2/SingleArchWallL_1/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/SingleArch2/SingleArchWallL_1/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_5watq")
 
-[node name="SingleArch_10" parent="DepthTowerElevator1102/Tower/TowerMidLower/SingleArch2" index="1"]
+[node name="SingleArch_10" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/SingleArch2" index="1"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/SingleArch2/SingleArch_10" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/SingleArch2/SingleArch_10" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/SingleArch2/SingleArch_10/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/SingleArch2/SingleArch_10/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ytm7g")
 
-[node name="DoubleArch" parent="DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch3" index="0"]
+[node name="DoubleArch" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch3" index="0"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch3/DoubleArch" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch3/DoubleArch" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch3/DoubleArch/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch3/DoubleArch/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w722q")
 
-[node name="DoubleArchWall" parent="DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch3" index="1"]
+[node name="DoubleArchWall" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch3" index="1"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch3/DoubleArchWall" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch3/DoubleArchWall" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch3/DoubleArchWall/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch3/DoubleArchWall/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_h5sxk")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch4/DoubleArch_1" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch4/DoubleArch_1" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch4/DoubleArch_1/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch4/DoubleArch_1/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_78duu")
 
-[node name="DoubleArchWall_1" parent="DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch4" index="1"]
+[node name="DoubleArchWall_1" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch4" index="1"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch4/DoubleArchWall_1" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch4/DoubleArchWall_1" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch4/DoubleArchWall_1/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/DoubleArch4/DoubleArchWall_1/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_2uuqd")
 
-[node name="tower_1" parent="DepthTowerElevator1102/Tower/TowerMidLower" index="4"]
+[node name="tower_1" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower" index="4"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/tower_1" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/tower_1" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/tower_1/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/tower_1/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_50a2c")
 
-[node name="TowerFloor" parent="DepthTowerElevator1102/Tower/TowerMidLower" index="5"]
+[node name="TowerFloor" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower" index="5"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/TowerFloor" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/TowerFloor" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower/TowerFloor/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower/TowerFloor/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_vqnwp")
 
-[node name="SingleArchWallL_2" parent="DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch3" index="0"]
+[node name="SingleArchWallL_2" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch3" index="0"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch3/SingleArchWallL_2" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch3/SingleArchWallL_2" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch3/SingleArchWallL_2/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch3/SingleArchWallL_2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ut808")
 
-[node name="SingleArch_11" parent="DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch3" index="1"]
+[node name="SingleArch_11" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch3" index="1"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch3/SingleArch_11" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch3/SingleArch_11" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch3/SingleArch_11/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch3/SingleArch_11/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_oa00c")
 
-[node name="SingleArchWallL_3" parent="DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch4" index="0"]
+[node name="SingleArchWallL_3" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch4" index="0"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch4/SingleArchWallL_3" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch4/SingleArchWallL_3" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch4/SingleArchWallL_3/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch4/SingleArchWallL_3/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_7w4sr")
 
-[node name="SingleArch_12" parent="DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch4" index="1"]
+[node name="SingleArch_12" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch4" index="1"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch4/SingleArch_12" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch4/SingleArch_12" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch4/SingleArch_12/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/SingleArch4/SingleArch_12/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n2lv4")
 
-[node name="DoubleArch_2" parent="DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch2" index="0"]
+[node name="DoubleArch_2" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch2" index="0"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch2/DoubleArch_2" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch2/DoubleArch_2" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch2/DoubleArch_2/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch2/DoubleArch_2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_01cli")
 
-[node name="DoubleArchWall_2" parent="DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch2" index="1"]
+[node name="DoubleArchWall_2" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch2" index="1"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch2/DoubleArchWall_2" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch2/DoubleArchWall_2" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch2/DoubleArchWall_2/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch2/DoubleArchWall_2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_u1m61")
 
-[node name="DoubleArch_3" parent="DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch5" index="0"]
+[node name="DoubleArch_3" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch5" index="0"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch5/DoubleArch_3" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch5/DoubleArch_3" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch5/DoubleArch_3/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch5/DoubleArch_3/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_nod02")
 
-[node name="DoubleArchWall_3" parent="DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch5" index="1"]
+[node name="DoubleArchWall_3" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch5" index="1"]
 material_override = ExtResource("2_g7lt4")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch5/DoubleArchWall_3" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch5/DoubleArchWall_3" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch5/DoubleArchWall_3/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/DoubleArch5/DoubleArchWall_3/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_jtae0")
 
-[node name="tower_2" parent="DepthTowerElevator1102/Tower/TowerMidLower2" index="4"]
+[node name="tower_2" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2" index="4"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/tower_2" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/tower_2" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/tower_2/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/tower_2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_unm5q")
 
-[node name="TowerFloor_1" parent="DepthTowerElevator1102/Tower/TowerMidLower2" index="5"]
+[node name="TowerFloor_1" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2" index="5"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/TowerFloor_1" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/TowerFloor_1" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower2/TowerFloor_1/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower2/TowerFloor_1/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_opy8i")
 
-[node name="SingleArchWallL_4" parent="DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch5" index="0"]
+[node name="SingleArchWallL_4" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch5" index="0"]
 material_override = ExtResource("2_g7lt4")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch5/SingleArchWallL_4" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch5/SingleArchWallL_4" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch5/SingleArchWallL_4/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch5/SingleArchWallL_4/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_sfl7p")
 
-[node name="SingleArch_13" parent="DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch5" index="1"]
+[node name="SingleArch_13" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch5" index="1"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch5/SingleArch_13" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch5/SingleArch_13" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch5/SingleArch_13/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch5/SingleArch_13/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_j62to")
 
-[node name="SingleArchWallL_5" parent="DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch6" index="0"]
+[node name="SingleArchWallL_5" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch6" index="0"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch6/SingleArchWallL_5" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch6/SingleArchWallL_5" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch6/SingleArchWallL_5/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch6/SingleArchWallL_5/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_g3yg0")
 
-[node name="SingleArch_14" parent="DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch6" index="1"]
+[node name="SingleArch_14" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch6" index="1"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch6/SingleArch_14" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch6/SingleArch_14" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch6/SingleArch_14/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/SingleArch6/SingleArch_14/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_pp1wi")
 
-[node name="DoubleArch_4" parent="DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch6" index="0"]
+[node name="DoubleArch_4" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch6" index="0"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch6/DoubleArch_4" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch6/DoubleArch_4" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch6/DoubleArch_4/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch6/DoubleArch_4/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_c1w1p")
 
-[node name="DoubleArchWall_4" parent="DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch6" index="1"]
+[node name="DoubleArchWall_4" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch6" index="1"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch6/DoubleArchWall_4" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch6/DoubleArchWall_4" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch6/DoubleArchWall_4/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch6/DoubleArchWall_4/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_1em0b")
 
-[node name="DoubleArch_5" parent="DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch7" index="0"]
+[node name="DoubleArch_5" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch7" index="0"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch7/DoubleArch_5" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch7/DoubleArch_5" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch7/DoubleArch_5/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch7/DoubleArch_5/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_l02kb")
 
-[node name="DoubleArchWall_5" parent="DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch7" index="1"]
+[node name="DoubleArchWall_5" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch7" index="1"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch7/DoubleArchWall_5" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch7/DoubleArchWall_5" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch7/DoubleArchWall_5/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/DoubleArch7/DoubleArchWall_5/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_y7e8q")
 
-[node name="tower_3" parent="DepthTowerElevator1102/Tower/TowerMidLower3" index="4"]
+[node name="tower_3" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3" index="4"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/tower_3" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/tower_3" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/tower_3/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/tower_3/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_yyqvx")
 
-[node name="TowerFloor_2" parent="DepthTowerElevator1102/Tower/TowerMidLower3" index="5"]
+[node name="TowerFloor_2" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3" index="5"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/TowerFloor_2" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/TowerFloor_2" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower3/TowerFloor_2/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower3/TowerFloor_2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_uklte")
 
-[node name="SingleArchWallL_6" parent="DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch7" index="0"]
+[node name="SingleArchWallL_6" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch7" index="0"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch7/SingleArchWallL_6" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch7/SingleArchWallL_6" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch7/SingleArchWallL_6/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch7/SingleArchWallL_6/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_tgu3d")
 
-[node name="SingleArch_15" parent="DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch7" index="1"]
+[node name="SingleArch_15" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch7" index="1"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch7/SingleArch_15" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch7/SingleArch_15" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch7/SingleArch_15/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch7/SingleArch_15/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_odi2c")
 
-[node name="SingleArchWallL_7" parent="DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch8" index="0"]
+[node name="SingleArchWallL_7" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch8" index="0"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch8/SingleArchWallL_7" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch8/SingleArchWallL_7" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch8/SingleArchWallL_7/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch8/SingleArchWallL_7/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_77q16")
 
-[node name="SingleArch_16" parent="DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch8" index="1"]
+[node name="SingleArch_16" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch8" index="1"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch8/SingleArch_16" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch8/SingleArch_16" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch8/SingleArch_16/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/SingleArch8/SingleArch_16/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_xu0vg")
 
-[node name="DoubleArch_6" parent="DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch8" index="0"]
+[node name="DoubleArch_6" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch8" index="0"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch8/DoubleArch_6" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch8/DoubleArch_6" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch8/DoubleArch_6/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch8/DoubleArch_6/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_bef2r")
 
-[node name="DoubleArchWall_6" parent="DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch8" index="1"]
+[node name="DoubleArchWall_6" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch8" index="1"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch8/DoubleArchWall_6" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch8/DoubleArchWall_6" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch8/DoubleArchWall_6/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch8/DoubleArchWall_6/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_gjntj")
 
-[node name="DoubleArch_7" parent="DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch9" index="0"]
+[node name="DoubleArch_7" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch9" index="0"]
 material_override = ExtResource("3_fyiqq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch9/DoubleArch_7" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch9/DoubleArch_7" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch9/DoubleArch_7/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch9/DoubleArch_7/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_y0ayg")
 
-[node name="DoubleArchWall_7" parent="DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch9" index="1"]
+[node name="DoubleArchWall_7" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch9" index="1"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch9/DoubleArchWall_7" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch9/DoubleArchWall_7" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch9/DoubleArchWall_7/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/DoubleArch9/DoubleArchWall_7/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_wgdar")
 
-[node name="tower_4" parent="DepthTowerElevator1102/Tower/TowerMidLower4" index="4"]
+[node name="tower_4" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4" index="4"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/tower_4" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/tower_4" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/tower_4/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/tower_4/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_8rqij")
 
-[node name="TowerFloor_3" parent="DepthTowerElevator1102/Tower/TowerMidLower4" index="5"]
+[node name="TowerFloor_3" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4" index="5"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/TowerFloor_3" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/TowerFloor_3" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerMidLower4/TowerFloor_3/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerMidLower4/TowerFloor_3/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_bnc8v")
 
-[node name="cylinder_9" parent="DepthTowerElevator1102/Tower/TowerBase" index="0"]
+[node name="cylinder_9" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerBase" index="0"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/TowerBase/cylinder_9" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerBase/cylinder_9" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/TowerBase/cylinder_9/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/TowerBase/cylinder_9/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ta7g2")
 
-[node name="cuboid" parent="DepthTowerElevator1102/Tower/Bridges/topbridge" index="0"]
+[node name="cuboid" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge" index="0"]
 material_override = ExtResource("4_vth84")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_6yh3e")
 
-[node name="cuboid_1" parent="DepthTowerElevator1102/Tower/Bridges/topbridge" index="1"]
+[node name="cuboid_1" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge" index="1"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_1" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_1" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_1/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_1/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_n2jbn")
 
-[node name="cuboid_8" parent="DepthTowerElevator1102/Tower/Bridges/topbridge" index="2"]
+[node name="cuboid_8" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge" index="2"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_8" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_8" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_8/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_8/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_a5kfo")
 
-[node name="cuboid_9" parent="DepthTowerElevator1102/Tower/Bridges/topbridge" index="3"]
+[node name="cuboid_9" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge" index="3"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_9" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_9" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_9/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_9/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_xebda")
 
-[node name="cuboid_10" parent="DepthTowerElevator1102/Tower/Bridges/topbridge" index="4"]
+[node name="cuboid_10" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge" index="4"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_10" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_10" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_10/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_10/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_y3yfc")
 
-[node name="cuboid_11" parent="DepthTowerElevator1102/Tower/Bridges/topbridge" index="5"]
+[node name="cuboid_11" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge" index="5"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_11" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_11" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_11/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_11/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_pkwmg")
 
-[node name="cuboid_12" parent="DepthTowerElevator1102/Tower/Bridges/topbridge" index="6"]
+[node name="cuboid_12" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge" index="6"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_12" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_12" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_12/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_12/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_v463d")
 
-[node name="cuboid_13" parent="DepthTowerElevator1102/Tower/Bridges/topbridge" index="7"]
+[node name="cuboid_13" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge" index="7"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_13" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_13" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_13/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_13/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_o0hyb")
 
-[node name="cuboid_14" parent="DepthTowerElevator1102/Tower/Bridges/topbridge" index="8"]
+[node name="cuboid_14" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge" index="8"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_14" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_14" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_14/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_14/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_k2xju")
 
-[node name="cuboid_15" parent="DepthTowerElevator1102/Tower/Bridges/topbridge" index="9"]
+[node name="cuboid_15" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge" index="9"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_15" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_15" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_15/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/topbridge/cuboid_15/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_1wsj2")
 
-[node name="cuboid_2" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="0"]
+[node name="cuboid_2" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="0"]
 material_override = ExtResource("4_vth84")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_2" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_2" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_2/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_q7den")
 
-[node name="cuboid_3" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="1"]
+[node name="cuboid_3" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="1"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_3" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_3" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_3/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_3/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_g63t7")
 
-[node name="cuboid_16" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="2"]
+[node name="cuboid_16" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="2"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_16" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_16" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_16/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_16/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_asopb")
 
-[node name="cuboid_17" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="3"]
+[node name="cuboid_17" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="3"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_17" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_17" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_17/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_17/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_kprmv")
 
-[node name="cuboid_18" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="4"]
+[node name="cuboid_18" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="4"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_18" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_18" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_18/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_18/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_1mfyu")
 
-[node name="cuboid_19" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="5"]
+[node name="cuboid_19" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="5"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_19" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_19" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_19/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_19/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_afwbt")
 
-[node name="cuboid_20" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="6"]
+[node name="cuboid_20" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="6"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_20" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_20" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_20/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_20/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_yinwo")
 
-[node name="cuboid_21" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="7"]
+[node name="cuboid_21" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="7"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_21" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_21" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_21/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_21/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_xfxmk")
 
-[node name="cuboid_22" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="8"]
+[node name="cuboid_22" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="8"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_22" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_22" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_22/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_22/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_vq2cv")
 
-[node name="cuboid_23" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="9"]
+[node name="cuboid_23" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge" index="9"]
 material_override = ExtResource("2_g7lt4")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_23" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_23" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_23/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midupperbridge/cuboid_23/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_t5hff")
 
-[node name="cuboid_4" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="0"]
+[node name="cuboid_4" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="0"]
 material_override = ExtResource("4_vth84")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_4" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_4" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_4/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_4/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qooa6")
 
-[node name="cuboid_5" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="1"]
+[node name="cuboid_5" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="1"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_5" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_5" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_5/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_5/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_nhpfr")
 
-[node name="cuboid_24" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="2"]
+[node name="cuboid_24" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="2"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_24" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_24" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_24/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_24/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_3fiky")
 
-[node name="cuboid_25" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="3"]
+[node name="cuboid_25" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="3"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_25" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_25" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_25/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_25/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_lhlqu")
 
-[node name="cuboid_26" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="4"]
+[node name="cuboid_26" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="4"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_26" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_26" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_26/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_26/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_fgu7f")
 
-[node name="cuboid_27" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="5"]
+[node name="cuboid_27" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="5"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_27" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_27" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_27/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_27/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_g12eg")
 
-[node name="cuboid_28" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="6"]
+[node name="cuboid_28" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="6"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_28" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_28" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_28/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_28/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0de1m")
 
-[node name="cuboid_29" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="7"]
+[node name="cuboid_29" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="7"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_29" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_29" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_29/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_29/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_wtel7")
 
-[node name="cuboid_30" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="8"]
+[node name="cuboid_30" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="8"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_30" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_30" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_30/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_30/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_egnkr")
 
-[node name="cuboid_31" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="9"]
+[node name="cuboid_31" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge" index="9"]
 material_override = ExtResource("2_g7lt4")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_31" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_31" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_31/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/midlowerbridge/cuboid_31/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_5owpd")
 
-[node name="cuboid_6" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge" index="0"]
+[node name="cuboid_6" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge" index="0"]
 material_override = ExtResource("4_vth84")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_6" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_6" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_6/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_6/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_h7gkk")
 
-[node name="cuboid_7" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge" index="1"]
+[node name="cuboid_7" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge" index="1"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_7" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_7" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_7/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_7/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_7mpwy")
 
-[node name="cuboid_32" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge" index="2"]
+[node name="cuboid_32" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge" index="2"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_32" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_32" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_32/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_32/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_skffq")
 
-[node name="cuboid_33" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge" index="3"]
+[node name="cuboid_33" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge" index="3"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_33" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_33" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_33/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_33/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_kd4dn")
 
-[node name="cuboid_34" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge" index="4"]
+[node name="cuboid_34" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge" index="4"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_34" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_34" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_34/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_34/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_q2rtk")
 
-[node name="cuboid_35" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge" index="5"]
+[node name="cuboid_35" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge" index="5"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_35" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_35" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_35/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_35/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_37f3e")
 
-[node name="cuboid_36" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge" index="6"]
+[node name="cuboid_36" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge" index="6"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_36" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_36" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_36/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_36/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_sejhm")
 
-[node name="cuboid_37" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge" index="7"]
+[node name="cuboid_37" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge" index="7"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_37" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_37" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_37/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_37/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_gis5j")
 
-[node name="cuboid_38" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge" index="8"]
+[node name="cuboid_38" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge" index="8"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_38" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_38" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_38/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_38/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_pup5f")
 
-[node name="cuboid_39" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge" index="9"]
+[node name="cuboid_39" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge" index="9"]
 material_override = ExtResource("2_xdcwc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_39" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_39" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_39/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTowerElevator1102/Tower/Bridges/lowbridge/cuboid_39/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_y2cyk")
 
 [node name="Player" parent="." instance=ExtResource("5_56pd4")]
@@ -1152,5 +1154,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 38.15425, 0)
 size = Vector3(900, 134.36432, 900)
 material = SubResource("FogMaterial_vth84")
 
-[editable path="DepthTowerElevator1102"]
+[editable path="EnvironmentMeshes/DepthTowerElevator1102"]
 [editable path="Player"]
