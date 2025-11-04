@@ -1325,7 +1325,6 @@ omni_range = 1816.295
 [node name="FogVolume" type="FogVolume" parent="Lighting"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 38.846237, 0)
 top_level = true
-visible = false
 size = Vector3(900, 135.74829, 900)
 material = SubResource("FogMaterial_vth84")
 
