@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b3ykfstk0a143"
-path="res://.godot/imported/bluecrystalrapier.fbx-159c06fbe9234795b29a075eb525335a.scn"
+uid="uid://dx458f76temsn"
+path="res://.godot/imported/maze1104.fbx-5afc773eb422bdf742ba4b191b8d1f92.scn"
 
 [deps]
 
-source_file="res://Art/Enviroment Meshes/bluecrystalrapier.fbx"
-dest_files=["res://.godot/imported/bluecrystalrapier.fbx-159c06fbe9234795b29a075eb525335a.scn"]
+source_file="res://Art/Enviroment Meshes/maze1104.fbx"
+dest_files=["res://.godot/imported/maze1104.fbx-5afc773eb422bdf742ba4b191b8d1f92.scn"]
 
 [params]
 
