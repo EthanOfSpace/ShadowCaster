@@ -99,3 +99,4 @@ walk_speed = 4.0
 sprint_speed = 20.0
 
 [editable path="environmentmeshes/maze1104"]
+[editable path="Player"]
