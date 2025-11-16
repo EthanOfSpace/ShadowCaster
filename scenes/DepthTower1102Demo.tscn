@@ -1,4 +1,4 @@
-[gd_scene load_steps=111 format=3 uid="uid://ban6sx8l0boa1"]
+[gd_scene load_steps=124 format=3 uid="uid://ban6sx8l0boa1"]
 
 [ext_resource type="PackedScene" uid="uid://c4w6bvhggbg8s" path="res://Art/Enviroment Meshes/DepthTowerElevator1102.fbx" id="1_pjy8i"]
 [ext_resource type="Material" uid="uid://d3rqm77f07tad" path="res://Art/Materials/depthTowerMat.tres" id="2_g7lt4"]
@@ -7,6 +7,12 @@
 [ext_resource type="Material" uid="uid://mw6aj4yendvt" path="res://Art/Materials/depthTowerBridges.tres" id="4_vth84"]
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="5_56pd4"]
 [ext_resource type="PackedScene" uid="uid://c3n44ms6em62u" path="res://Art/Enviroment Meshes/DepthTowerWalls1103.fbx" id="7_56pd4"]
+[ext_resource type="PackedScene" uid="uid://b6rvkmug6eg34" path="res://Level Elements/levelTrigger.tscn" id="8_mrp8i"]
+[ext_resource type="PackedScene" uid="uid://dvoeqdhp0utm3" path="res://scenes/abyss_castle.tscn" id="9_4q3sh"]
+[ext_resource type="AudioStream" uid="uid://3vhb13vxdxq3" path="res://Audio/Ambience/wind.mp3" id="10_7luqm"]
+[ext_resource type="Script" uid="uid://cr4y61480pokc" path="res://scripts/elevator.gd" id="11_77goy"]
+[ext_resource type="PackedScene" uid="uid://cmih1i1ptbjq1" path="res://Art/Enviroment Meshes/DepthTowerElevatorPlatform1.1.fbx" id="12_vqk84"]
+[ext_resource type="Script" uid="uid://cgl4vem4q4wq6" path="res://nodes/interactable.gd" id="13_hw8n6"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_g7lt4"]
 data = PackedVector3Array(0.0063, 0, 0.0063, 0.0063, 0.024999999, 0.0063, 0.0063, 0.024999999, -0.0063, 0.0063, 0.024999999, -0.0063, 0.0063, 0, -0.0063, 0.0063, 0, 0.0063, -0.0063, 0.024999999, -0.0063, -0.0063, 0.024999999, 0.0063, -0.0063, 0, 0.0063, -0.0063, 0, 0.0063, -0.0063, 0, -0.0063, -0.0063, 0.024999999, -0.0063, 0.0063, 0.024999999, -0.0063, 0.0063, 0.024999999, 0.0063, -0.0063, 0.024999999, 0.0063, -0.0063, 0.024999999, 0.0063, -0.0063, 0.024999999, -0.0063, 0.0063, 0.024999999, -0.0063, -0.0063, 0, 0.0063, 0.0063, 0, 0.0063, 0.0063, 0, -0.0063, 0.0063, 0, -0.0063, -0.0063, 0, -0.0063, -0.0063, 0, 0.0063, -0.0063, 0.024999999, 0.0063, 0.0063, 0.024999999, 0.0063, 0.0063, 0, 0.0063, 0.0063, 0, 0.0063, -0.0063, 0, 0.0063, -0.0063, 0.024999999, 0.0063, 0.0063, 0, -0.0063, 0.0063, 0.024999999, -0.0063, -0.0063, 0.024999999, -0.0063, -0.0063, 0.024999999, -0.0063, -0.0063, 0, -0.0063, 0.0063, 0, -0.0063)
@@ -322,6 +328,80 @@ volumetric_fog_albedo = Color(0.6599018, 0.6599018, 0.6599018, 1)
 volumetric_fog_length = 383.31
 
 [sub_resource type="FogMaterial" id="FogMaterial_vth84"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uxojn"]
+size = Vector3(0.118079, 0.0198898, 0.115501)
+
+[sub_resource type="Animation" id="Animation_gg5tc"]
+resource_name = "Activate"
+length = 0.7
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(0.366022, 0.307786),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0.785398)]
+}
+
+[sub_resource type="Animation" id="Animation_5ekfw"]
+resource_name = "Idle"
+loop_mode = 2
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0.1, 1, 0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_ox5nu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_r8c12"]
+resource_name = "ReturnToIdle"
+length = 0.8
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(2.07053, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0.785398), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_27lo1"]
+_data = {
+&"Activate": SubResource("Animation_gg5tc"),
+&"Idle": SubResource("Animation_5ekfw"),
+&"RESET": SubResource("Animation_ox5nu"),
+&"ReturnToIdle": SubResource("Animation_r8c12")
+}
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_vwvrr"]
+radius = 0.055342
 
 [node name="Node3D" type="Node3D"]
 
@@ -1304,7 +1384,7 @@ material_override = ExtResource("4_vth84")
 material_override = ExtResource("4_vth84")
 
 [node name="Player" parent="." instance=ExtResource("5_56pd4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 215, -23.25)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 241.36646, -9.018669)
 walk_back_speed = 4.0
 walk_speed = 4.0
 sprint_speed = 20.0
@@ -1328,6 +1408,63 @@ top_level = true
 size = Vector3(900, 135.74829, 900)
 material = SubResource("FogMaterial_vth84")
 
+[node name="Area3D" parent="." instance=ExtResource("8_mrp8i")]
+transform = Transform3D(-0.99948436, 0, -0.032108597, 0, 1, 0, 0.032108597, 0, -0.99948436, 1.4138813, 216.12003, -107.85594)
+scene_to_load = ExtResource("9_4q3sh")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+autoplay = true
+
+[node name="Ambience" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_7luqm")
+autoplay = true
+
+[node name="Elevator" type="AnimatableBody3D" parent="."]
+transform = Transform3D(-80, 9.796855e-15, -1.2079664e-05, 9.796854e-15, 80, 9.796854e-15, 1.2079664e-05, 9.7968525e-15, -80, -0.28494644, 238.99033, -0.35124063)
+script = ExtResource("11_77goy")
+lever_node = NodePath("Mesh/bone/Lever")
+
+[node name="Elevator Collision" type="CollisionShape3D" parent="Elevator"]
+transform = Transform3D(1, 0, 1.10168e-36, 0, 1, 0, -1.10165e-36, 0, 1, -0.0053228, 0.0127146, 0.000965118)
+shape = SubResource("BoxShape3D_uxojn")
+
+[node name="Mesh" parent="Elevator" instance=ExtResource("12_vqk84")]
+transform = Transform3D(-1.03682, 1.26969e-16, 0, 1.26969e-16, 1.03682, 1.26969e-16, 1.55487e-32, 1.26969e-16, -1.03682, -0.00515071, 0.00490093, -0.00275445)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Elevator/Mesh/bone/Lever" index="0"]
+libraries = {
+&"": SubResource("AnimationLibrary_27lo1")
+}
+autoplay = "Idle"
+
+[node name="Interactable" type="Area3D" parent="Elevator" node_paths=PackedStringArray("interaction_popup")]
+transform = Transform3D(1, 0, -3.4119e-40, 0, 1, 0, -7.3e-44, 0, 1, -0.00547351, 0.0243382, 0)
+script = ExtResource("13_hw8n6")
+damage_activated = true
+interaction_popup = NodePath("Label")
+interaction_text = "[E] Start Elevator"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Elevator/Interactable"]
+shape = SubResource("SphereShape3D_vwvrr")
+
+[node name="Label" type="Label" parent="Elevator/Interactable"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -24.0
+offset_top = -210.0
+offset_right = 25.0
+offset_bottom = -187.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "splorp"
+horizontal_alignment = 1
+
+[connection signal="interacted" from="Elevator/Interactable" to="Elevator" method="move_elevator_down_floor"]
+
 [editable path="EnvironmentMeshes/DepthTowerElevator1102"]
 [editable path="EnvironmentMeshes/DepthTowerWalls1103"]
 [editable path="Player"]
+[editable path="Elevator/Mesh"]

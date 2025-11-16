@@ -4,11 +4,14 @@ extends AnimatableBody3D
 @onready var lever = get_node(lever_node)
 @onready var lever_anim = lever.get_node("AnimationPlayer")
 
+var canMove = true
 var isMoving = false
 var current_floor : int = 0
 const MAX_FLOORS : int = 5
 
 func move_elevator_up_floor():
+	if !canMove:
+		return	
 	if isMoving:
 		return
 	isMoving = true
@@ -18,11 +21,13 @@ func move_elevator_up_floor():
 		lever_anim.play("Activate")
 	
 	var tween = get_tree().create_tween()
-	var target_pos = position + Vector3(0, 15, 0)
+	var target_pos = position + Vector3(0, 26, 0) # so yeah 26 seems to work fine for demo distance purposes
 	tween.tween_property(self, "position", target_pos, 5.0)
 	tween.finished.connect(on_elevator_finished_moving)
 
 func move_elevator_down_floor():
+	if !canMove:
+		return
 	current_floor -= 1
 	if isMoving:
 		return
@@ -32,12 +37,13 @@ func move_elevator_down_floor():
 		lever_anim.play("Activate")
 	
 	var tween = get_tree().create_tween()
-	var target_pos = position + Vector3(0, -15, 0)
+	var target_pos = position + Vector3(0, -26, 0) # -26 is like perfect rn for the sake of the getting from the top of the tower to the first bridge. Works for sake of demo.
 	tween.tween_property(self, "position", target_pos, 5.0)
 	tween.finished.connect(on_elevator_finished_moving)
 
 func on_elevator_finished_moving():
 	isMoving = false
+	canMove = false
 	
 	if lever_anim.has_animation("ReturnToIdle"):
 		lever_anim.play("ReturnToIdle")

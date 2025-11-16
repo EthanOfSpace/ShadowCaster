@@ -1,12 +1,30 @@
-[gd_scene load_steps=4 format=3 uid="uid://bcsrfw34n7ciw"]
+[gd_scene load_steps=7 format=3 uid="uid://bcsrfw34n7ciw"]
 
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="1_iji4g"]
 [ext_resource type="PackedScene" uid="uid://cancih2cpkuai" path="res://Art/Enviroment Meshes/rampSensTowerc.gltf" id="3_issbk"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ggok5"]
+sky_top_color = Color(0, 0, 0, 1)
+sky_horizon_color = Color(0, 0, 0, 1)
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Sky" id="Sky_issbk"]
+sky_material = SubResource("ProceduralSkyMaterial_ggok5")
+
+[sub_resource type="Environment" id="Environment_7jo7n"]
+background_mode = 1
+sky = SubResource("Sky_issbk")
+tonemap_mode = 2
+glow_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ggok5"]
 uv1_scale = Vector3(10.055, 10.055, 10.055)
 
 [node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_7jo7n")
 
 [node name="blockbench_export" parent="." instance=ExtResource("3_issbk")]
 transform = Transform3D(16, 0, 0, 0, 16, 0, 0, 0, 16, 0, 0.5, 0)
