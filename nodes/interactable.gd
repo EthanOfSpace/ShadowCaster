@@ -57,6 +57,6 @@ func _on_body_exited(body):
 			if interaction_popup and button_activated: 
 				interaction_popup.visible = false
 
-func _input(event: InputEvent) -> void:
+func _input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("interact") and enabled and in_range:
 		interact(true)

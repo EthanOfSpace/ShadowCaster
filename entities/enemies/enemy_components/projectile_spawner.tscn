@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://cetqgvr8snh0x"]
+
+[ext_resource type="Script" uid="uid://c3dodxocw1mig" path="res://entities/enemies/enemy_components/projectile_spawner.gd" id="1_jhttc"]
+[ext_resource type="PackedScene" uid="uid://d3t168qr50d6b" path="res://entities/enemies/enemy_components/basic_projectile.tscn" id="2_qpgit"]
+
+[node name="ProjectileSpawner" type="Marker3D"]
+script = ExtResource("1_jhttc")
+projectile = ExtResource("2_qpgit")

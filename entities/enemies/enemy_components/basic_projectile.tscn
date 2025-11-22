@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3t168qr50d6b"]
+
+[ext_resource type="Script" uid="uid://buuwnfdh6dnk3" path="res://entities/enemies/enemy_components/basic_projectile.gd" id="1_y8jn8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3x08k"]
+render_priority = 1
+transparency = 1
+shading_mode = 0
+albedo_color = Color(0.8209893, 0, 0.20685297, 1)
+grow = true
+grow_amount = 0.01
+stencil_mode = 3
+stencil_flags = 1
+stencil_compare = 5
+metadata/_stencil_owned = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y8jn8"]
+next_pass = SubResource("StandardMaterial3D_3x08k")
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+stencil_mode = 1
+stencil_flags = 2
+stencil_color = Color(0.8209893, 0, 0.20685297, 1)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_y8jn8"]
+radius = 0.13
+height = 0.51
+
+[node name="BasicProjectile" type="Area3D"]
+script = ExtResource("1_y8jn8")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+radius = 0.04248047
+height = 0.214
+material = SubResource("StandardMaterial3D_y8jn8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 6.6164696e-10, -0.015136719)
+shape = SubResource("CapsuleShape3D_y8jn8")

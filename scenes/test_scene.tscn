@@ -2,7 +2,7 @@
 
 [ext_resource type="Material" uid="uid://brpu7xylrg2l2" path="res://Art/Materials/material_basic_blue.tres" id="1_g7g4h"]
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="2_j8ivh"]
-[ext_resource type="PackedScene" uid="uid://d2fomkqd3ua5s" path="res://entities/enemies/test_enemy.tscn" id="3_nd71p"]
+[ext_resource type="PackedScene" uid="uid://cqmrai61unlsi" path="res://entities/enemies/test_archer_enemy.tscn" id="3_nd71p"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_j8ivh"]
 vertices = PackedVector3Array(-20.5, 0.321534, -43, -18.75, 0.321534, -43.25, -19, 0.321534, -49.5, -99.5, 0.321534, -49.5, -99.5, 0.321534, -6.75, -20.5, 0.321534, -6.75, 19, 0.321534, -43.25, 19.25, 0.321534, -49.5, 20.75, 0.321534, -43, 99.5, 0.321534, -49.5, 20.75, 0.321534, -6.25, 99.5, 0.321534, -6, -19.5, 1.57153, -6.75, 19.5, 1.57153, -6.75, 19.5, 4.07153, -42.25, -19.5, 4.07153, -42.25, -19.5, 4.07153, -12.6667, 19.5, 4.07153, -12.6667, -19.25, 0.321534, -42, -19.25, 0.321534, -15, 19.5, 0.321534, -15, 19.5, 0.321534, -42, -19.25, 0.321534, -12, -19.25, 0.321534, -8.5, 19.5, 0.321534, -8.5, 19.5, 0.321534, -12, 0, 0.321534, 49.5, 0, 0.321534, 35, -2.5, 0.321534, 34.75, -2.5, 0.321534, 16.25, -19.75, 0.571534, -4.75, -20.5, 0.321534, -4.75, -99.5, 0.321534, 49.5, -2.25, 0.321534, 15.75, 2.25, 0.321534, 15.75, 19.5, 0.821534, -5, 17.0206, 0.321534, -3.50861, 16.9803, 0.571534, -5.0223, 0.495148, 0.571534, -4.99315, 2.25, 0.321534, 35, 2.75, 0.321534, 34.5, 20.75, 0.321534, -4.75, 20, 0.571534, -4.5, 2.75, 0.321534, 16.25, 99.5, 0.321534, 49.5, -19.5, -2.42847, 2.25, -19.5, -7.92847, 14.25, 19.5, -7.92847, 14.25, 19.5, -2.42847, 2.25, -7.00341, -6.92847, 11.4753, -1.5, 17.0715, 16.75, -1.5, 17.0715, 33.75, 1.5, 17.0715, 33.75, 1.5, 17.0715, 16.75, -1.25, 0.321534, 17, -1.25, 0.321534, 33.75, 1.5, 0.321534, 33.75, 1.5, 0.321534, 17)
@@ -70,14 +70,7 @@ walk_speed = 4.0
 sprint_speed = 20.0
 
 [node name="TestEnemy" parent="." instance=ExtResource("3_nd71p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.75, 0, -2.75)
-health = 999.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.25, 0, 3.75)
 
 [node name="TestEnemy2" parent="." instance=ExtResource("3_nd71p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 0, -1.75)
-
-[node name="TestEnemy3" parent="." instance=ExtResource("3_nd71p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 9.25)
-
-[node name="TestEnemy4" parent="." instance=ExtResource("3_nd71p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.25, 0, -7.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 9.5)

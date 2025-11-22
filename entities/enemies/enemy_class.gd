@@ -8,14 +8,14 @@ extends CharacterBody3D
 @export var stop_distance = 20.0
 @export var max_distance = 30.0
 
-@export_category("Nodes")
+@export_group("Nodes")
 @export var nav_agent : NavigationAgent3D
 @export var seek_cast : RayCast3D
 @export var mesh : Node3D
 @export var animation_player : AnimationPlayer
 @export var memory: Timer
 
-@export_category("Animation Names")
+@export_group("Animation Names")
 @export var attack_anim = "attack"
 @export var idle_anim = "idle"
 @export var run_anim = "run"
