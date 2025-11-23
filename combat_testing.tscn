@@ -1,0 +1,162 @@
+[gd_scene load_steps=9 format=3 uid="uid://b0eat6bubu53j"]
+
+[ext_resource type="Material" uid="uid://bbyn53xkqaq5h" path="res://Art/Materials/MazeFloorCobble.tres" id="1_3svos"]
+[ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="1_dunnw"]
+[ext_resource type="PackedScene" uid="uid://cqmrai61unlsi" path="res://entities/enemies/test_archer_enemy.tscn" id="2_e3tcf"]
+[ext_resource type="PackedScene" uid="uid://d2fomkqd3ua5s" path="res://entities/enemies/test_enemy.tscn" id="3_gsnjn"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_dunnw"]
+vertices = PackedVector3Array(-51.56401, 0.24124384, -25.557167, -51.56401, 0.24124384, -49.557167, -99.56401, 0.24124384, -49.557167, -99.56401, 0.24124384, -25.557167, -49.31401, 0.24124384, -25.307167, -49.31401, 0.24124384, -13.057167, -38.06401, 0.24124384, -13.057167, -37.81401, 0.24124384, -10.807167, -12.814011, 0.24124384, -10.807167, -12.814011, 0.24124384, -12.807167, -10.564011, 0.24124384, -13.057167, -10.564011, 0.24124384, -49.557167, 60.68599, 0.24124384, -13.057167, 60.68599, 0.24124384, -49.557167, 62.68599, 0.24124384, -13.057167, 62.93599, 0.24124384, -10.807167, 99.43599, 0.24124384, -10.807167, 99.43599, 0.24124384, -49.557167, -99.56401, 3.2412438, -24.557167, -99.56401, 3.2412438, 24.692833, -50.31401, 3.2412438, 24.692833, -50.31401, 3.2412438, -24.557167, -50.56401, 0.24124384, 24.442833, -50.56401, 0.24124384, 13.192833, -51.06401, 0.24124384, 12.942833, -99.31401, 0.24124384, 24.442833, -51.06401, 0.24124384, -12.807167, -50.56401, 0.24124384, -13.057167, -50.56401, 0.24124384, -24.307167, -99.31401, 0.24124384, -24.307167, -49.31401, 2.7412438, -12.057167, -49.31401, 2.7412438, 12.192833, -47.81401, 2.7412438, 12.192833, -47.81401, 2.7412438, -12.057167, -46.81401, 2.2412438, -12.057167, -46.81401, 2.2412438, 12.192833, -44.81401, 2.2412438, 12.192833, -44.81401, 2.2412438, -12.057167, -43.81401, 1.7412438, -12.057167, -43.81401, 1.7412438, 12.192833, -41.81401, 1.7412438, 12.192833, -41.81401, 1.7412438, -12.057167, -40.81401, 1.2412438, -12.057167, -40.81401, 1.2412438, 12.192833, -38.81401, 1.2412438, 12.192833, -38.81401, 1.2412438, -12.057167, -49.31401, 0.24124384, -11.807167, -49.31401, 0.24124384, 11.942833, -48.06401, 0.24124384, 11.942833, -48.06401, 0.24124384, -11.807167, -46.81401, 0.24124384, -11.807167, -46.81401, 0.24124384, 11.942833, -45.06401, 0.24124384, 11.942833, -45.06401, 0.24124384, -11.807167, -11.814011, -0.50875616, -11.807167, -11.814011, -0.50875616, 11.942833, 61.93599, -0.50875616, 11.942833, 61.93599, -0.50875616, -11.807167, -37.81401, 0.24124384, 10.692833, -12.814011, 0.24124384, 10.692833, 62.93599, 0.24124384, 10.692833, 99.43599, 0.24124384, 10.692833, -38.31401, 0.24124384, 13.192833, -49.31401, 0.24124384, 13.192833, -49.31401, 0.24124384, 25.192833, -37.81401, 0.24124384, 12.692833, -49.81401, 0.24124384, 25.692833, -51.31401, 0.24124384, 25.692833, -51.06401, 0.24124384, 49.442833, -12.814011, 0.24124384, 12.692833, -10.564011, 0.24124384, 12.942833, -10.564011, 0.24124384, 49.442833, 62.68599, 0.24124384, 12.942833, 60.68599, 0.24124384, 12.942833, 60.68599, 0.24124384, 49.442833, 99.43599, 0.24124384, 49.442833, -99.56401, 0.24124384, 25.692833, -99.56401, 0.24124384, 49.442833)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1), PackedInt32Array(6, 5, 4), PackedInt32Array(4, 0, 1), PackedInt32Array(8, 7, 9), PackedInt32Array(9, 7, 6), PackedInt32Array(9, 6, 10), PackedInt32Array(10, 6, 4), PackedInt32Array(10, 4, 1), PackedInt32Array(10, 1, 11), PackedInt32Array(11, 13, 10), PackedInt32Array(10, 13, 12), PackedInt32Array(14, 12, 13), PackedInt32Array(15, 14, 16), PackedInt32Array(16, 14, 17), PackedInt32Array(17, 14, 13), PackedInt32Array(21, 20, 18), PackedInt32Array(18, 20, 19), PackedInt32Array(23, 22, 24), PackedInt32Array(24, 22, 25), PackedInt32Array(27, 26, 28), PackedInt32Array(28, 26, 29), PackedInt32Array(26, 24, 29), PackedInt32Array(29, 24, 25), PackedInt32Array(33, 32, 30), PackedInt32Array(30, 32, 31), PackedInt32Array(37, 36, 34), PackedInt32Array(34, 36, 35), PackedInt32Array(41, 40, 38), PackedInt32Array(38, 40, 39), PackedInt32Array(45, 44, 42), PackedInt32Array(42, 44, 43), PackedInt32Array(49, 48, 46), PackedInt32Array(46, 48, 47), PackedInt32Array(53, 52, 50), PackedInt32Array(50, 52, 51), PackedInt32Array(57, 56, 54), PackedInt32Array(54, 56, 55), PackedInt32Array(7, 8, 58), PackedInt32Array(58, 8, 59), PackedInt32Array(15, 16, 60), PackedInt32Array(60, 16, 61), PackedInt32Array(64, 63, 62), PackedInt32Array(64, 62, 65), PackedInt32Array(68, 67, 66), PackedInt32Array(68, 66, 64), PackedInt32Array(65, 58, 69), PackedInt32Array(69, 58, 59), PackedInt32Array(69, 70, 65), PackedInt32Array(65, 70, 64), PackedInt32Array(64, 70, 68), PackedInt32Array(68, 70, 71), PackedInt32Array(74, 73, 72), PackedInt32Array(60, 61, 72), PackedInt32Array(72, 61, 75), PackedInt32Array(72, 75, 74), PackedInt32Array(70, 73, 71), PackedInt32Array(71, 73, 74), PackedInt32Array(76, 67, 77), PackedInt32Array(77, 67, 68)]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7nnur"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_e3tcf"]
+sky_material = SubResource("ProceduralSkyMaterial_7nnur")
+
+[sub_resource type="Environment" id="Environment_gsnjn"]
+background_mode = 1
+background_color = Color(1, 0.26000598, 0.2008352, 1)
+sky = SubResource("Sky_e3tcf")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="CombatTesting" type="Node3D"]
+
+[node name="EnvironmentMeshes" type="Node3D" parent="."]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="EnvironmentMeshes"]
+navigation_mesh = SubResource("NavigationMesh_dunnw")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="EnvironmentMeshes/NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.06401, 0.43368912, -0.057167053)
+material_override = ExtResource("1_3svos")
+use_collision = true
+size = Vector3(3, 4, 25)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="EnvironmentMeshes/NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.06401, 0.43368912, -0.057167053)
+material_override = ExtResource("1_3svos")
+use_collision = true
+size = Vector3(3, 3, 25)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="EnvironmentMeshes/NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.06401, 0.43368912, -0.057167053)
+material_override = ExtResource("1_3svos")
+use_collision = true
+size = Vector3(3, 2, 25)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="EnvironmentMeshes/NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.06401, 0.43368912, -0.057167053)
+material_override = ExtResource("1_3svos")
+use_collision = true
+size = Vector3(3, 1, 25)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="EnvironmentMeshes/NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.06401, 1.4336891, -0.057167053)
+material_override = ExtResource("1_3svos")
+use_collision = true
+size = Vector3(50, 3, 50)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="EnvironmentMeshes/NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.277706, -1.5087562, -0.018737793)
+material_override = ExtResource("1_3svos")
+use_collision = true
+size = Vector3(75.5, 1, 25)
+material = ExtResource("1_3svos")
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="EnvironmentMeshes/NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.064006805, -0.5663109, -0.057167053)
+material_override = ExtResource("1_3svos")
+operation = 2
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="EnvironmentMeshes/NavigationRegion3D/CSGCombiner3D"]
+material_override = ExtResource("1_3svos")
+size = Vector3(200, 1, 100)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="EnvironmentMeshes/NavigationRegion3D/CSGCombiner3D/CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.2, 0.08388114, 0)
+operation = 2
+size = Vector3(75, 3.2094727, 25)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="EnvironmentMeshes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.064006805, -0.5663109, -25.057167)
+material_override = ExtResource("1_3svos")
+use_collision = true
+radius = 5.0
+height = 50.0
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="EnvironmentMeshes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.935993, -0.5663109, -25.057167)
+material_override = ExtResource("1_3svos")
+use_collision = true
+radius = 5.0
+height = 50.0
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="EnvironmentMeshes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.935993, -0.5663109, -25.057167)
+material_override = ExtResource("1_3svos")
+use_collision = true
+radius = 5.0
+height = 50.0
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="EnvironmentMeshes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.064006805, -0.5663109, 24.942833)
+material_override = ExtResource("1_3svos")
+use_collision = true
+radius = 5.0
+height = 50.0
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="EnvironmentMeshes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.935993, -0.5663109, 24.942833)
+material_override = ExtResource("1_3svos")
+use_collision = true
+radius = 5.0
+height = 50.0
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="EnvironmentMeshes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.935993, -0.5663109, 24.942833)
+material_override = ExtResource("1_3svos")
+use_collision = true
+radius = 5.0
+height = 50.0
+
+[node name="Enemies" type="Node3D" parent="."]
+
+[node name="ArcherEnemy" parent="Enemies" instance=ExtResource("2_e3tcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.25, 0, -13.589954)
+
+[node name="ArcherEnemy4" parent="Enemies" instance=ExtResource("2_e3tcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.25, 0, 13.410046)
+
+[node name="ArcherEnemy5" parent="Enemies" instance=ExtResource("2_e3tcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.25, 0, 13.410046)
+
+[node name="ArcherEnemy6" parent="Enemies" instance=ExtResource("2_e3tcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.25, 0, 13.410046)
+
+[node name="ArcherEnemy2" parent="Enemies" instance=ExtResource("2_e3tcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.854923, 0, -13.589954)
+
+[node name="ArcherEnemy3" parent="Enemies" instance=ExtResource("2_e3tcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.531963, 0, -13.589954)
+
+[node name="MeleeEnemy" parent="Enemies" instance=ExtResource("3_gsnjn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+
+[node name="MeleeEnemy2" parent="Enemies" instance=ExtResource("3_gsnjn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9836445, -1, 0)
+
+[node name="MeleeEnemy3" parent="Enemies" instance=ExtResource("3_gsnjn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.066293, -1, 0)
+
+[node name="Player" parent="." instance=ExtResource("1_dunnw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, -0.097970724, 0)
+
+[node name="Lighting" type="Node3D" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Lighting"]
+environment = SubResource("Environment_gsnjn")
