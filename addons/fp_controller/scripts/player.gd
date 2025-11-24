@@ -2,8 +2,9 @@ class_name Player extends CharacterBody3D
 
 var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
 
-@export var health := 10.0
-var current_health = health
+@export var max_health := 10.0
+var current_health = max_health
+var can_take_damage = true
 
 @export_group("Controls map names")
 @export var MOVE_FORWARD: String = "move_forward"
@@ -305,4 +306,22 @@ func _add_joy_button_event(action_name: String, joy_button: JoyButton = 100) -> 
 	InputMap.action_add_event(action_name, joy_button_event)
 
 func take_damage(amount : float):
-	current_health -= amount
+	if can_take_damage:
+		current_health -= amount
+		if current_health <= 0.0:
+			current_health = 0.0
+			die()
+		var h_tween = create_tween()
+		h_tween.set_ease(Tween.EASE_OUT)
+		h_tween.set_trans(Tween.TRANS_CUBIC)
+		h_tween.tween_property(%BarCrop, "scale:x", current_health/max_health, 0.2)
+
+func die():
+	var tween = create_tween()
+	tween.set_ease(Tween.EASE_OUT)
+	tween.set_trans(Tween.TRANS_CUBIC)
+	tween.tween_property(Engine, "time_scale", 0.5, 0.7)
+	$UserInterface.death_screen()
+	
+	can_move = false
+	can_take_damage = false
