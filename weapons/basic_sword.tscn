@@ -336,10 +336,12 @@ knockback = 15.0
 transform = Transform3D(-0.22342564, 0.012176639, -0.1223017, -0.010681102, -0.2547091, -0.005846763, -0.12244137, 0, 0.22368081, -0.03997134, 0.83611447, 2.3748725e-10)
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="MeshPivot/WeaponMesh/Hitbox/skeletonlongsword"]
-transform = Transform3D(3.59273, 1.4007092e-06, 1.5719414, 5.9604645e-08, 3.9215708, -4.7311187e-07, -1.5719395, -4.7683716e-07, 3.592728, -0.0025743544, 2.5992153, -0.009354085)
+transform = Transform3D(3.592429, 0.0025379658, 1.5726271, 0.0013698041, 3.9215586, -0.009454697, -1.5726266, 0.009209521, 3.5924153, 0.019819751, 2.9185667, -0.041562542)
 light_color = Color(8.182227e-06, 0.8782742, 0.72330284, 1)
-light_energy = 1.35
-light_volumetric_fog_energy = 0.1
+light_energy = 0.855
+light_indirect_energy = 1.825
+light_volumetric_fog_energy = 0.595
+light_size = 0.19
 omni_range = 2.311
 omni_attenuation = 1.339
 omni_shadow_mode = 0

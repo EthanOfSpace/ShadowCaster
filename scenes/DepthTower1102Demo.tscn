@@ -645,6 +645,9 @@ walk_back_speed = 4.0
 walk_speed = 4.0
 sprint_speed = 20.0
 
+[node name="DeathScreen" parent="Player/UserInterface" index="2"]
+visible = false
+
 [node name="Lighting" type="Node3D" parent="."]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Lighting"]
