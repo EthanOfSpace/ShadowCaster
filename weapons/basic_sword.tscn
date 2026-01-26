@@ -333,14 +333,14 @@ script = ExtResource("2_dethn")
 knockback = 15.0
 
 [node name="skeletonlongsword" parent="MeshPivot/WeaponMesh/Hitbox" instance=ExtResource("3_dethn")]
-transform = Transform3D(-0.22342564, 0.012176639, -0.1223017, -0.010681102, -0.2547091, -0.005846763, -0.12244137, 0, 0.22368081, -0.03997134, 0.83611447, 2.3748725e-10)
+transform = Transform3D(-0.22083648, -1.9306137e-08, -0.1275, 2.2292808e-08, -0.255, 0, -0.1275, -1.1146404e-08, 0.22083648, -0.03997134, 0.83611447, 2.3748725e-10)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="MeshPivot/WeaponMesh/Hitbox/skeletonlongsword"]
 transform = Transform3D(3.9215696, 1.0728836e-06, 9.536743e-07, 2.0861626e-07, 3.9215705, -1.013279e-06, 5.9604645e-08, 6.7055225e-08, 3.921567, -0.01203274, 4.876644, -0.008113906)
 light_color = Color(0, 0.8450783, 0.7356637, 1)
 light_energy = 1.165
 light_indirect_energy = 4.464
-light_volumetric_fog_energy = 0.505
+light_volumetric_fog_energy = 0.175
 omni_range = 6.467
 omni_attenuation = 0.722
 

@@ -1,7 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://bmg21m7jsgjpq"]
+[gd_scene load_steps=6 format=3 uid="uid://bmg21m7jsgjpq"]
 
 [ext_resource type="MeshLibrary" uid="uid://8680rpbel8cw" path="res://TileSet/Dungeon.tres" id="1_moch0"]
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="2_tpmwd"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_moch0"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_bkrrf"]
+sky_material = SubResource("ProceduralSkyMaterial_moch0")
+
+[sub_resource type="Environment" id="Environment_tpmwd"]
+background_mode = 1
+background_color = Color(0.36289462, 0.30416378, 0.31992424, 1)
+sky = SubResource("Sky_bkrrf")
+tonemap_mode = 2
+fog_mode = 1
+fog_light_color = Color(0.3669696, 0.2721234, 0.27203032, 1)
+fog_density = 15.0
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.1468
+volumetric_fog_emission = Color(0.11119685, 0.11119684, 0.11119684, 1)
 
 [node name="Node3D" type="Node3D"]
 
@@ -17,6 +36,9 @@ data = {
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
 [node name="Lighting" type="Node3D" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Lighting"]
+environment = SubResource("Environment_tpmwd")
 
 [node name="Player" type="Node3D" parent="."]
 

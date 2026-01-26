@@ -1,10 +1,29 @@
-[gd_scene load_steps=6 format=3 uid="uid://u7smvsyu73bl"]
+[gd_scene load_steps=9 format=3 uid="uid://u7smvsyu73bl"]
 
 [ext_resource type="MeshLibrary" uid="uid://8680rpbel8cw" path="res://TileSet/Dungeon.tres" id="1_p6jul"]
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="2_776qg"]
 [ext_resource type="AudioStream" uid="uid://cyctix5su5jsj" path="res://Audio/Music/Drone 1 dank crypt.mp3" id="2_awpnv"]
 [ext_resource type="PackedScene" uid="uid://cqmrai61unlsi" path="res://entities/enemies/test_archer_enemy.tscn" id="4_8y04k"]
 [ext_resource type="PackedScene" uid="uid://d2fomkqd3ua5s" path="res://entities/enemies/test_enemy.tscn" id="5_bkrrf"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8y04k"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_8y04k"]
+sky_material = SubResource("ProceduralSkyMaterial_8y04k")
+
+[sub_resource type="Environment" id="Environment_8prc1"]
+background_mode = 1
+background_color = Color(0.36289462, 0.30416378, 0.31992424, 1)
+sky = SubResource("Sky_8y04k")
+tonemap_mode = 2
+fog_mode = 1
+fog_light_color = Color(0.3669696, 0.2721234, 0.27203032, 1)
+fog_density = 15.0
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.1468
+volumetric_fog_emission = Color(0.11119685, 0.11119684, 0.11119684, 1)
 
 [node name="DungeonTest02" type="Node3D"]
 
@@ -26,6 +45,9 @@ autoplay = true
 parameters/looping = false
 
 [node name="Lighting" type="Node3D" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Lighting"]
+environment = SubResource("Environment_8prc1")
 
 [node name="Player" type="Node3D" parent="."]
 
