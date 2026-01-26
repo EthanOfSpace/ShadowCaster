@@ -298,10 +298,16 @@ material_override = ExtResource("3_fyiqq")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTower1121/Tower/TowerTop/cylinder_4/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_vwvrr")
 
+[node name="cylinder_5" parent="EnvironmentMeshes/DepthTower1121/Tower/TowerTop" index="6"]
+material_override = ExtResource("3_fyiqq")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTower1121/Tower/TowerTop/cylinder_5" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTower1121/Tower/TowerTop/cylinder_5/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_c0jvm")
+
+[node name="cylinder_6" parent="EnvironmentMeshes/DepthTower1121/Tower/TowerTop" index="7"]
+material_override = ExtResource("3_fyiqq")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTower1121/Tower/TowerTop/cylinder_6" index="0"]
 
@@ -435,6 +441,9 @@ material_override = ExtResource("3_fyiqq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTower1121/Tower/TowerMidLower/DoubleArch_1/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ut808")
+
+[node name="SingleArch_9" parent="EnvironmentMeshes/DepthTower1121/Tower/TowerMidLower" index="4"]
+material_override = ExtResource("3_fyiqq")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTower1121/Tower/TowerMidLower/SingleArch_9" index="0"]
 
@@ -645,9 +654,6 @@ walk_back_speed = 4.0
 walk_speed = 4.0
 sprint_speed = 20.0
 
-[node name="DeathScreen" parent="Player/UserInterface" index="2"]
-visible = false
-
 [node name="Lighting" type="Node3D" parent="."]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Lighting"]
@@ -696,6 +702,7 @@ transform = Transform3D(-1.03682, 1.26969e-16, 0, 1.26969e-16, 1.03682, 1.26969e
 
 [node name="cylinder" parent="Elevator/Mesh/bone" index="0"]
 transform = Transform3D(1, 0, -1.0176904e-28, 1.0017935e-28, 0, 1, 0, -1, -1.009742e-28, 0, 0.016116858, 0)
+material_override = ExtResource("3_fyiqq")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Elevator/Mesh/bone/Lever" index="0"]
 libraries = {

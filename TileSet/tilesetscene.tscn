@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bt7wp8s5g4l0v"]
-
-[ext_resource type="PackedScene" uid="uid://bbn3r3ev06swi" path="res://TileSet/Tileset012526.gltf" id="1_s6yut"]
-
-[node name="blockbench_export" instance=ExtResource("1_s6yut")]

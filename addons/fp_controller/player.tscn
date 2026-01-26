@@ -2,17 +2,17 @@
 
 [ext_resource type="Script" uid="uid://cigv0n5jvforp" path="res://addons/fp_controller/scripts/player.gd" id="1_5ras8"]
 [ext_resource type="Script" uid="uid://bg3yypedv4af7" path="res://addons/fp_controller/scripts/smooth_camera.gd" id="2_1py82"]
-[ext_resource type="Script" uid="uid://cer2cebxsldr7" path="res://addons/fp_controller/scripts/player_state_machine.gd" id="2_wwa58"]
+[ext_resource type="Script" uid="uid://dhkjiswvmw6dh" path="res://addons/fp_controller/scripts/player_state_machine.gd" id="2_wwa58"]
 [ext_resource type="PackedScene" uid="uid://dugb1cgyj11b8" path="res://weapons/basic_sword.tscn" id="3_njw88"]
-[ext_resource type="Script" uid="uid://7vp2ks1gp3fe" path="res://addons/fp_controller/scripts/player_move_state/idle.gd" id="3_xe000"]
-[ext_resource type="Script" uid="uid://duea184ks6e8y" path="res://addons/fp_controller/scripts/player_move_state/jump.gd" id="4_1lr3q"]
-[ext_resource type="Script" uid="uid://ba7dbfrhc1lk3" path="res://addons/fp_controller/scripts/player_move_state/walk.gd" id="5_bwgwe"]
-[ext_resource type="Script" uid="uid://4m2n7h25r6ai" path="res://addons/fp_controller/scripts/player_move_state/sprint.gd" id="6_b4xrx"]
-[ext_resource type="Script" uid="uid://daov7148qmunn" path="res://addons/fp_controller/scripts/player_move_state/fall.gd" id="7_dv6ye"]
-[ext_resource type="Script" uid="uid://is6hgxjysqsc" path="res://addons/fp_controller/scripts/player_move_state/crouch.gd" id="9_yxb0u"]
-[ext_resource type="Script" uid="uid://chbkbhwtfvav8" path="res://addons/fp_controller/scripts/player_move_state/climb.gd" id="10_o7gmx"]
-[ext_resource type="Script" uid="uid://cgwqd37e07t5b" path="res://addons/fp_controller/scripts/player_move_state/grab.gd" id="11_gkc45"]
-[ext_resource type="Script" uid="uid://bng02gvbcv3u2" path="res://addons/fp_controller/scripts/player_move_state/slide.gd" id="12_bqyfq"]
+[ext_resource type="Script" uid="uid://c5t7egoolhmd0" path="res://addons/fp_controller/scripts/player_move_state/idle.gd" id="3_xe000"]
+[ext_resource type="Script" uid="uid://bm13fnltd1wpp" path="res://addons/fp_controller/scripts/player_move_state/jump.gd" id="4_1lr3q"]
+[ext_resource type="Script" uid="uid://befju05cq8idd" path="res://addons/fp_controller/scripts/player_move_state/walk.gd" id="5_bwgwe"]
+[ext_resource type="Script" uid="uid://chvob4yd53f5q" path="res://addons/fp_controller/scripts/player_move_state/sprint.gd" id="6_b4xrx"]
+[ext_resource type="Script" uid="uid://es0mjk88bqfc" path="res://addons/fp_controller/scripts/player_move_state/fall.gd" id="7_dv6ye"]
+[ext_resource type="Script" uid="uid://b8gu5mldbjo6h" path="res://addons/fp_controller/scripts/player_move_state/crouch.gd" id="9_yxb0u"]
+[ext_resource type="Script" uid="uid://d4c5rkiraenmk" path="res://addons/fp_controller/scripts/player_move_state/climb.gd" id="10_o7gmx"]
+[ext_resource type="Script" uid="uid://b8pmnfq7ed0cp" path="res://addons/fp_controller/scripts/player_move_state/grab.gd" id="11_gkc45"]
+[ext_resource type="Script" uid="uid://bk3flw4e5lid3" path="res://addons/fp_controller/scripts/player_move_state/slide.gd" id="12_bqyfq"]
 [ext_resource type="Script" uid="uid://cydag03fxj2ac" path="res://addons/fp_controller/scripts/player_ui.gd" id="12_d7xi0"]
 
 [sub_resource type="Animation" id="Animation_5udu4"]
@@ -253,6 +253,33 @@ fill_to = Vector2(0, 1)
 font_size = 61
 font_color = Color(1, 0, 0, 0)
 
+[sub_resource type="Animation" id="Animation_ttf0e"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1.525)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:label_settings:font_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 0, 0, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_njw88"]
 resource_name = "death_screen"
 length = 3.0
@@ -280,33 +307,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Color(1, 0, 0, 0), Color(1, 0, 0, 1), Color(1, 0, 0, 1), Color(1, 0, 0, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_ttf0e"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Label:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1.525)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Label:label_settings:font_color")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 0, 0, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ttf0e"]
@@ -397,6 +397,7 @@ weapon_sway_amount = 0.07
 weapon_rotation_amount = 0.01
 
 [node name="ReflectionProbe" type="ReflectionProbe" parent="CameraPivot/SmoothCamera"]
+visible = false
 
 [node name="Hand" type="Node3D" parent="CameraPivot/SmoothCamera"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.625696, -0.458608, -0.811623)
@@ -494,6 +495,7 @@ grow_vertical = 0
 color = Color(1, 0, 0, 1)
 
 [node name="DeathScreen" type="Control" parent="UserInterface"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
