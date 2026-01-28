@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cyctix5su5jsj"
+path="res://.godot/imported/Drone 1 dank crypt.mp3-005a64dcae204edb78e6b619da22b306.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/Drone 1 dank crypt.mp3"
+dest_files=["res://.godot/imported/Drone 1 dank crypt.mp3-005a64dcae204edb78e6b619da22b306.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
