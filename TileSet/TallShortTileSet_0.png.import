@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yy8unbw3j3sp"
-path.s3tc="res://.godot/imported/Tileset012526_1.png-19330983da6fd65d7b7771d6c06bc359.s3tc.ctex"
+uid="uid://cftubq3ixtoif"
+path.s3tc="res://.godot/imported/TallShortTileSet_0.png-b93cc9f7d30afba5727e2824d11a8338.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "0c6e424271890756e36df7370544fd4d"
+"md5": "c4147390f15bca1fd67e499a9d8f3684"
 }
 
 [deps]
 
-source_file="res://TileSet/Tileset012526_1.png"
-dest_files=["res://.godot/imported/Tileset012526_1.png-19330983da6fd65d7b7771d6c06bc359.s3tc.ctex"]
+source_file="res://TileSet/TallShortTileSet_0.png"
+dest_files=["res://.godot/imported/TallShortTileSet_0.png-b93cc9f7d30afba5727e2824d11a8338.s3tc.ctex"]
 
 [params]
 

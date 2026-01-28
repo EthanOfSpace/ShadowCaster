@@ -650,9 +650,6 @@ material_override = ExtResource("4_vth84")
 
 [node name="Player" parent="." instance=ExtResource("5_56pd4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 241.36646, -9.018669)
-walk_back_speed = 4.0
-walk_speed = 4.0
-sprint_speed = 20.0
 
 [node name="Lighting" type="Node3D" parent="."]
 

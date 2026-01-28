@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cfhil3sg3poct"
-path="res://.godot/imported/Tileset012626.gltf-e308c00627f812ddcf404e1321ebfc03.scn"
+uid="uid://dbvxbyktxntuj"
+path="res://.godot/imported/TallShortTileSet.gltf-0740bfc8e421da5e5a8544c7b34d2961.scn"
 
 [deps]
 
-source_file="res://TileSet/Tileset012626.gltf"
-dest_files=["res://.godot/imported/Tileset012626.gltf-e308c00627f812ddcf404e1321ebfc03.scn"]
+source_file="res://TileSet/TallShortTileSet.gltf"
+dest_files=["res://.godot/imported/TallShortTileSet.gltf-0740bfc8e421da5e5a8544c7b34d2961.scn"]
 
 [params]
 

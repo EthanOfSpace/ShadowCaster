@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bo5wwqim3jm13"]
-
-[ext_resource type="PackedScene" uid="uid://cfsip736ib1hm" path="res://TileSet/DungeonTileSet.gltf" id="1_xyvob"]
-
-[node name="blockbench_export" instance=ExtResource("1_xyvob")]
