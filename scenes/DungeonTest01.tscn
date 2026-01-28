@@ -18,7 +18,8 @@ sky = SubResource("Sky_ax54y")
 tonemap_mode = 2
 glow_enabled = true
 volumetric_fog_enabled = true
-volumetric_fog_density = 0.0853
+volumetric_fog_density = 0.08
+volumetric_fog_albedo = Color(1, 0, 0, 1)
 
 [node name="Node3D" type="Node3D"]
 
