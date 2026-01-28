@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b0eat6bubu53j"]
+[gd_scene load_steps=9 format=3 uid="uid://brrti2c6l0cq8"]
 
 [ext_resource type="Material" uid="uid://bbyn53xkqaq5h" path="res://Art/Materials/MazeFloorCobble.tres" id="1_3svos"]
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="1_dunnw"]

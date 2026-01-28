@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SpellStrategy" load_steps=7 format=3 uid="uid://no4j2vjbff1t"]
+
+[ext_resource type="Script" uid="uid://cipm8dypm6ct5" path="res://spells/spell scripts/spell_strategy.gd" id="1_6vqqh"]
+[ext_resource type="Script" uid="uid://bjinhldhsvgim" path="res://spells/spell scripts/projectile_pattern.gd" id="2_6vqqh"]
+[ext_resource type="PackedScene" uid="uid://c17l2esajtdsn" path="res://spells/projectiles/fire_ball.tscn" id="3_ybm48"]
+[ext_resource type="Script" uid="uid://bph1cfrn5r8y" path="res://spells/spell scripts/spellProjectile.gd" id="4_qs5df"]
+
+[sub_resource type="Resource" id="Resource_1k8m7"]
+script = ExtResource("2_6vqqh")
+metadata/_custom_type_script = "uid://bjinhldhsvgim"
+
+[sub_resource type="Resource" id="Resource_4813d"]
+script = ExtResource("4_qs5df")
+projectile_scene = ExtResource("3_ybm48")
+projectile_pattern = SubResource("Resource_1k8m7")
+metadata/_custom_type_script = "uid://bph1cfrn5r8y"
+
+[resource]
+script = ExtResource("1_6vqqh")
+spell_behavior = SubResource("Resource_4813d")
+cost = 12.0
+metadata/_custom_type_script = "uid://cipm8dypm6ct5"

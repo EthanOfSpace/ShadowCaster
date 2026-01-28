@@ -1,19 +1,22 @@
-[gd_scene load_steps=29 format=3 uid="uid://dlbkch6iuy8gn"]
+[gd_scene load_steps=32 format=3 uid="uid://dlbkch6iuy8gn"]
 
 [ext_resource type="Script" uid="uid://cigv0n5jvforp" path="res://addons/fp_controller/scripts/player.gd" id="1_5ras8"]
 [ext_resource type="Script" uid="uid://bg3yypedv4af7" path="res://addons/fp_controller/scripts/smooth_camera.gd" id="2_1py82"]
-[ext_resource type="Script" uid="uid://cer2cebxsldr7" path="res://addons/fp_controller/scripts/player_state_machine.gd" id="2_wwa58"]
+[ext_resource type="Script" uid="uid://dhkjiswvmw6dh" path="res://addons/fp_controller/scripts/player_state_machine.gd" id="2_wwa58"]
 [ext_resource type="PackedScene" uid="uid://dugb1cgyj11b8" path="res://weapons/basic_sword.tscn" id="3_njw88"]
-[ext_resource type="Script" uid="uid://7vp2ks1gp3fe" path="res://addons/fp_controller/scripts/player_move_state/idle.gd" id="3_xe000"]
-[ext_resource type="Script" uid="uid://duea184ks6e8y" path="res://addons/fp_controller/scripts/player_move_state/jump.gd" id="4_1lr3q"]
-[ext_resource type="Script" uid="uid://ba7dbfrhc1lk3" path="res://addons/fp_controller/scripts/player_move_state/walk.gd" id="5_bwgwe"]
-[ext_resource type="Script" uid="uid://4m2n7h25r6ai" path="res://addons/fp_controller/scripts/player_move_state/sprint.gd" id="6_b4xrx"]
-[ext_resource type="Script" uid="uid://daov7148qmunn" path="res://addons/fp_controller/scripts/player_move_state/fall.gd" id="7_dv6ye"]
-[ext_resource type="Script" uid="uid://is6hgxjysqsc" path="res://addons/fp_controller/scripts/player_move_state/crouch.gd" id="9_yxb0u"]
-[ext_resource type="Script" uid="uid://chbkbhwtfvav8" path="res://addons/fp_controller/scripts/player_move_state/climb.gd" id="10_o7gmx"]
-[ext_resource type="Script" uid="uid://cgwqd37e07t5b" path="res://addons/fp_controller/scripts/player_move_state/grab.gd" id="11_gkc45"]
-[ext_resource type="Script" uid="uid://bng02gvbcv3u2" path="res://addons/fp_controller/scripts/player_move_state/slide.gd" id="12_bqyfq"]
+[ext_resource type="Script" uid="uid://c5t7egoolhmd0" path="res://addons/fp_controller/scripts/player_move_state/idle.gd" id="3_xe000"]
+[ext_resource type="Script" uid="uid://bm13fnltd1wpp" path="res://addons/fp_controller/scripts/player_move_state/jump.gd" id="4_1lr3q"]
+[ext_resource type="Script" uid="uid://befju05cq8idd" path="res://addons/fp_controller/scripts/player_move_state/walk.gd" id="5_bwgwe"]
+[ext_resource type="Script" uid="uid://chvob4yd53f5q" path="res://addons/fp_controller/scripts/player_move_state/sprint.gd" id="6_b4xrx"]
+[ext_resource type="Script" uid="uid://es0mjk88bqfc" path="res://addons/fp_controller/scripts/player_move_state/fall.gd" id="7_dv6ye"]
+[ext_resource type="Script" uid="uid://b8gu5mldbjo6h" path="res://addons/fp_controller/scripts/player_move_state/crouch.gd" id="9_yxb0u"]
+[ext_resource type="Script" uid="uid://d4c5rkiraenmk" path="res://addons/fp_controller/scripts/player_move_state/climb.gd" id="10_o7gmx"]
+[ext_resource type="Script" uid="uid://b8pmnfq7ed0cp" path="res://addons/fp_controller/scripts/player_move_state/grab.gd" id="11_gkc45"]
+[ext_resource type="Script" uid="uid://bk3flw4e5lid3" path="res://addons/fp_controller/scripts/player_move_state/slide.gd" id="12_bqyfq"]
 [ext_resource type="Script" uid="uid://cydag03fxj2ac" path="res://addons/fp_controller/scripts/player_ui.gd" id="12_d7xi0"]
+[ext_resource type="Script" uid="uid://q6ebmoe7mmiv" path="res://addons/fp_controller/spell_manager.gd" id="15_ttf0e"]
+[ext_resource type="Script" uid="uid://cipm8dypm6ct5" path="res://spells/spell scripts/spell_strategy.gd" id="16_mkvci"]
+[ext_resource type="Resource" uid="uid://no4j2vjbff1t" path="res://spells/spell resources/fireball.tres" id="17_a8wmt"]
 
 [sub_resource type="Animation" id="Animation_5udu4"]
 length = 0.001
@@ -253,6 +256,33 @@ fill_to = Vector2(0, 1)
 font_size = 61
 font_color = Color(1, 0, 0, 0)
 
+[sub_resource type="Animation" id="Animation_ttf0e"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1.525)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:label_settings:font_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 0, 0, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_njw88"]
 resource_name = "death_screen"
 length = 3.0
@@ -280,33 +310,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Color(1, 0, 0, 0), Color(1, 0, 0, 1), Color(1, 0, 0, 1), Color(1, 0, 0, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_ttf0e"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Label:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1.525)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Label:label_settings:font_color")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 0, 0, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ttf0e"]
@@ -403,6 +406,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.625696, -0.458608, -0.81162
 
 [node name="BasicSword" parent="CameraPivot/SmoothCamera/Hand" instance=ExtResource("3_njw88")]
 
+[node name="ProjectileSpawnPoint" type="Node3D" parent="CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.6, -1.2)
+
 [node name="StateMachine" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("2_wwa58")
@@ -461,6 +467,38 @@ unique_name_in_owner = true
 layout_mode = 2
 mouse_filter = 2
 
+[node name="ManaBar" type="ColorRect" parent="UserInterface"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 64.0
+offset_top = -88.0
+offset_right = 408.0
+offset_bottom = -64.0
+grow_vertical = 0
+color = Color(0, 0, 0, 0.3529412)
+
+[node name="ManaBarCrop" type="Control" parent="UserInterface/ManaBar"]
+unique_name_in_owner = true
+clip_contents = true
+anchors_preset = 0
+offset_left = 4.0
+offset_right = 340.0
+offset_bottom = 24.0
+
+[node name="ManaBarTexture" type="ColorRect" parent="UserInterface/ManaBar/ManaBarCrop"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -20.0
+offset_right = 336.0
+offset_bottom = -4.0
+grow_vertical = 0
+color = Color(0.26465994, 0.5646302, 0.7718211, 1)
+
 [node name="HealthBarBG" type="ColorRect" parent="UserInterface"]
 clip_contents = true
 layout_mode = 1
@@ -494,6 +532,7 @@ grow_vertical = 0
 color = Color(1, 0, 0, 1)
 
 [node name="DeathScreen" type="Control" parent="UserInterface"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -541,6 +580,11 @@ libraries = {
 
 [node name="AudioListener3D" type="AudioListener3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.47237, 0)
+
+[node name="SpellManager" type="Node3D" parent="." node_paths=PackedStringArray("projectileSpawnPoint")]
+script = ExtResource("15_ttf0e")
+spells = Array[ExtResource("16_mkvci")]([ExtResource("17_a8wmt")])
+projectileSpawnPoint = NodePath("../CameraPivot/ProjectileSpawnPoint")
 
 [connection signal="transitioned" from="StateMachine" to="." method="_on_state_machine_transitioned"]
 [connection signal="draw" from="UserInterface/CrosshairContainer/Crosshair" to="UserInterface" method="_on_crosshair_draw"]
