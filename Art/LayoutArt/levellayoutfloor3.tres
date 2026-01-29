@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c6inan7crk15p"]
+
+[ext_resource type="Texture2D" uid="uid://dx6tbx1fcpqmh" path="res://Art/LayoutArt/veiled_labyrinth_of_sorrows.png" id="1_sm43p"]
+
+[resource]
+albedo_texture = ExtResource("1_sm43p")

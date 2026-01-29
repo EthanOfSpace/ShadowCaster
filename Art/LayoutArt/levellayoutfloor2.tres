@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bpmq26igi1gr5"]
+
+[ext_resource type="Texture2D" uid="uid://nojrcgdrcjhk" path="res://Art/LayoutArt/desert_chambers_of_nemeia-koranna.png" id="1_t77o4"]
+
+[resource]
+albedo_texture = ExtResource("1_t77o4")

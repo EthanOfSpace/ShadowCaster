@@ -681,7 +681,25 @@ light_energy = 2.079
 omni_range = 31.441
 
 [node name="OmniLight3D4" type="OmniLight3D" parent="Lighting"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.671772, 221.0793, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.671772, 195.41396, 0)
+light_color = Color(1, 0.73333335, 0, 1)
+light_energy = 2.079
+omni_range = 31.441
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="Lighting"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.671772, 195.41396, 0)
+light_color = Color(1, 0.73333335, 0, 1)
+light_energy = 2.079
+omni_range = 31.441
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="Lighting"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.070026, 195.41396, 0)
+light_color = Color(1, 0.73333335, 0, 1)
+light_energy = 2.079
+omni_range = 31.441
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="Lighting"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.070026, 195.41396, 0)
 light_color = Color(1, 0.73333335, 0, 1)
 light_energy = 2.079
 omni_range = 31.441
@@ -700,6 +718,7 @@ parameters/looping = true
 stream = ExtResource("10_7luqm")
 volume_db = -11.45
 autoplay = true
+parameters/looping = true
 
 [node name="Elevator" type="AnimatableBody3D" parent="."]
 transform = Transform3D(-80, 9.796855e-15, -1.2079664e-05, 9.796854e-15, 80, 9.796854e-15, 1.2079664e-05, 9.7968525e-15, -80, -0.28494644, 238.99033, -0.35124063)
