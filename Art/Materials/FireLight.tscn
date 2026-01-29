@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://b4jakvmvc7f8p"]
+
+[ext_resource type="Script" uid="uid://0wj7dun7650v" path="res://omni_light_3d.gd" id="1_3sue0"]
+
+[sub_resource type="Gradient" id="Gradient_yb43l"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_i1oc2"]
+noise_type = 2
+frequency = 0.0605
+
+[sub_resource type="NoiseTexture3D" id="NoiseTexture3D_02qb0"]
+noise = SubResource("FastNoiseLite_i1oc2")
+color_ramp = SubResource("Gradient_yb43l")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+light_color = Color(1, 0.668, 0.17000002, 1)
+script = ExtResource("1_3sue0")
+noise = SubResource("NoiseTexture3D_02qb0")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0038795, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1, 0, 0)

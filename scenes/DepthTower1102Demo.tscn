@@ -162,9 +162,7 @@ data = PackedVector3Array(0.0084999995, -0.0041, -0.17909999, 0.0169, -0.0041, -
 
 [sub_resource type="Environment" id="Environment_g7lt4"]
 background_mode = 1
-background_color = Color(0.09499922, 0, 0.12310943, 0.5137255)
-background_energy_multiplier = 2.08
-ambient_light_color = Color(0.1637809, 0.00034625264, 0.32195786, 1)
+background_energy_multiplier = 2.0
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.0108
 volumetric_fog_albedo = Color(0.6599018, 0.6599018, 0.6599018, 1)
@@ -669,6 +667,24 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 38.846237, 0)
 top_level = true
 size = Vector3(1000, 135.75, 1000)
 material = SubResource("FogMaterial_vth84")
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Lighting"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 256, 0)
+light_color = Color(1, 0.73333335, 0, 1)
+light_energy = 2.079
+omni_range = 31.441
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Lighting"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.409447, 221.0793, 0)
+light_color = Color(1, 0.73333335, 0, 1)
+light_energy = 2.079
+omni_range = 31.441
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="Lighting"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.671772, 221.0793, 0)
+light_color = Color(1, 0.73333335, 0, 1)
+light_energy = 2.079
+omni_range = 31.441
 
 [node name="Area3D" parent="." instance=ExtResource("8_mrp8i")]
 transform = Transform3D(-0.99948436, 0, -0.032108597, 0, 1, 0, 0.032108597, 0, -0.99948436, 1.4138813, 216.12003, -107.85594)

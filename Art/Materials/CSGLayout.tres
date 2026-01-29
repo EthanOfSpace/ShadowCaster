@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://i0kqyytrplss"]
+
+[ext_resource type="Texture2D" uid="uid://13lyj3s3wlcp" path="res://Art/Textures/duskfist_monastery.png" id="1_dep77"]
+
+[resource]
+albedo_texture = ExtResource("1_dep77")
