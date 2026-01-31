@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c61rdennx8ayt"]
+
+[ext_resource type="Texture2D" uid="uid://bdp2ep17l4crq" path="res://Art/LayoutArt/stronghold_of_the_iron_general.png" id="1_gqhuc"]
+
+[resource]
+albedo_texture = ExtResource("1_gqhuc")

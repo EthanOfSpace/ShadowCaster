@@ -340,7 +340,7 @@ transform = Transform3D(3.9215696, 1.0728836e-06, 9.536743e-07, 2.0861626e-07, 3
 light_color = Color(0, 0.8450783, 0.7356637, 1)
 light_energy = 1.165
 light_indirect_energy = 4.464
-light_volumetric_fog_energy = 0.175
+light_volumetric_fog_energy = 0.1
 omni_range = 6.467
 omni_attenuation = 0.722
 
