@@ -1,25 +1,37 @@
-[gd_scene load_steps=7 format=3 uid="uid://lohha7tfqg73"]
+[gd_scene load_steps=9 format=3 uid="uid://lohha7tfqg73"]
 
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="1_g7y5c"]
 [ext_resource type="MeshLibrary" uid="uid://bjcqkmtfre2oi" path="res://TileSet/RampTileSet.tres" id="1_pl5ae"]
 [ext_resource type="AudioStream" uid="uid://cyctix5su5jsj" path="res://Audio/Music/Drone 1 dank crypt.mp3" id="2_ir7kt"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ir7kt"]
-sky_top_color = Color(0.2403577, 0.2931297, 0.36344135, 1)
-sky_horizon_color = Color(0.29922125, 0.31241423, 0.32999218, 1)
+[sub_resource type="Gradient" id="Gradient_ir7kt"]
+offsets = PackedFloat32Array(0, 0.4385965, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.56381077, 0.5168963, 0.65526444, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_7qbi2"]
+gradient = SubResource("Gradient_ir7kt")
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tedk1"]
+sky_top_color = Color(0.38045958, 0.4537413, 0.54805654, 1)
+sky_horizon_color = Color(0.46588713, 0.48420757, 0.5077864, 1)
 ground_bottom_color = Color(0, 0, 0, 1)
-ground_horizon_color = Color(0.29922125, 0.31241423, 0.32999218, 1)
+ground_horizon_color = Color(0.46588713, 0.48420757, 0.5077864, 1)
 
-[sub_resource type="Sky" id="Sky_7qbi2"]
-sky_material = SubResource("ProceduralSkyMaterial_ir7kt")
+[sub_resource type="Sky" id="Sky_ow2xo"]
+sky_material = SubResource("ProceduralSkyMaterial_tedk1")
 
-[sub_resource type="Environment" id="Environment_tedk1"]
+[sub_resource type="Environment" id="Environment_uiek6"]
 background_mode = 2
-sky = SubResource("Sky_7qbi2")
+sky = SubResource("Sky_ow2xo")
 tonemap_mode = 2
 ssao_enabled = true
+fog_mode = 1
+fog_density = 1.0
 volumetric_fog_enabled = true
-volumetric_fog_density = 0.1206
+volumetric_fog_density = 0.1
+adjustment_enabled = true
+adjustment_contrast = 1.2
+adjustment_color_correction = SubResource("GradientTexture1D_7qbi2")
 
 [node name="Node3D" type="Node3D"]
 
@@ -40,17 +52,19 @@ metadata/_editor_floor_ = Vector3(0, 6, 0)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Environment/Ambient"]
 stream = ExtResource("2_ir7kt")
+volume_db = -5.0
+autoplay = true
 parameters/looping = true
 
 [node name="Lighting" type="Node3D" parent="."]
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="Lighting"]
-environment = SubResource("Environment_tedk1")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lighting"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.33039, 2.9009113, -9.32909)
 light_color = Color(0.82911116, 0.55308765, 0, 1)
 omni_range = 7.746
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Lighting"]
+environment = SubResource("Environment_uiek6")
 
 [node name="Player" type="Node3D" parent="."]
 

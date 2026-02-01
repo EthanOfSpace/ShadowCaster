@@ -341,8 +341,7 @@ light_color = Color(0, 0.8450783, 0.7356637, 1)
 light_energy = 1.165
 light_indirect_energy = 4.464
 light_volumetric_fog_energy = 0.1
-omni_range = 6.467
-omni_attenuation = 0.722
+omni_range = 10.319
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshPivot/WeaponMesh/Hitbox"]
 transform = Transform3D(0.9999999, -1.7806888e-06, 1.4901161e-07, 4.246831e-07, 0.999996, 8.6426735e-07, -2.9802322e-08, 4.7683716e-07, 0.9999998, 0.054337583, -0.56223094, -2.9802322e-08)

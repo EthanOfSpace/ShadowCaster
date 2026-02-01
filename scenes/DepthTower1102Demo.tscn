@@ -163,10 +163,13 @@ data = PackedVector3Array(0.0084999995, -0.0041, -0.17909999, 0.0169, -0.0041, -
 [sub_resource type="Environment" id="Environment_g7lt4"]
 background_mode = 1
 background_energy_multiplier = 2.0
+ssao_enabled = true
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.0108
 volumetric_fog_albedo = Color(0.6599018, 0.6599018, 0.6599018, 1)
 volumetric_fog_length = 383.31
+adjustment_enabled = true
+adjustment_contrast = 1.2
 
 [sub_resource type="FogMaterial" id="FogMaterial_vth84"]
 
@@ -669,7 +672,7 @@ size = Vector3(1000, 135.75, 1000)
 material = SubResource("FogMaterial_vth84")
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Lighting"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 256, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 244.95784, 0)
 light_color = Color(1, 0.73333335, 0, 1)
 light_energy = 2.079
 omni_range = 31.441
