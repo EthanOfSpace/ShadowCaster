@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://dvoeqdhp0utm3"]
+[gd_scene load_steps=8 format=3 uid="uid://dvoeqdhp0utm3"]
 
+[ext_resource type="Material" uid="uid://mw6aj4yendvt" path="res://Art/Materials/depthTowerBridges.tres" id="1_j07ft"]
 [ext_resource type="ArrayMesh" uid="uid://bowngqarjaq8s" path="res://Art/Enviroment Meshes/abysscastle.obj" id="1_x0k3e"]
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="2_kbnp7"]
 
@@ -29,6 +30,7 @@ transform = Transform3D(1.005, 0, 0, 0, 1.005, 0, 0, 0, 1.005, -24.006681, 74.66
 
 [node name="Abysscastle" type="MeshInstance3D" parent="EnvironmentMeshes"]
 transform = Transform3D(40.03, 0, 0, 0, 40.03, 0, 0, 0, 40.03, -0.00668177, -37, -0.0025097132)
+material_override = ExtResource("1_j07ft")
 mesh = ExtResource("1_x0k3e")
 skeleton = NodePath("../..")
 
@@ -40,7 +42,7 @@ shape = SubResource("ConcavePolygonShape3D_kbnp7")
 [node name="Player" type="Node3D" parent="."]
 
 [node name="Player" parent="Player" instance=ExtResource("2_kbnp7")]
-transform = Transform3D(-0.716996, 0, -0.697078, 0, 1, 0, 0.697078, 0, -0.716996, 86.35743, 20.88623, -142.85475)
+transform = Transform3D(-0.9859062, 0, 0.16730213, 0, 1, 0, -0.16730213, 0, -0.9859062, 86.35743, 20.88623, -142.85475)
 walk_back_speed = 3.0
 walk_speed = 3.0
 sprint_speed = 8.0
@@ -56,8 +58,16 @@ environment = SubResource("Environment_ngvdi")
 [node name="Lights" type="Node3D" parent="Environment"]
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Environment/Lights"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.547615, 276.7142, -66.511475)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.547615, 180.04758, -66.511475)
 light_color = Color(0.5411765, 0.011764706, 1, 1)
 light_energy = 38.49
 light_volumetric_fog_energy = 0.0
 omni_range = 424.497
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Environment/Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 175.75194, -16)
+light_color = Color(1, 0.23333335, 0, 1)
+light_energy = 16.0
+light_size = 3.005
+omni_range = 109.241
+omni_attenuation = 0.551

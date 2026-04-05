@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://be7qipgidgxk4"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_kodj5"]
+emission_shape = 3
+emission_box_extents = Vector3(100, 20, 100)
+direction = Vector3(0, 0, 0)
+spread = 5.548
+initial_velocity_min = 1.0
+initial_velocity_max = 1.0
+gravity = Vector3(0, 0, 0)
+radial_accel_min = -2.0000021
+radial_accel_max = 1.9999977
+tangential_accel_min = -3.0000021
+tangential_accel_max = 2.9999976
+damping_max = 4.0
+scale_min = 0.5
+
+[sub_resource type="Gradient" id="Gradient_gqvaq"]
+offsets = PackedFloat32Array(0.11702128, 0.7553192)
+colors = PackedColorArray(0.7580001, 0.66999996, 1, 1, 0.23, 0.23, 0.23, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_q1ncn"]
+gradient = SubResource("Gradient_gqvaq")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_54gfi"]
+transparency = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource("GradientTexture2D_q1ncn")
+billboard_mode = 1
+billboard_keep_scale = true
+
+[sub_resource type="QuadMesh" id="QuadMesh_ha6u0"]
+material = SubResource("StandardMaterial3D_54gfi")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+use_collision = true
+size = Vector3(400, 1, 400)
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 29.223228, 0)
+visible = false
+amount = 256
+lifetime = 3.5
+process_material = SubResource("ParticleProcessMaterial_kodj5")
+draw_pass_1 = SubResource("QuadMesh_ha6u0")
+
+[node name="GPUParticles3D2" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 64.8088, 0)
+amount = 256
+lifetime = 7.35
+trail_lifetime = 2.21
+process_material = SubResource("ParticleProcessMaterial_kodj5")
+draw_pass_1 = SubResource("QuadMesh_ha6u0")

@@ -27,7 +27,6 @@ tonemap_mode = 2
 ssao_enabled = true
 fog_mode = 1
 fog_density = 1.0
-volumetric_fog_enabled = true
 volumetric_fog_density = 0.1
 adjustment_enabled = true
 adjustment_contrast = 1.2

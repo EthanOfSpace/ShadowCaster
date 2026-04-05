@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=3 uid="uid://ban6sx8l0boa1"]
+[gd_scene load_steps=76 format=3 uid="uid://ban6sx8l0boa1"]
 
 [ext_resource type="Material" uid="uid://cuydbbidn63ia" path="res://Art/Materials/depthTowerMatNew.tres" id="2_xdcwc"]
 [ext_resource type="Material" uid="uid://cfsq4oheuvfuq" path="res://Art/Materials/depthTowerMatNewArches.tres" id="3_fyiqq"]
@@ -246,6 +246,41 @@ _data = {
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_vwvrr"]
 radius = 0.055342
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_nmasf"]
+emission_shape = 3
+emission_box_extents = Vector3(400, 100, 400)
+direction = Vector3(0, 0, 0)
+spread = 5.548
+initial_velocity_min = 1.0
+initial_velocity_max = 1.0
+gravity = Vector3(0, 0, 0)
+radial_accel_min = -2.0000021
+radial_accel_max = 1.9999977
+tangential_accel_min = -3.0000021
+tangential_accel_max = 2.9999976
+damping_max = 4.0
+scale_min = 0.5
+
+[sub_resource type="Gradient" id="Gradient_gbojk"]
+offsets = PackedFloat32Array(0.11702128, 0.7553192)
+colors = PackedColorArray(0.7580001, 0.66999996, 1, 1, 0.23, 0.23, 0.23, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_77goy"]
+gradient = SubResource("Gradient_gbojk")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kaigb"]
+transparency = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource("GradientTexture2D_77goy")
+billboard_mode = 1
+billboard_keep_scale = true
+
+[sub_resource type="QuadMesh" id="QuadMesh_vqk84"]
+material = SubResource("StandardMaterial3D_kaigb")
 
 [node name="Node3D" type="Node3D"]
 
@@ -769,6 +804,17 @@ grow_horizontal = 2
 grow_vertical = 0
 text = "splorp"
 horizontal_alignment = 1
+
+[node name="particles" type="Node3D" parent="."]
+
+[node name="GPUParticles3D2" type="GPUParticles3D" parent="particles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 272.82275, 0)
+amount = 2048
+lifetime = 7.35
+visibility_aabb = AABB(-457.65057, -111.888794, -441.9976, 903.3031, 223.33725, 881.29224)
+trail_lifetime = 2.21
+process_material = SubResource("ParticleProcessMaterial_nmasf")
+draw_pass_1 = SubResource("QuadMesh_vqk84")
 
 [connection signal="interacted" from="Elevator/Interactable" to="Elevator" method="move_elevator_down_floor"]
 
