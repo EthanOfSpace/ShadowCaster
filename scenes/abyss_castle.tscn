@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dvoeqdhp0utm3"]
+[gd_scene load_steps=13 format=3 uid="uid://dvoeqdhp0utm3"]
 
 [ext_resource type="Material" uid="uid://mw6aj4yendvt" path="res://Art/Materials/depthTowerBridges.tres" id="1_j07ft"]
 [ext_resource type="ArrayMesh" uid="uid://bowngqarjaq8s" path="res://Art/Enviroment Meshes/abysscastle.obj" id="1_x0k3e"]
@@ -20,6 +20,41 @@ background_color = Color(0.01645015, 4.725838e-06, 0.12439328, 1)
 sky = SubResource("Sky_sdvmn")
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_j07ft"]
+emission_shape = 3
+emission_box_extents = Vector3(400, 100, 400)
+direction = Vector3(0, 0, 0)
+spread = 5.548
+initial_velocity_min = 1.0
+initial_velocity_max = 1.0
+gravity = Vector3(0, 0, 0)
+radial_accel_min = -2.0000021
+radial_accel_max = 1.9999977
+tangential_accel_min = -3.0000021
+tangential_accel_max = 2.9999976
+damping_max = 4.0
+scale_min = 0.5
+
+[sub_resource type="Gradient" id="Gradient_iqab2"]
+offsets = PackedFloat32Array(0.11702128, 0.7553192)
+colors = PackedColorArray(0.7580001, 0.66999996, 1, 1, 0.23, 0.23, 0.23, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_tdhl6"]
+gradient = SubResource("Gradient_iqab2")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y3d1x"]
+transparency = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource("GradientTexture2D_tdhl6")
+billboard_mode = 1
+billboard_keep_scale = true
+
+[sub_resource type="QuadMesh" id="QuadMesh_l3613"]
+material = SubResource("StandardMaterial3D_y3d1x")
 
 [node name="AbyssCastle" type="Node3D"]
 
@@ -71,3 +106,12 @@ light_energy = 16.0
 light_size = 3.005
 omni_range = 109.241
 omni_attenuation = 0.551
+
+[node name="GPUParticles3D2" type="GPUParticles3D" parent="Environment/Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 84.821106, 0)
+amount = 2048
+lifetime = 7.35
+visibility_aabb = AABB(-448.39792, -111.19677, -437.64197, 904.67804, 227.31863, 898.8546)
+trail_lifetime = 2.21
+process_material = SubResource("ParticleProcessMaterial_j07ft")
+draw_pass_1 = SubResource("QuadMesh_l3613")

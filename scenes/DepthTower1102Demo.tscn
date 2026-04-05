@@ -262,16 +262,16 @@ tangential_accel_max = 2.9999976
 damping_max = 4.0
 scale_min = 0.5
 
-[sub_resource type="Gradient" id="Gradient_gbojk"]
+[sub_resource type="Gradient" id="Gradient_nmasf"]
 offsets = PackedFloat32Array(0.11702128, 0.7553192)
 colors = PackedColorArray(0.7580001, 0.66999996, 1, 1, 0.23, 0.23, 0.23, 0)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_77goy"]
-gradient = SubResource("Gradient_gbojk")
+gradient = SubResource("Gradient_nmasf")
 fill = 1
 fill_from = Vector2(0.5, 0.5)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kaigb"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_77goy"]
 transparency = 1
 shading_mode = 0
 vertex_color_use_as_albedo = true
@@ -280,7 +280,7 @@ billboard_mode = 1
 billboard_keep_scale = true
 
 [sub_resource type="QuadMesh" id="QuadMesh_vqk84"]
-material = SubResource("StandardMaterial3D_kaigb")
+material = SubResource("StandardMaterial3D_77goy")
 
 [node name="Node3D" type="Node3D"]
 
