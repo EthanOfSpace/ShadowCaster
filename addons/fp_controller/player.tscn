@@ -387,6 +387,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 0.9, 2.08165e-12
 shape = SubResource("CapsuleShape3D_irl70")
 
 [node name="Placeholder_BodyMesh" type="MeshInstance3D" parent="Placeholder_Collider"]
+visible = false
 mesh = SubResource("CapsuleMesh_aufvi")
 skeleton = NodePath("../..")
 
@@ -587,6 +588,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.47237, 0)
 script = ExtResource("15_ttf0e")
 spells = Array[ExtResource("16_mkvci")]([ExtResource("17_a8wmt")])
 projectileSpawnPoint = NodePath("../CameraPivot/ProjectileSpawnPoint")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3570106, 0)
+light_energy = 0.003
+omni_range = 10.555
+omni_attenuation = 1.899
 
 [connection signal="transitioned" from="StateMachine" to="." method="_on_state_machine_transitioned"]
 [connection signal="draw" from="UserInterface/CrosshairContainer/Crosshair" to="UserInterface" method="_on_crosshair_draw"]

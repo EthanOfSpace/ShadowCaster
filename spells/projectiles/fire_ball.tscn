@@ -1,12 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://c17l2esajtdsn"]
+[gd_scene load_steps=5 format=3 uid="uid://c17l2esajtdsn"]
 
 [ext_resource type="Script" uid="uid://buuwnfdh6dnk3" path="res://entities/enemies/enemy_components/basic_projectile.gd" id="1_cobtl"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cobtl"]
-emission_enabled = true
-emission = Color(1.5574771, 1.3034385, 0, 1)
+[ext_resource type="PackedScene" uid="uid://chlqowhmf75dr" path="res://Particles/fireballparticle.tscn" id="2_gk58n"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_cobtl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gk58n"]
+albedo_color = Color(0.83465576, 0.38725078, 5.7756904e-07, 1)
+emission_enabled = true
+emission = Color(0.7525468, 0.46064132, 0, 1)
+emission_energy_multiplier = 5.0
 
 [node name="FireBall" type="Area3D"]
 script = ExtResource("1_cobtl")
@@ -16,8 +19,11 @@ damage = 10.0
 speed = 20.0
 despawn_time = 3.0
 
-[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
-material = SubResource("StandardMaterial3D_cobtl")
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_cobtl")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="CollisionShape3D"]
+radius = 0.1
+material = SubResource("StandardMaterial3D_gk58n")
+
+[node name="fireparticle" parent="CollisionShape3D" instance=ExtResource("2_gk58n")]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=3 uid="uid://ban6sx8l0boa1"]
+[gd_scene load_steps=78 format=3 uid="uid://ban6sx8l0boa1"]
 
 [ext_resource type="Material" uid="uid://cuydbbidn63ia" path="res://Art/Materials/depthTowerMatNew.tres" id="2_xdcwc"]
 [ext_resource type="Material" uid="uid://cfsq4oheuvfuq" path="res://Art/Materials/depthTowerMatNewArches.tres" id="3_fyiqq"]
@@ -11,7 +11,9 @@
 [ext_resource type="AudioStream" uid="uid://wyenrdnhyi0f" path="res://Audio/Music/hub geetar.mp3" id="10_vqk84"]
 [ext_resource type="Script" uid="uid://cr4y61480pokc" path="res://scripts/elevator.gd" id="11_77goy"]
 [ext_resource type="PackedScene" uid="uid://cmih1i1ptbjq1" path="res://Art/Enviroment Meshes/DepthTowerElevatorPlatform1.1.fbx" id="12_vqk84"]
+[ext_resource type="PackedScene" uid="uid://gsnabglu4jpu" path="res://Art/Enviroment Meshes/candlewall420.tscn" id="13_77goy"]
 [ext_resource type="Script" uid="uid://cgl4vem4q4wq6" path="res://nodes/interactable.gd" id="13_hw8n6"]
+[ext_resource type="PackedScene" uid="uid://bbxlmpd3brw7o" path="res://Art/Enviroment Meshes/bluefiretable.tscn" id="14_vqk84"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_nmasf"]
 data = PackedVector3Array(0.0063, 0, 0.0063, 0.0063, 0.024999999, 0.0063, 0.0063, 0.024999999, -0.0063, 0.0063, 0.024999999, -0.0063, 0.0063, 0, -0.0063, 0.0063, 0, 0.0063, -0.0063, 0.024999999, -0.0063, -0.0063, 0.024999999, 0.0063, -0.0063, 0, 0.0063, -0.0063, 0, 0.0063, -0.0063, 0, -0.0063, -0.0063, 0.024999999, -0.0063, 0.0063, 0.024999999, -0.0063, 0.0063, 0.024999999, 0.0063, -0.0063, 0.024999999, 0.0063, -0.0063, 0.024999999, 0.0063, -0.0063, 0.024999999, -0.0063, 0.0063, 0.024999999, -0.0063, -0.0063, 0, 0.0063, 0.0063, 0, 0.0063, 0.0063, 0, -0.0063, 0.0063, 0, -0.0063, -0.0063, 0, -0.0063, -0.0063, 0, 0.0063, -0.0063, 0.024999999, 0.0063, 0.0063, 0.024999999, 0.0063, 0.0063, 0, 0.0063, 0.0063, 0, 0.0063, -0.0063, 0, 0.0063, -0.0063, 0.024999999, 0.0063, 0.0063, 0, -0.0063, 0.0063, 0.024999999, -0.0063, -0.0063, 0.024999999, -0.0063, -0.0063, 0.024999999, -0.0063, -0.0063, 0, -0.0063, 0.0063, 0, -0.0063)
@@ -596,6 +598,7 @@ material_override = ExtResource("3_fyiqq")
 [node name="StaticBody3D" type="StaticBody3D" parent="EnvironmentMeshes/DepthTower1121/Tower/TowerMidLower2/DoubleArch_3" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnvironmentMeshes/DepthTower1121/Tower/TowerMidLower2/DoubleArch_3/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1479855e-05, 0, -0.00020834505)
 shape = SubResource("ConcavePolygonShape3D_1em0b")
 
 [node name="TowerSection_2" parent="EnvironmentMeshes/DepthTower1121/Tower/TowerMidLower3" index="0"]
@@ -684,6 +687,154 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.27767703, 0)
 [node name="WallCorner" parent="EnvironmentMeshes/DepthTower1121/group17" index="0"]
 material_override = ExtResource("4_vth84")
 
+[node name="Decoration" type="Node3D" parent="EnvironmentMeshes"]
+
+[node name="Lamps" type="Node3D" parent="EnvironmentMeshes/Decoration"]
+
+[node name="blockbench_export" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4118373, 241.4646, 15.47311)
+
+[node name="blockbench_export2" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5881627, 241.4646, 15.47311)
+
+[node name="blockbench_export3" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -3.5881627, 241.4646, -15.52689)
+
+[node name="blockbench_export4" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 3.4118373, 241.4646, -15.52689)
+
+[node name="blockbench_export9" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -3.5881627, 215.4646, -14.52689)
+
+[node name="blockbench_export10" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 3.4118373, 215.4646, -14.52689)
+
+[node name="blockbench_export25" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 14.411838, 215.4646, 0.07311019)
+
+[node name="blockbench_export27" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 14.411838, 215.4646, 7.07311)
+
+[node name="blockbench_export26" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 14.411838, 215.4646, -6.92689)
+
+[node name="blockbench_export28" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 14.411838, 189.4646, 0.07311019)
+
+[node name="blockbench_export29" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 14.411838, 189.4646, 7.07311)
+
+[node name="blockbench_export30" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 14.411838, 189.4646, -6.92689)
+
+[node name="blockbench_export31" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 14.411838, 163.4646, 0.07311019)
+
+[node name="blockbench_export32" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 14.411838, 163.4646, 7.07311)
+
+[node name="blockbench_export33" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 14.411838, 163.4646, -6.92689)
+
+[node name="blockbench_export34" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 14.411838, 137.4646, 0.07311019)
+
+[node name="blockbench_export35" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 14.411838, 137.4646, 7.07311)
+
+[node name="blockbench_export36" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 14.411838, 137.4646, -6.92689)
+
+[node name="blockbench_export37" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-2.1855693e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855693e-07, -14.588162, 137.4646, 0.073110014)
+
+[node name="blockbench_export38" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-2.1855693e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855693e-07, -14.588161, 137.4646, -6.92689)
+
+[node name="blockbench_export39" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-2.1855693e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855693e-07, -14.588163, 137.4646, 7.07311)
+
+[node name="blockbench_export40" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-2.1855693e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855693e-07, -14.588162, 163.4646, 0.073110014)
+
+[node name="blockbench_export41" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-2.1855693e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855693e-07, -14.588161, 163.4646, -6.92689)
+
+[node name="blockbench_export42" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-2.1855693e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855693e-07, -14.588163, 163.4646, 7.07311)
+
+[node name="blockbench_export43" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-2.1855693e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855693e-07, -14.588162, 189.4646, 0.073110014)
+
+[node name="blockbench_export44" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-2.1855693e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855693e-07, -14.588161, 189.4646, -6.92689)
+
+[node name="blockbench_export45" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-2.1855693e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855693e-07, -14.588163, 189.4646, 7.07311)
+
+[node name="blockbench_export46" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-2.1855693e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855693e-07, -14.588162, 215.4646, 0.073110014)
+
+[node name="blockbench_export47" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-2.1855693e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855693e-07, -14.588161, 215.4646, -6.92689)
+
+[node name="blockbench_export48" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-2.1855693e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855693e-07, -14.588163, 215.4646, 7.07311)
+
+[node name="blockbench_export13" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -3.5881627, 189.4646, -14.52689)
+
+[node name="blockbench_export14" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 3.4118373, 189.4646, -14.52689)
+
+[node name="blockbench_export15" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -3.5881627, 163.4646, -14.52689)
+
+[node name="blockbench_export16" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 3.4118373, 163.4646, -14.52689)
+
+[node name="blockbench_export17" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -3.5881627, 137.4646, -14.52689)
+
+[node name="blockbench_export18" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 3.4118373, 137.4646, -14.52689)
+
+[node name="blockbench_export11" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, 3.4118373, 215.4646, 14.47311)
+
+[node name="blockbench_export12" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -3.5881627, 215.4646, 14.47311)
+
+[node name="blockbench_export19" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, 3.4118373, 189.4646, 14.47311)
+
+[node name="blockbench_export20" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -3.5881627, 189.4646, 14.47311)
+
+[node name="blockbench_export21" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, 3.4118373, 163.4646, 14.47311)
+
+[node name="blockbench_export22" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -3.5881627, 163.4646, 14.47311)
+
+[node name="blockbench_export23" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, 3.4118373, 137.4646, 14.47311)
+
+[node name="blockbench_export24" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -3.5881627, 137.4646, 14.47311)
+
+[node name="blockbench_export5" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 15.53085, 241.4646, -3.5268898)
+
+[node name="blockbench_export6" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 15.53085, 241.4646, 3.4731102)
+
+[node name="blockbench_export7" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, -15.46915, 241.4646, 3.4731102)
+
+[node name="blockbench_export8" parent="EnvironmentMeshes/Decoration/Lamps" instance=ExtResource("13_77goy")]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, -15.46915, 241.4646, -3.5268898)
+
 [node name="Player" parent="." instance=ExtResource("5_56pd4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 241.36646, -9.018669)
 
@@ -705,42 +856,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 38.846237, 0)
 top_level = true
 size = Vector3(1000, 135.75, 1000)
 material = SubResource("FogMaterial_vth84")
-
-[node name="OmniLight3D2" type="OmniLight3D" parent="Lighting"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 244.95784, 0)
-light_color = Color(1, 0.73333335, 0, 1)
-light_energy = 2.079
-omni_range = 31.441
-
-[node name="OmniLight3D3" type="OmniLight3D" parent="Lighting"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.409447, 221.0793, 0)
-light_color = Color(1, 0.73333335, 0, 1)
-light_energy = 2.079
-omni_range = 31.441
-
-[node name="OmniLight3D4" type="OmniLight3D" parent="Lighting"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.671772, 195.41396, 0)
-light_color = Color(1, 0.73333335, 0, 1)
-light_energy = 2.079
-omni_range = 31.441
-
-[node name="OmniLight3D5" type="OmniLight3D" parent="Lighting"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.671772, 195.41396, 0)
-light_color = Color(1, 0.73333335, 0, 1)
-light_energy = 2.079
-omni_range = 31.441
-
-[node name="OmniLight3D6" type="OmniLight3D" parent="Lighting"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.070026, 195.41396, 0)
-light_color = Color(1, 0.73333335, 0, 1)
-light_energy = 2.079
-omni_range = 31.441
-
-[node name="OmniLight3D7" type="OmniLight3D" parent="Lighting"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.070026, 195.41396, 0)
-light_color = Color(1, 0.73333335, 0, 1)
-light_energy = 2.079
-omni_range = 31.441
 
 [node name="Area3D" parent="." instance=ExtResource("8_mrp8i")]
 transform = Transform3D(-0.99948436, 0, -0.032108597, 0, 1, 0, 0.032108597, 0, -0.99948436, 1.4138813, 216.12003, -107.85594)
@@ -809,12 +924,15 @@ horizontal_alignment = 1
 
 [node name="GPUParticles3D2" type="GPUParticles3D" parent="particles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 272.82275, 0)
-amount = 2048
+amount = 4000
 lifetime = 7.35
 visibility_aabb = AABB(-457.65057, -111.888794, -441.9976, 903.3031, 223.33725, 881.29224)
 trail_lifetime = 2.21
 process_material = SubResource("ParticleProcessMaterial_nmasf")
 draw_pass_1 = SubResource("QuadMesh_vqk84")
+
+[node name="blockbench_export" parent="." instance=ExtResource("14_vqk84")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08202994, 214.88521, -106.82215)
 
 [connection signal="interacted" from="Elevator/Interactable" to="Elevator" method="move_elevator_down_floor"]
 

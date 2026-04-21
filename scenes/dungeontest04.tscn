@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://lohha7tfqg73"]
+[gd_scene load_steps=10 format=3 uid="uid://lohha7tfqg73"]
 
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="1_g7y5c"]
 [ext_resource type="MeshLibrary" uid="uid://bjcqkmtfre2oi" path="res://TileSet/RampTileSet.tres" id="1_pl5ae"]
 [ext_resource type="AudioStream" uid="uid://cyctix5su5jsj" path="res://Audio/Music/Drone 1 dank crypt.mp3" id="2_ir7kt"]
+[ext_resource type="PackedScene" uid="uid://ojm8ipbtfo4g" path="res://Art/Enviroment Meshes/bluefirecandles.tscn" id="3_tedk1"]
 
 [sub_resource type="Gradient" id="Gradient_ir7kt"]
 offsets = PackedFloat32Array(0, 0.4385965, 1)
@@ -27,6 +28,7 @@ tonemap_mode = 2
 ssao_enabled = true
 fog_mode = 1
 fog_density = 1.0
+volumetric_fog_enabled = true
 volumetric_fog_density = 0.1
 adjustment_enabled = true
 adjustment_contrast = 1.2
@@ -47,6 +49,32 @@ data = {
 }
 metadata/_editor_floor_ = Vector3(0, 6, 0)
 
+[node name="decorations" type="Node3D" parent="Environment/EnvironmentMeshes"]
+
+[node name="blockbench_export2" parent="Environment/EnvironmentMeshes/decorations" instance=ExtResource("3_tedk1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -11.002685, 0.10309875, 1.6647452)
+
+[node name="blockbench_export4" parent="Environment/EnvironmentMeshes/decorations" instance=ExtResource("3_tedk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.002686, 0.10309875, 1.6647452)
+
+[node name="blockbench_export5" parent="Environment/EnvironmentMeshes/decorations" instance=ExtResource("3_tedk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.002686, 0.10309875, 1.6647452)
+
+[node name="blockbench_export6" parent="Environment/EnvironmentMeshes/decorations" instance=ExtResource("3_tedk1")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -31.402685, 0.10309875, -21.035255)
+
+[node name="blockbench_export7" parent="Environment/EnvironmentMeshes/decorations" instance=ExtResource("3_tedk1")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -37.402687, 0.10309875, -21.035255)
+
+[node name="blockbench_export8" parent="Environment/EnvironmentMeshes/decorations" instance=ExtResource("3_tedk1")]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -37.402687, 0.10309875, -23.035255)
+
+[node name="blockbench_export9" parent="Environment/EnvironmentMeshes/decorations" instance=ExtResource("3_tedk1")]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -31.402687, 0.10309875, -23.035255)
+
+[node name="blockbench_export3" parent="Environment/EnvironmentMeshes/decorations" instance=ExtResource("3_tedk1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -11.002685, 0.10309875, -6.3352547)
+
 [node name="Ambient" type="Node3D" parent="Environment"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Environment/Ambient"]
@@ -57,15 +85,11 @@ parameters/looping = true
 
 [node name="Lighting" type="Node3D" parent="."]
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Lighting"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.33039, 2.9009113, -9.32909)
-light_color = Color(0.82911116, 0.55308765, 0, 1)
-omni_range = 7.746
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Lighting"]
 environment = SubResource("Environment_uiek6")
 
 [node name="Player" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 6, -30)
 
 [node name="Player" parent="Player" instance=ExtResource("1_g7y5c")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, -2)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 46, -6, 28)

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://3nyfldy6u40j"
-path="res://.godot/imported/DungeonFloor.fbx-7c2972ee51862306fab2196a793849b3.scn"
+uid="uid://c5i6cct6f2bo7"
+path="res://.godot/imported/candlewall420.gltf-68cdd734a6e69871e35568e13cd66e22.scn"
 
 [deps]
 
-source_file="res://Art/Enviroment Meshes/DungeonFloor.fbx"
-dest_files=["res://.godot/imported/DungeonFloor.fbx-7c2972ee51862306fab2196a793849b3.scn"]
+source_file="res://Art/Enviroment Meshes/candlewall420.gltf"
+dest_files=["res://.godot/imported/candlewall420.gltf-68cdd734a6e69871e35568e13cd66e22.scn"]
 
 [params]
 
@@ -30,7 +30,7 @@ meshes/force_disable_compression=false
 skins/use_named_skins=true
 animation/import=true
 animation/fps=30
-animation/trimming=true
+animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
@@ -38,7 +38,5 @@ materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
 _subresources={}
-fbx/importer=0
-fbx/allow_geometry_helper_nodes=false
-fbx/embedded_image_handling=1
-fbx/naming_version=2
+gltf/naming_version=2
+gltf/embedded_image_handling=1

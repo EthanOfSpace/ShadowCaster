@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://cos38u0xwuisp"]
+
+[ext_resource type="Texture2D" uid="uid://cgssg0uyx5bki" path="res://Particles/PNG (Transparent)/smoke_08.png" id="1_bjll0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58ffe"]
+transparency = 1
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_bjll0")
+billboard_mode = 1
+
+[sub_resource type="Gradient" id="Gradient_pl540"]
+offsets = PackedFloat32Array(0, 0.5, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0.46, 0.46, 0.46, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ehn2o"]
+gradient = SubResource("Gradient_pl540")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_a2hpj"]
+emission_shape_scale = Vector3(2.045, 0.55, 1)
+emission_shape = 1
+emission_sphere_radius = 4.0
+angle_min = -720.0
+angle_max = 720.0
+gravity = Vector3(0, 0, 0)
+color_ramp = SubResource("GradientTexture1D_ehn2o")
+
+[sub_resource type="QuadMesh" id="QuadMesh_da4rw"]
+
+[node name="CloudParticle" type="Node3D"]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+material_override = SubResource("StandardMaterial3D_58ffe")
+amount = 2048
+lifetime = 15.0
+process_material = SubResource("ParticleProcessMaterial_a2hpj")
+draw_pass_1 = SubResource("QuadMesh_da4rw")

@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cauhltw2qe5hr"]
+[gd_scene load_steps=8 format=3 uid="uid://cauhltw2qe5hr"]
 
 [ext_resource type="AudioStream" uid="uid://cyctix5su5jsj" path="res://Audio/Music/Drone 1 dank crypt.mp3" id="1_racb0"]
 [ext_resource type="MeshLibrary" uid="uid://ctlywdo54341s" path="res://TileSet/dungeontilesetupdated.tres" id="2_7tbvv"]
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="3_d1hrp"]
+[ext_resource type="PackedScene" uid="uid://bbxlmpd3brw7o" path="res://Art/Enviroment Meshes/bluefiretable.tscn" id="4_7tbvv"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_racb0"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -51,3 +52,6 @@ environment = SubResource("Environment_7tbvv")
 [node name="Player" parent="Player" instance=ExtResource("3_d1hrp")]
 
 [node name="enemies" type="Node3D" parent="."]
+
+[node name="blockbench_export" parent="." instance=ExtResource("4_7tbvv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 6)

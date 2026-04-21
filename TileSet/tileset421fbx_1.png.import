@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://o3buhlvbp22j"
-path.s3tc="res://.godot/imported/walllargeupd_1.png-b961c6da20dda9f651dc289fa4cab6d3.s3tc.ctex"
+uid="uid://bitc66h2grljj"
+path.s3tc="res://.godot/imported/tileset421fbx_1.png-284050e2ac944fd21c6836e7f38a68ed.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "2e394a1d4301ea1aff10d5ee3a91a5d6"
+"md5": "9de238c77686f86dfdd5a1a261ab8b35"
 }
 
 [deps]
 
-source_file="res://Art/Enviroment Meshes/walllargeupd_1.png"
-dest_files=["res://.godot/imported/walllargeupd_1.png-b961c6da20dda9f651dc289fa4cab6d3.s3tc.ctex"]
+source_file="res://TileSet/tileset421fbx_1.png"
+dest_files=["res://.godot/imported/tileset421fbx_1.png-284050e2ac944fd21c6836e7f38a68ed.s3tc.ctex"]
 
 [params]
 

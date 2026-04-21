@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://vw5q85i22qw3" path="res://weapons/essential/base_weapon_class.gd" id="1_4aqmg"]
 [ext_resource type="Script" uid="uid://bpkbe3xct3suh" path="res://weapons/essential/weapon_hitbox.gd" id="2_dethn"]
-[ext_resource type="PackedScene" uid="uid://dnawkq47qhoel" path="res://Art/Weapon Meshes/skeletonlongsword.fbx" id="3_dethn"]
+[ext_resource type="PackedScene" uid="uid://ca8tn6mxm7okm" path="res://weapons/pixeltestsword.glb" id="3_dethn"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4aqmg"]
 radius = 0.453335
@@ -332,16 +332,8 @@ monitoring = false
 script = ExtResource("2_dethn")
 knockback = 15.0
 
-[node name="skeletonlongsword" parent="MeshPivot/WeaponMesh/Hitbox" instance=ExtResource("3_dethn")]
-transform = Transform3D(-0.22083648, -1.9306137e-08, -0.1275, 2.2292808e-08, -0.255, 0, -0.1275, -1.1146404e-08, 0.22083648, -0.03997134, 0.83611447, 2.3748725e-10)
-
-[node name="OmniLight3D" type="OmniLight3D" parent="MeshPivot/WeaponMesh/Hitbox/skeletonlongsword"]
-transform = Transform3D(3.9215696, 1.0728836e-06, 9.536743e-07, 2.0861626e-07, 3.9215705, -1.013279e-06, 5.9604645e-08, 6.7055225e-08, 3.921567, -0.01203274, 4.876644, -0.008113906)
-light_color = Color(0, 0.8450783, 0.7356637, 1)
-light_energy = 1.165
-light_indirect_energy = 4.464
-light_volumetric_fog_energy = 0.1
-omni_range = 10.319
+[node name="pixeltestsword" parent="MeshPivot/WeaponMesh/Hitbox" instance=ExtResource("3_dethn")]
+transform = Transform3D(-0.18853883, 0.013800193, -0.18570857, -0.029870901, -0.26309058, 0.010775562, -0.18380925, 0.028599473, 0.18873574, -0.028420765, 0.8153477, -0.07451555)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshPivot/WeaponMesh/Hitbox"]
 transform = Transform3D(0.9999999, -1.7806888e-06, 1.4901161e-07, 4.246831e-07, 0.999996, 8.6426735e-07, -2.9802322e-08, 4.7683716e-07, 0.9999998, 0.054337583, -0.56223094, -2.9802322e-08)

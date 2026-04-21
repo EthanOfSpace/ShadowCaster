@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuxltl6oevb4k"]
+
+[ext_resource type="PackedScene" uid="uid://bno3fuul7t5qh" path="res://Art/Enviroment Meshes/dungeontable.glb" id="1_twtp2"]
+[ext_resource type="Material" uid="uid://cqin7jw35dsc1" path="res://Art/Materials/wood.tres" id="2_c5pq4"]
+
+[node name="blockbench_export" instance=ExtResource("1_twtp2")]
+
+[node name="beveled_cuboid" parent="group" index="0"]
+material_override = ExtResource("2_c5pq4")
+
+[node name="mesh" parent="group" index="1"]
+material_override = ExtResource("2_c5pq4")
+
+[node name="mesh2" parent="group" index="2"]
+material_override = ExtResource("2_c5pq4")
+
+[node name="mesh3" parent="group" index="3"]
+material_override = ExtResource("2_c5pq4")
+
+[node name="mesh4" parent="group" index="4"]
+material_override = ExtResource("2_c5pq4")

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dp4bq5s07veue"
-path="res://.godot/imported/walllargeupd.gltf-4d41eeb2b2a655f87f60923596f6d198.scn"
+uid="uid://c3phwlh8r0wv2"
+path="res://.godot/imported/candletable420.gltf-68be97bc2d04eef1c674ed4aed2da64c.scn"
 
 [deps]
 
-source_file="res://Art/Enviroment Meshes/walllargeupd.gltf"
-dest_files=["res://.godot/imported/walllargeupd.gltf-4d41eeb2b2a655f87f60923596f6d198.scn"]
+source_file="res://Art/Enviroment Meshes/candletable420.gltf"
+dest_files=["res://.godot/imported/candletable420.gltf-68be97bc2d04eef1c674ed4aed2da64c.scn"]
 
 [params]
 
