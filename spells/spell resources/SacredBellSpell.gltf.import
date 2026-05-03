@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://y7dwotoulm0a"
-path="res://.godot/imported/skull.gltf-13d8d6192c75600a0d75fa89491ac89a.scn"
+uid="uid://c1m0nj21fpvmb"
+path="res://.godot/imported/SacredBellSpell.gltf-09f5e04f5baaf3bef32672a6f410b279.scn"
 
 [deps]
 
-source_file="res://weapons/skull.gltf"
-dest_files=["res://.godot/imported/skull.gltf-13d8d6192c75600a0d75fa89491ac89a.scn"]
+source_file="res://spells/spell resources/SacredBellSpell.gltf"
+dest_files=["res://.godot/imported/SacredBellSpell.gltf-09f5e04f5baaf3bef32672a6f410b279.scn"]
 
 [params]
 

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxnw3yo03waey"]
+
+[ext_resource type="PackedScene" uid="uid://c1m0nj21fpvmb" path="res://spells/spell resources/SacredBellSpell.gltf" id="1_vqb70"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pkctx"]
+cull_mode = 2
+albedo_color = Color(0, 0, 0, 1)
+emission_enabled = true
+emission = Color(1, 0.7666667, 0, 1)
+emission_energy_multiplier = 5.0
+
+[node name="bellspell" instance=ExtResource("1_vqb70")]
+
+[node name="circle" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_pkctx")
