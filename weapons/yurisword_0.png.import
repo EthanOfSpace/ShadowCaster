@@ -2,19 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlk5lhx6tpgsb"
-path="res://.godot/imported/flamemace_0.png-0ad8252cfcc64a3ce289b0aae63e9206.ctex"
+uid="uid://csyeqcx8k7l18"
+path="res://.godot/imported/yurisword_0.png-2329e9cfee9ffbc72d687662564345eb.ctex"
 metadata={
 "vram_texture": false
 }
 generator_parameters={
-"md5": "e8fbdcfb93f7775a1181ee1531f76786"
+"md5": "99d39a4534964bc7df29319e845fd3cc"
 }
 
 [deps]
 
-source_file="res://weapons/flamemace_0.png"
-dest_files=["res://.godot/imported/flamemace_0.png-0ad8252cfcc64a3ce289b0aae63e9206.ctex"]
+source_file="res://weapons/yurisword_0.png"
+dest_files=["res://.godot/imported/yurisword_0.png-2329e9cfee9ffbc72d687662564345eb.ctex"]
 
 [params]
 

@@ -2,21 +2,23 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ipiyj41e5t1b"
-path.s3tc="res://.godot/imported/crystallegendswordemmissive.png-fe820e61a086370609861c43e31953ce.s3tc.ctex"
+uid="uid://dhj6oo37eydkx"
+path="res://.godot/imported/longhaftsword_0.png-150e48d53bc3f116fcda1c47210d5969.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
+}
+generator_parameters={
+"md5": "b459674831796c58f83bcaf75c07f5d9"
 }
 
 [deps]
 
-source_file="res://weapons/crystallegendswordemmissive.png"
-dest_files=["res://.godot/imported/crystallegendswordemmissive.png-fe820e61a086370609861c43e31953ce.s3tc.ctex"]
+source_file="res://longhaftsword_0.png"
+dest_files=["res://.godot/imported/longhaftsword_0.png-150e48d53bc3f116fcda1c47210d5969.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -24,7 +26,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""

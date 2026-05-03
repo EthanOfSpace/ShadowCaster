@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://ca8tn6mxm7okm"
-path="res://.godot/imported/pixeltestsword.glb-18a366f6db785845e2f2f4f01f2fdf2f.scn"
+uid="uid://dcin12xwsp5qc"
+path="res://.godot/imported/LucerneHead.gltf-b5b641f429b645bd0830ff775c8510cc.scn"
 
 [deps]
 
-source_file="res://weapons/pixeltestsword.glb"
-dest_files=["res://.godot/imported/pixeltestsword.glb-18a366f6db785845e2f2f4f01f2fdf2f.scn"]
+source_file="res://weapons/LucerneHead.gltf"
+dest_files=["res://.godot/imported/LucerneHead.gltf-b5b641f429b645bd0830ff775c8510cc.scn"]
 
 [params]
 

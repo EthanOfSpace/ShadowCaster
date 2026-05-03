@@ -2,24 +2,23 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqkbb8dkghqnf"
-path.s3tc="res://.godot/imported/pixeltestsword_Image_0.png-2b847357c499e90317fbfe8425639add.s3tc.ctex"
+uid="uid://bet8cry4n063q"
+path="res://.godot/imported/friedesword_0.png-79413799963e6123a73748f84cc6895c.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 generator_parameters={
-"md5": "d885afc45a2f54812e43f8f055d81d40"
+"md5": "d73e0501ebe62bc838fc4cffd80ed264"
 }
 
 [deps]
 
-source_file="res://weapons/pixeltestsword_Image_0.png"
-dest_files=["res://.godot/imported/pixeltestsword_Image_0.png-2b847357c499e90317fbfe8425639add.s3tc.ctex"]
+source_file="res://weapons/friedesword_0.png"
+dest_files=["res://.godot/imported/friedesword_0.png-79413799963e6123a73748f84cc6895c.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -27,7 +26,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""

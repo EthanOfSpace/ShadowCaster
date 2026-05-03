@@ -2,19 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlk5lhx6tpgsb"
-path="res://.godot/imported/flamemace_0.png-0ad8252cfcc64a3ce289b0aae63e9206.ctex"
+uid="uid://dulibwgovvjqc"
+path="res://.godot/imported/LucerneHead_0.png-3d1fe80b63d9d1f4c4be2726830fecef.ctex"
 metadata={
 "vram_texture": false
 }
 generator_parameters={
-"md5": "e8fbdcfb93f7775a1181ee1531f76786"
+"md5": "2df2ba27d7b0a47e1e82918003097c0e"
 }
 
 [deps]
 
-source_file="res://weapons/flamemace_0.png"
-dest_files=["res://.godot/imported/flamemace_0.png-0ad8252cfcc64a3ce289b0aae63e9206.ctex"]
+source_file="res://weapons/LucerneHead_0.png"
+dest_files=["res://.godot/imported/LucerneHead_0.png-3d1fe80b63d9d1f4c4be2726830fecef.ctex"]
 
 [params]
 

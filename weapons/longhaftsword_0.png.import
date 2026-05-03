@@ -2,23 +2,24 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlk5lhx6tpgsb"
-path="res://.godot/imported/flamemace_0.png-0ad8252cfcc64a3ce289b0aae63e9206.ctex"
+uid="uid://gwugmtf0h1gh"
+path.s3tc="res://.godot/imported/longhaftsword_0.png-bad0b62f7489b89b4bc98ce4cae2db2b.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
-"md5": "e8fbdcfb93f7775a1181ee1531f76786"
+"md5": "b459674831796c58f83bcaf75c07f5d9"
 }
 
 [deps]
 
-source_file="res://weapons/flamemace_0.png"
-dest_files=["res://.godot/imported/flamemace_0.png-0ad8252cfcc64a3ce289b0aae63e9206.ctex"]
+source_file="res://weapons/longhaftsword_0.png"
+dest_files=["res://.godot/imported/longhaftsword_0.png-bad0b62f7489b89b4bc98ce4cae2db2b.s3tc.ctex"]
 
 [params]
 
-compress/mode=3
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -26,7 +27,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=false
+mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""

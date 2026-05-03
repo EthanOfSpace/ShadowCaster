@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dq57nu13funbm"
-path="res://.godot/imported/crystallegendsword523.glb-80bb94458df6ec8075a1d806b3b24fac.scn"
+uid="uid://80oo1gccrrdm"
+path="res://.godot/imported/friedesword.gltf-a72a99c41306800156e4d5b504f9b008.scn"
 
 [deps]
 
-source_file="res://weapons/crystallegendsword523.glb"
-dest_files=["res://.godot/imported/crystallegendsword523.glb-80bb94458df6ec8075a1d806b3b24fac.scn"]
+source_file="res://weapons/friedesword.gltf"
+dest_files=["res://.godot/imported/friedesword.gltf-a72a99c41306800156e4d5b504f9b008.scn"]
 
 [params]
 
