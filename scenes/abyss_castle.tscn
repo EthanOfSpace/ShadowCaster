@@ -126,38 +126,3 @@ process_material = SubResource("ParticleProcessMaterial_j07ft")
 draw_pass_1 = SubResource("QuadMesh_l3613")
 
 [node name="CSGs" type="Node3D" parent="."]
-
-[node name="CSGBox3D" type="CSGBox3D" parent="CSGs"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.5, 21.015154, -143.5)
-use_collision = true
-size = Vector3(6, 1, 4)
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="CSGs"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.5, 21.007736, -139.5)
-use_collision = true
-size = Vector3(6, 1, 4)
-
-[node name="CSGBox3D4" type="CSGBox3D" parent="CSGs"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.7046, 21.007736, -123.65054)
-use_collision = true
-size = Vector3(16, 1, 4)
-
-[node name="CSGBox3D5" type="CSGBox3D" parent="CSGs"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.402466, 21.007736, -111.16877)
-use_collision = true
-size = Vector3(15, 1, 4)
-
-[node name="CSGBox3D6" type="CSGBox3D" parent="CSGs"]
-transform = Transform3D(0.45030108, 0, 0.8928769, 0, 1, 0, -0.8928769, 0, 0.45030108, 89.14844, 21.01639, -116.39486)
-use_collision = true
-size = Vector3(15, 1, 4)
-
-[node name="CSGBox3D3" type="CSGBox3D" parent="CSGs"]
-transform = Transform3D(0.4675596, 0, 0.88396156, 0, 1, 0, -0.88396156, 0, 0.4675596, 76.258415, 21, -116.81327)
-use_collision = true
-size = Vector3(49, 1, 4)
-
-[node name="CSGBox3D7" type="CSGBox3D" parent="CSGs"]
-transform = Transform3D(0.9999982, 0, 0.0019372553, -0.00013810411, 0.9974557, 0.071288414, -0.0019323264, -0.07128854, 0.9974539, 36.950672, 21.000828, -94.14834)
-use_collision = true
-size = Vector3(61, 1, 4)

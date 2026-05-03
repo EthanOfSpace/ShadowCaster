@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://csp002is43uyu"]
-
-[ext_resource type="PackedScene" uid="uid://dma1yyv6wcfxi" path="res://weapons/yurisword.gltf" id="1_02iw0"]
-
-[node name="blockbench_export" instance=ExtResource("1_02iw0")]

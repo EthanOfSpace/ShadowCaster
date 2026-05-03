@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyob61qw6jh68"]
+
+[ext_resource type="PackedScene" uid="uid://dq57nu13funbm" path="res://weapons/crystallegendsword523.glb" id="1_5bgoy"]
+[ext_resource type="Material" uid="uid://cdmj0w0r284oh" path="res://weapons/new_standard_material_3d.tres" id="2_lhdu5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5bgoy"]
+albedo_color = Color(0, 0, 0, 1)
+emission_enabled = true
+emission = Color(2.9359758e-06, 0.5501344, 0.454839, 1)
+emission_energy_multiplier = 1.31
+
+[node name="crystallegendsword" instance=ExtResource("1_5bgoy")]
+
+[node name="hilt" parent="sword" index="0"]
+material_override = ExtResource("2_lhdu5")
+
+[node name="cone" parent="sword" index="1"]
+material_override = ExtResource("2_lhdu5")
+
+[node name="crossguard" parent="sword" index="2"]
+material_override = ExtResource("2_lhdu5")
+
+[node name="blade" parent="sword" index="3"]
+material_override = ExtResource("2_lhdu5")
+
+[node name="hiltemissive" parent="sword" index="4"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5bgoy")
+
+[node name="coneemissive" parent="sword" index="5"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5bgoy")
+
+[node name="crossguardemissive" parent="sword" index="6"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5bgoy")
+
+[node name="bladeemissive" parent="sword" index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.20249999)
+surface_material_override/0 = SubResource("StandardMaterial3D_5bgoy")

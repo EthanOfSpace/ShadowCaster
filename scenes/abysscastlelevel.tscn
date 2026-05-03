@@ -4,8 +4,14 @@
 [ext_resource type="PackedScene" uid="uid://dd0pb5eqw6fdo" path="res://scenes/AbyssCastle.tscn" id="2_01eu0"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_01eu0"]
-sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
-ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+sky_top_color = Color(0.03285571, 1.5349196e-05, 0.059853427, 1)
+sky_horizon_color = Color(0.04920447, 0.0018737369, 0.042086035, 1)
+sky_curve = 4.6364875
+sky_energy_multiplier = 11.82
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0.58, 0.17979999, 0.48661986, 1)
+ground_curve = 0.298571
+energy_multiplier = 0.1
 
 [sub_resource type="Sky" id="Sky_3cday"]
 sky_material = SubResource("ProceduralSkyMaterial_01eu0")
@@ -30,3 +36,20 @@ transform = Transform3D(40, 0, 0, 0, 40, 0, 0, 0, 40, 0, 0, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Lighting"]
 environment = SubResource("Environment_ykmn0")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lighting"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 180.82532, -81.351555)
+light_color = Color(0.83543277, 0.6326476, 1, 1)
+light_energy = 16.0
+light_indirect_energy = 10.0
+light_volumetric_fog_energy = 16.0
+omni_range = 535.039
+omni_attenuation = 0.72
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Lighting"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 151.82532, 17.648445)
+light_color = Color(1, 0, 0, 1)
+light_energy = 20.0
+light_indirect_energy = 4.0
+omni_range = 100.0
+omni_attenuation = 0.5

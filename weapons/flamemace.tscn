@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvsr0edko2rec"]
+
+[ext_resource type="PackedScene" uid="uid://bbb1k4lupja1e" path="res://weapons/flamemace.gltf" id="1_bxx81"]
+[ext_resource type="PackedScene" uid="uid://cdmfc047ru5gi" path="res://Particles/flamemaceparticle.tscn" id="2_y27dx"]
+
+[node name="blockbench_export" instance=ExtResource("1_bxx81")]
+
+[node name="fireparticle" parent="." index="1" instance=ExtResource("2_y27dx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1948937, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3000001, 0)
+light_color = Color(0.89526474, 0.52940834, 9.62615e-07, 1)
+light_size = 1.0
