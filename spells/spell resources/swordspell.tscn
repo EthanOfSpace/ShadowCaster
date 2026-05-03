@@ -12,3 +12,10 @@ emission_energy_multiplier = 5.0
 
 [node name="SacredSword" parent="." index="0"]
 surface_material_override/0 = SubResource("StandardMaterial3D_yr1mf")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3471917, 0)
+light_color = Color(1, 0.76862746, 0, 1)
+light_energy = 3.0
+light_size = 3.0
+omni_range = 10.0
