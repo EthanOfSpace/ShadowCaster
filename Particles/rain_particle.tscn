@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://cg88mk4uo670l"]
+
+[ext_resource type="Texture2D" uid="uid://b3juy17umj85v" path="res://Particles/PNG (Transparent)/circle_05.png" id="1_x2do3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4xh5r"]
+transparency = 1
+albedo_texture = ExtResource("1_x2do3")
+emission_enabled = true
+emission = Color(0.7602548, 0.8422235, 1, 1)
+billboard_mode = 1
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_o17ro"]
+emission_shape = 3
+emission_box_extents = Vector3(400, 1, 400)
+
+[sub_resource type="QuadMesh" id="QuadMesh_r2jr1"]
+size = Vector2(0.04, 2.335)
+
+[node name="RainParticle" type="Node3D"]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+material_override = SubResource("StandardMaterial3D_4xh5r")
+amount = 8000
+process_material = SubResource("ParticleProcessMaterial_o17ro")
+draw_pass_1 = SubResource("QuadMesh_r2jr1")

@@ -6,7 +6,7 @@
 [ext_resource type="Material" uid="uid://mw6aj4yendvt" path="res://Art/Materials/depthTowerBridges.tres" id="5_8ifsc"]
 [ext_resource type="AudioStream" uid="uid://3vhb13vxdxq3" path="res://Audio/Ambience/wind.mp3" id="5_o78cm"]
 [ext_resource type="Script" uid="uid://cr4y61480pokc" path="res://scripts/elevator.gd" id="6_pd7dv"]
-[ext_resource type="PackedScene" uid="uid://76rifsmrghju" path="res://Art/Enviroment Meshes/DepthTowerFBXDemo.fbx" id="7_5lbmj"]
+[ext_resource type="PackedScene" path="res://Art/Enviroment Meshes/DepthTowerFBXDemo.fbx" id="7_5lbmj"]
 [ext_resource type="Material" uid="uid://cuydbbidn63ia" path="res://Art/Materials/depthTowerMatNew.tres" id="7_y8egi"]
 [ext_resource type="PackedScene" uid="uid://cmih1i1ptbjq1" path="res://Art/Enviroment Meshes/DepthTowerElevatorPlatform1.1.fbx" id="9_vsi1p"]
 [ext_resource type="Script" uid="uid://cgl4vem4q4wq6" path="res://nodes/interactable.gd" id="9_xyevo"]

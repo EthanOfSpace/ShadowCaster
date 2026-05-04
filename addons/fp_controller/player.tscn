@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://dlbkch6iuy8gn"]
+[gd_scene load_steps=34 format=3 uid="uid://dlbkch6iuy8gn"]
 
 [ext_resource type="Script" uid="uid://cigv0n5jvforp" path="res://addons/fp_controller/scripts/player.gd" id="1_5ras8"]
 [ext_resource type="Script" uid="uid://bg3yypedv4af7" path="res://addons/fp_controller/scripts/smooth_camera.gd" id="2_1py82"]
@@ -17,6 +17,8 @@
 [ext_resource type="Script" uid="uid://q6ebmoe7mmiv" path="res://addons/fp_controller/spell_manager.gd" id="15_ttf0e"]
 [ext_resource type="Script" uid="uid://cipm8dypm6ct5" path="res://spells/spell scripts/spell_strategy.gd" id="16_mkvci"]
 [ext_resource type="Resource" uid="uid://no4j2vjbff1t" path="res://spells/spell resources/fireball.tres" id="17_a8wmt"]
+[ext_resource type="Resource" uid="uid://dpu3vblf6ckj1" path="res://spells/spell resources/bell.tres" id="18_a8wmt"]
+[ext_resource type="Resource" uid="uid://c4h7as1x2v0af" path="res://spells/spell resources/sacredSword.tres" id="19_gd45c"]
 
 [sub_resource type="Animation" id="Animation_5udu4"]
 length = 0.001
@@ -586,7 +588,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.47237, 0)
 
 [node name="SpellManager" type="Node3D" parent="." node_paths=PackedStringArray("projectileSpawnPoint")]
 script = ExtResource("15_ttf0e")
-spells = Array[ExtResource("16_mkvci")]([ExtResource("17_a8wmt")])
+spells = Array[ExtResource("16_mkvci")]([ExtResource("17_a8wmt"), ExtResource("18_a8wmt"), ExtResource("19_gd45c"), null])
 projectileSpawnPoint = NodePath("../CameraPivot/ProjectileSpawnPoint")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]

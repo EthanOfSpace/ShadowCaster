@@ -128,13 +128,13 @@ material_override = ExtResource("2_agex3")
 shape = SubResource("ConcavePolygonShape3D_0icj6")
 
 [node name="fireparticle" parent="." index="1" instance=ExtResource("3_agex3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.102407455, 1.3735634, 0.021435708)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11270332, 1.3735634, 0.00084379315)
 
 [node name="fireparticle3" parent="." index="2" instance=ExtResource("3_agex3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05256188, 1.2104979, -0.11709866)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04483974, 1.2104979, -0.12996852)
 
 [node name="fireparticle2" parent="." index="3" instance=ExtResource("3_agex3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07917863, 1.4788072, 0.07016829)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07917875, 1.4788072, 0.062446296)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." index="4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5284117, -0.05548981)

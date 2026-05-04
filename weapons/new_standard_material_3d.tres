@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cdmj0w0r284oh"]
+
+[ext_resource type="Texture2D" uid="uid://ipiyj41e5t1b" path="res://weapons/crystallegendswordemmissive.png" id="1_i8y2s"]
+
+[resource]
+transparency = 1
+albedo_texture = ExtResource("1_i8y2s")
+emission = Color(0, 1, 0.7166667, 1)

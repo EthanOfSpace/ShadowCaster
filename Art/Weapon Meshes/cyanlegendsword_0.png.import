@@ -2,14 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0m1sfikk1j77"
+uid="uid://d3ri2s22ddeuh"
 path.s3tc="res://.godot/imported/cyanlegendsword_0.png-96a30410c69ced8e63de73b05d9e9f00.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "dbef485d15e205360ec1342823bfedc1"
 }
 
 [deps]

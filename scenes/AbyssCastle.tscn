@@ -222,255 +222,411 @@ data = PackedVector3Array(0.0078, 0.0469, -0.0078, 0.0078, 0.0156, 0.0078, 0.007
 
 [node name="blockbench_export" instance=ExtResource("1_lkecd")]
 
+[node name="wallseg" parent="CastleKeep/sunkenmaze/outer walls/WallCurve" index="0"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve/wallseg" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve/wallseg/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_cv0bh")
+
+[node name="wallseg2" parent="CastleKeep/sunkenmaze/outer walls/WallCurve" index="1"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve/wallseg2" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve/wallseg2/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_f2ma7")
 
+[node name="wallseg3" parent="CastleKeep/sunkenmaze/outer walls/WallCurve" index="2"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve/wallseg3" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve/wallseg3/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_6d0m6")
+
+[node name="wallseg4" parent="CastleKeep/sunkenmaze/outer walls/WallCurve" index="3"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve/wallseg4" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve/wallseg4/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_aalsk")
 
+[node name="wallseg5" parent="CastleKeep/sunkenmaze/outer walls/WallCurve" index="4"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve/wallseg5" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve/wallseg5/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_c81a1")
+
+[node name="wallseg6" parent="CastleKeep/sunkenmaze/outer walls/WallCurve" index="5"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve/wallseg6" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve/wallseg6/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_1my45")
 
+[node name="wallseg7" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7" index="0"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7/wallseg7" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7/wallseg7/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_lkecd")
+
+[node name="wallseg8" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7" index="1"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7/wallseg8" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7/wallseg8/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_k0i1k")
 
+[node name="wallseg9" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7" index="2"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7/wallseg9" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7/wallseg9/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_a7fmu")
+
+[node name="wallseg10" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7" index="3"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7/wallseg10" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7/wallseg10/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_elfc8")
 
+[node name="wallseg11" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7" index="4"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7/wallseg11" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7/wallseg11/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_arb3r")
+
+[node name="wallseg12" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7" index="5"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7/wallseg12" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve7/wallseg12/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_wb78q")
 
+[node name="wallseg13" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4" index="0"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4/wallseg13" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4/wallseg13/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_u6mle")
+
+[node name="wallseg14" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4" index="1"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4/wallseg14" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4/wallseg14/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_jba0d")
 
+[node name="wallseg15" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4" index="2"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4/wallseg15" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4/wallseg15/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_fk1fe")
+
+[node name="wallseg16" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4" index="3"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4/wallseg16" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4/wallseg16/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_n0qg7")
 
+[node name="wallseg17" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4" index="4"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4/wallseg17" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4/wallseg17/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_ca6g7")
+
+[node name="wallseg18" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4" index="5"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4/wallseg18" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve4/wallseg18/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_ykc1g")
 
+[node name="wallseg19" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6" index="0"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6/wallseg19" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6/wallseg19/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_515wq")
+
+[node name="wallseg20" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6" index="1"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6/wallseg20" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6/wallseg20/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_tdoss")
 
+[node name="wallseg21" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6" index="2"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6/wallseg21" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6/wallseg21/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_roear")
+
+[node name="wallseg22" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6" index="3"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6/wallseg22" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6/wallseg22/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_fq141")
 
+[node name="wallseg23" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6" index="4"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6/wallseg23" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6/wallseg23/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_h6xqp")
+
+[node name="wallseg24" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6" index="5"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6/wallseg24" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve6/wallseg24/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_35paf")
 
+[node name="wallseg25" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5" index="0"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5/wallseg25" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5/wallseg25/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_54gim")
+
+[node name="wallseg26" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5" index="1"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5/wallseg26" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5/wallseg26/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_ninug")
 
+[node name="wallseg27" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5" index="2"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5/wallseg27" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5/wallseg27/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_528gr")
+
+[node name="wallseg28" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5" index="3"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5/wallseg28" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5/wallseg28/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_bpc55")
 
+[node name="wallseg29" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5" index="4"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5/wallseg29" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5/wallseg29/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_m3fe1")
+
+[node name="wallseg30" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5" index="5"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5/wallseg30" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5/wallseg30/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_pktbp")
 
+[node name="wallseg31" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5" index="6"]
+visible = false
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5/wallseg31" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve5/wallseg31/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_dbr1o")
+
+[node name="wallseg32" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3" index="0"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3/wallseg32" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3/wallseg32/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_lns50")
 
+[node name="wallseg33" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3" index="1"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3/wallseg33" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3/wallseg33/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_1f8b2")
+
+[node name="wallseg34" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3" index="2"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3/wallseg34" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3/wallseg34/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_8ro2s")
 
+[node name="wallseg35" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3" index="3"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3/wallseg35" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3/wallseg35/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_fpfhb")
+
+[node name="wallseg36" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3" index="4"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3/wallseg36" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3/wallseg36/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_dx6m3")
 
+[node name="wallseg37" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3" index="5"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3/wallseg37" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3/wallseg37/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_pmgq4")
+
+[node name="wallseg38" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3" index="6"]
+visible = false
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3/wallseg38" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve3/wallseg38/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_sc65y")
 
+[node name="wallseg39" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8" index="0"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8/wallseg39" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8/wallseg39/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_ikvks")
+
+[node name="wallseg40" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8" index="1"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8/wallseg40" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8/wallseg40/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_is74b")
 
+[node name="wallseg41" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8" index="2"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8/wallseg41" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8/wallseg41/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_uq5vr")
+
+[node name="wallseg42" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8" index="3"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8/wallseg42" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8/wallseg42/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_yubgn")
 
+[node name="wallseg43" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8" index="4"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8/wallseg43" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8/wallseg43/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_em7f8")
+
+[node name="wallseg44" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8" index="5"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8/wallseg44" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve8/wallseg44/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_gi0dc")
 
+[node name="wallseg45" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2" index="0"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2/wallseg45" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2/wallseg45/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_2ogun")
+
+[node name="wallseg46" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2" index="1"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2/wallseg46" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2/wallseg46/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_mvgfs")
 
+[node name="wallseg47" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2" index="2"]
+visible = false
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2/wallseg47" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2/wallseg47/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_15mor")
+
+[node name="wallseg48" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2" index="3"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2/wallseg48" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2/wallseg48/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_q72vg")
 
+[node name="wallseg49" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2" index="4"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2/wallseg49" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2/wallseg49/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_x1uvn")
 
+[node name="wallseg50" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2" index="5"]
+material_override = ExtResource("2_f2ma7")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2/wallseg50" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2/wallseg50/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_p8w7w")
+
+[node name="wallseg51" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2" index="6"]
+material_override = ExtResource("2_f2ma7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/outer walls/WallCurve2/wallseg51" index="0"]
 
@@ -493,80 +649,128 @@ material_override = ExtResource("3_6d0m6")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/Sunken_Maze_01_(player,_63_x_63)2/cuboid/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_c6fp6")
 
+[node name="plane" parent="CastleKeep/sunkenmaze" index="2"]
+material_override = ExtResource("3_6d0m6")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/sunkenmaze/plane" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/sunkenmaze/plane/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_x4ehy")
+
+[node name="cylinder" parent="CastleKeep" index="1"]
+material_override = ExtResource("3_6d0m6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/cylinder" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/cylinder/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_4xvwh")
 
+[node name="cuboid2" parent="CastleKeep" index="2"]
+material_override = ExtResource("3_6d0m6")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/cuboid2" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/cuboid2/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_pfr80")
+
+[node name="cuboid3" parent="CastleKeep" index="3"]
+material_override = ExtResource("3_6d0m6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/cuboid3" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/cuboid3/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_71fif")
 
+[node name="cuboid4" parent="CastleKeep" index="4"]
+material_override = ExtResource("3_6d0m6")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/cuboid4" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/cuboid4/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_1onjm")
+
+[node name="cuboid5" parent="CastleKeep" index="5"]
+material_override = ExtResource("3_6d0m6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/cuboid5" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/cuboid5/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_cwu4e")
 
+[node name="cuboid6" parent="CastleKeep" index="6"]
+material_override = ExtResource("3_6d0m6")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/cuboid6" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/cuboid6/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_4s2aw")
+
+[node name="cuboid7" parent="CastleKeep" index="7"]
+material_override = ExtResource("3_6d0m6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/cuboid7" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/cuboid7/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_j7usm")
 
+[node name="cuboid8" parent="CastleKeep" index="8"]
+material_override = ExtResource("3_6d0m6")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/cuboid8" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/cuboid8/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_kjebb")
+
+[node name="cuboid9" parent="CastleKeep" index="9"]
+material_override = ExtResource("3_6d0m6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/cuboid9" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/cuboid9/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_vxbiy")
 
+[node name="cuboid10" parent="CastleKeep" index="10"]
+material_override = ExtResource("3_6d0m6")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/cuboid10" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/cuboid10/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_nxhcn")
+
+[node name="cuboid11" parent="CastleKeep" index="11"]
+material_override = ExtResource("3_6d0m6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/cuboid11" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/cuboid11/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_exvgx")
 
+[node name="cuboid12" parent="CastleKeep" index="12"]
+material_override = ExtResource("3_6d0m6")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/cuboid12" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/cuboid12/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_25fpu")
+
+[node name="cuboid13" parent="CastleKeep" index="13"]
+material_override = ExtResource("3_6d0m6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/cuboid13" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/cuboid13/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_jvrpj")
 
+[node name="cuboid14" parent="CastleKeep" index="14"]
+material_override = ExtResource("3_6d0m6")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/cuboid14" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/cuboid14/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_fbue2")
+
+[node name="cuboid15" parent="CastleKeep" index="15"]
+material_override = ExtResource("3_6d0m6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/cuboid15" index="0"]
 
@@ -577,6 +781,9 @@ shape = SubResource("ConcavePolygonShape3D_ulk3n")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CastleKeep/wallcon/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_fgjdu")
+
+[node name="cuboid16" parent="CastleKeep" index="17"]
+material_override = ExtResource("3_6d0m6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CastleKeep/cuboid16" index="0"]
 

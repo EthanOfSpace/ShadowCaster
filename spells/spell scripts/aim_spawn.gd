@@ -1,0 +1,2 @@
+extends SummonPattern
+class_name AimSpawn

@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dgqiqhekgtvxp"]
+
+[ext_resource type="Texture2D" uid="uid://vthm3th2ms2v" path="res://Art/LayoutArt/eternal_monastery_of_the_grey_queen.png" id="1_ehvw2"]
+
+[resource]
+albedo_texture = ExtResource("1_ehvw2")
