@@ -1,0 +1,72 @@
+[gd_scene load_steps=11 format=3 uid="uid://lddekn6dqx0f"]
+
+[ext_resource type="Texture2D" uid="uid://cq5p8sbvt832n" path="res://Particles/PNG (Transparent)/magic_02.png" id="1_55uin"]
+[ext_resource type="Texture2D" uid="uid://cqa670wpwd047" path="res://Particles/PNG (Transparent)/trace_04.png" id="2_dscwa"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_auo6f"]
+transparency = 1
+vertex_color_use_as_albedo = true
+albedo_color = Color(0, 0, 0, 1)
+albedo_texture = ExtResource("1_55uin")
+emission_enabled = true
+emission = Color(0.01666665, 1, 0, 1)
+billboard_mode = 1
+
+[sub_resource type="Gradient" id="Gradient_s20hp"]
+offsets = PackedFloat32Array(0.17777778, 0.6333333, 1)
+colors = PackedColorArray(0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_auo6f"]
+gradient = SubResource("Gradient_s20hp")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_1vt41"]
+gravity = Vector3(0, 0, 0)
+color_ramp = SubResource("GradientTexture1D_auo6f")
+
+[sub_resource type="QuadMesh" id="QuadMesh_sawue"]
+size = Vector2(0.3, 0.3)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2wxsg"]
+transparency = 1
+albedo_color = Color(0, 0, 0, 1)
+albedo_texture = ExtResource("2_dscwa")
+emission_enabled = true
+emission = Color(0.015686275, 1, 0, 1)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_q5yqh"]
+particle_flag_align_y = true
+particle_flag_disable_z = true
+direction = Vector3(0, 1, 1)
+spread = 180.0
+initial_velocity_min = 3.0
+initial_velocity_max = 3.0
+gravity = Vector3(0, 0, 0)
+
+[sub_resource type="QuadMesh" id="QuadMesh_1vt41"]
+size = Vector2(0.05, 0.3)
+
+[node name="HealParticle" type="Node3D"]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+material_override = SubResource("StandardMaterial3D_auo6f")
+emitting = false
+amount = 1
+lifetime = 3.0
+one_shot = true
+process_material = SubResource("ParticleProcessMaterial_1vt41")
+draw_pass_1 = SubResource("QuadMesh_sawue")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="GPUParticles3D"]
+light_color = Color(0.015686275, 1, 0, 1)
+light_energy = 2.0
+omni_range = 8.0
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="GPUParticles3D"]
+material_override = SubResource("StandardMaterial3D_2wxsg")
+emitting = false
+amount = 16
+lifetime = 0.25
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_q5yqh")
+draw_pass_1 = SubResource("QuadMesh_1vt41")
