@@ -1,9 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://n0423wqoh6tj"]
 
 [ext_resource type="Script" uid="uid://cfie2bdmggrur" path="res://spells/spell scripts/basic_summon.gd" id="1_c2uc3"]
-[ext_resource type="PackedScene" uid="uid://bxnw3yo03waey" path="res://spells/Summons/bellspell.tscn" id="2_kn171"]
+[ext_resource type="PackedScene" uid="uid://c1m0nj21fpvmb" path="res://Art/SacredBellSpell.gltf" id="2_c2uc3"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_cobtl"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_c2uc3"]
+size = Vector3(2.3706055, 2.7493896, 2.4664307)
 
 [node name="FireBall" type="Area3D"]
 script = ExtResource("1_c2uc3")
@@ -14,7 +15,8 @@ speed = 20.0
 despawn_time = 3.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("SphereShape3D_cobtl")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48657227, 0.38006592, -0.7536011)
+shape = SubResource("BoxShape3D_c2uc3")
 
-[node name="bellspell" parent="CollisionShape3D" instance=ExtResource("2_kn171")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.053118944, -0.6178569, -0.28424597)
+[node name="blockbench_export" parent="." instance=ExtResource("2_c2uc3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.41507626, -1.3203968, -0.60447955)
