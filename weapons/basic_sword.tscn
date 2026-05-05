@@ -336,7 +336,11 @@ knockback = 15.0
 transform = Transform3D(-0.700787, 0.052076202, 0.7114674, 0.040662505, -0.99279475, 0.112720385, 0.7122104, 0.10792255, 0.6936198, -0.049976513, 0.9527658, -0.10357116)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshPivot/WeaponMesh/Hitbox"]
+<<<<<<< HEAD
 transform = Transform3D(0.99793553, -0.064156815, 0.0016355217, 0.06392759, 0.99593455, 0.063134015, -0.0056777, -0.06289396, 0.9980037, 0.005267624, -0.022658497, -0.04832925)
+=======
+transform = Transform3D(0.99793553, -0.064156815, 0.0016355217, 0.06392759, 0.99593455, 0.063134015, -0.0056777, -0.06289396, 0.9980037, 0.0052676275, -0.022658497, -0.048329245)
+>>>>>>> 7c149f6b3ffa2335797a826b0f20f91fa01acb32
 shape = SubResource("CapsuleShape3D_4aqmg")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

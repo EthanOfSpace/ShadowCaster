@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://n0423wqoh6tj"]
+
+[ext_resource type="Script" uid="uid://cfie2bdmggrur" path="res://spells/spell scripts/basic_summon.gd" id="1_c2uc3"]
+[ext_resource type="PackedScene" uid="uid://bxnw3yo03waey" path="res://spells/Summons/bellspell.tscn" id="2_kn171"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_cobtl"]
+
+[node name="FireBall" type="Area3D"]
+script = ExtResource("1_c2uc3")
+damage_player = false
+damage_enemies = true
+damage = 10.0
+speed = 20.0
+despawn_time = 3.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_cobtl")
+
+[node name="bellspell" parent="CollisionShape3D" instance=ExtResource("2_kn171")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.053118944, -0.6178569, -0.28424597)

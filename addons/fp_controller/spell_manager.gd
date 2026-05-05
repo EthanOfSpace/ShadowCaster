@@ -12,7 +12,7 @@ func _ready():
 	currentMana = maxMana
 
 func try_to_cast(spell: SpellStrategy):
-	if(currentMana - spell.cost > 0):
+	if(currentMana - spell.cost >= 0):
 		spell.cast(projectileSpawnPoint)
 		currentMana -= spell.cost
 		var h_tween = create_tween()
@@ -22,6 +22,9 @@ func try_to_cast(spell: SpellStrategy):
 	
 	
 
+func switch_spell():
+	print("asd")
+
 func _input(event):
 	if event is InputEventKey and event.pressed and event.keycode == KEY_Q:
-		try_to_cast(spells[0])
+		try_to_cast(spells[2])

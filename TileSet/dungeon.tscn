@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cep5gqu8a20b7"]
 
-[ext_resource type="MeshLibrary" uid="uid://dt2nkhivb3ovc" path="res://TileSet/tileset420.tres" id="1_5g5ft"]
+[ext_resource type="MeshLibrary" path="res://TileSet/tileset420.tres" id="1_5g5ft"]
 [ext_resource type="PackedScene" uid="uid://dlbkch6iuy8gn" path="res://addons/fp_controller/player.tscn" id="2_jaag3"]
 [ext_resource type="PackedScene" uid="uid://bbxlmpd3brw7o" path="res://Art/Enviroment Meshes/bluefiretable.tscn" id="3_2rulp"]
 

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="SpellStrategy" load_steps=7 format=3 uid="uid://c4h7as1x2v0af"]
+
+[ext_resource type="Script" uid="uid://cipm8dypm6ct5" path="res://spells/spell scripts/spell_strategy.gd" id="1_xc0fr"]
+[ext_resource type="Script" uid="uid://dvkigr50dfo12" path="res://spells/spell scripts/spellSummon.gd" id="2_xc0fr"]
+[ext_resource type="Script" uid="uid://d07vhddlqgfit" path="res://spells/spell scripts/aim_spawn.gd" id="3_p6ec4"]
+[ext_resource type="PackedScene" uid="uid://b4daeqp0jrlwv" path="res://spells/Summons/swordSpell2.tscn" id="4_xc0fr"]
+
+[sub_resource type="Resource" id="Resource_xc0fr"]
+script = ExtResource("3_p6ec4")
+metadata/_custom_type_script = "uid://d07vhddlqgfit"
+
+[sub_resource type="Resource" id="Resource_weuxc"]
+script = ExtResource("2_xc0fr")
+summon_scene = ExtResource("4_xc0fr")
+summon_pattern = SubResource("Resource_xc0fr")
+metadata/_custom_type_script = "uid://dvkigr50dfo12"
+
+[resource]
+script = ExtResource("1_xc0fr")
+spell_behavior = SubResource("Resource_weuxc")
+cost = 15.0
