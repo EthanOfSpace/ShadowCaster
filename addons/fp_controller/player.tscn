@@ -588,7 +588,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.47237, 0)
 
 [node name="SpellManager" type="Node3D" parent="." node_paths=PackedStringArray("projectileSpawnPoint")]
 script = ExtResource("15_ttf0e")
-spells = Array[ExtResource("16_mkvci")]([ExtResource("17_a8wmt"), ExtResource("18_a8wmt"), ExtResource("19_gd45c"), null])
+spells = Array[ExtResource("16_mkvci")]([ExtResource("17_a8wmt"), ExtResource("18_a8wmt"), ExtResource("19_gd45c")])
 projectileSpawnPoint = NodePath("../CameraPivot/ProjectileSpawnPoint")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]

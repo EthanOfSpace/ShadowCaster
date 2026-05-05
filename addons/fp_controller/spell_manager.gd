@@ -2,6 +2,7 @@ extends Node3D
 class_name SpellManager
  
 @export var spells: Array[SpellStrategy]
+@export var currentSpellIndex : int
 
 @export var maxMana: int = 100
 var currentMana
@@ -10,6 +11,7 @@ var currentMana
 
 func _ready():
 	currentMana = maxMana
+	currentSpellIndex = 0
 
 func try_to_cast(spell: SpellStrategy):
 	if(currentMana - spell.cost >= 0):
@@ -23,8 +25,15 @@ func try_to_cast(spell: SpellStrategy):
 	
 
 func switch_spell():
-	print("asd")
+	if currentSpellIndex + 1 < spells.size():
+			currentSpellIndex += 1
+	else:
+		currentSpellIndex = 0
+
 
 func _input(event):
 	if event is InputEventKey and event.pressed and event.keycode == KEY_Q:
-		try_to_cast(spells[2])
+		try_to_cast(spells[currentSpellIndex])
+	if event is InputEventKey and event.pressed and event.keycode == KEY_TAB:
+		switch_spell()
+		
