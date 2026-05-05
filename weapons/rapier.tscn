@@ -1,0 +1,345 @@
+[gd_scene load_steps=13 format=3 uid="uid://ikdjiymhlpdq"]
+
+[ext_resource type="Script" uid="uid://vw5q85i22qw3" path="res://weapons/essential/base_weapon_class.gd" id="1_wdfth"]
+[ext_resource type="Script" uid="uid://bpkbe3xct3suh" path="res://weapons/essential/weapon_hitbox.gd" id="2_40lw5"]
+[ext_resource type="PackedScene" uid="uid://bvsr0edko2rec" path="res://weapons/flamemace.tscn" id="3_3gl0k"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4aqmg"]
+radius = 0.5957031
+height = 1.9789124
+
+[sub_resource type="Animation" id="Animation_4aqmg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshPivot:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MeshPivot:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MeshPivot/WeaponMesh/Hitbox:monitoring")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_p62xt"]
+resource_name = "attack"
+length = 0.4
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshPivot:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(0.267943, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(1.86401, 4.79442, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MeshPivot:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(0.435275, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-1.475, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MeshPivot/WeaponMesh/Hitbox:monitoring")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_tsogf"]
+resource_name = "heavy_attack"
+length = 0.5
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshPivot:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(0.164939, 1),
+"update": 0,
+"values": [Vector3(0.4027, -0.0903906, 0), Vector3(2.25671, 4.35111, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MeshPivot:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(0.435275, 1),
+"update": 0,
+"values": [Vector3(0, 0.25, 0), Vector3(-1.475, -0.475, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MeshPivot/WeaponMesh/Hitbox:monitoring")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_vb158"]
+resource_name = "heavy_charge"
+length = 1.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshPivot:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 0.75, 0.95),
+"transitions": PackedFloat32Array(0.812251, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0.4027, -0.0903906, 0), Vector3(0.200713, -0.0907571, 0), Vector3(0.403171, -0.0907571, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MeshPivot:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.75),
+"transitions": PackedFloat32Array(0.435275, 0.435275),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0.25, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MeshPivot/WeaponMesh/Hitbox:monitoring")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.65),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"charge_heavy"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_8cejh"]
+resource_name = "heavy_return"
+length = 0.8
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshPivot:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1.68179, 0.267943),
+"update": 0,
+"values": [Vector3(2.25671, 4.35111, 0), Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MeshPivot:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 0.435275),
+"update": 0,
+"values": [Vector3(-1.475, -0.475, 0), Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MeshPivot/WeaponMesh/Hitbox:monitoring")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.7),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"cooldown_over"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_dethn"]
+resource_name = "idle"
+step = 0.1
+
+[sub_resource type="Animation" id="Animation_v1ia6"]
+resource_name = "return"
+length = 0.4
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshPivot:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 0.267943),
+"update": 0,
+"values": [Vector3(1.86401, 4.79442, 0), Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MeshPivot:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1.93187, 0.435275),
+"update": 0,
+"values": [Vector3(-1.475, 0, 0), Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MeshPivot/WeaponMesh/Hitbox:monitoring")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.4),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"cooldown_over"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tsogf"]
+_data = {
+&"RESET": SubResource("Animation_4aqmg"),
+&"attack": SubResource("Animation_p62xt"),
+&"heavy_attack": SubResource("Animation_tsogf"),
+&"heavy_charge": SubResource("Animation_vb158"),
+&"heavy_return": SubResource("Animation_8cejh"),
+&"idle": SubResource("Animation_dethn"),
+&"return": SubResource("Animation_v1ia6")
+}
+
+[node name="BasicSword" type="Node3D" node_paths=PackedStringArray("animation_player")]
+script = ExtResource("1_wdfth")
+animation_player = NodePath("AnimationPlayer")
+short_attack_animation = "attack"
+heavy_charge_animation = "heavy_charge"
+heavy_attack_animation = "heavy_attack"
+idle_animation = "RESET"
+cooldown_animation = "return"
+heavy_cooldown_animation = "heavy_return"
+metadata/_custom_type_script = "uid://vw5q85i22qw3"
+
+[node name="MeshPivot" type="Node3D" parent="."]
+
+[node name="WeaponMesh" type="MeshInstance3D" parent="MeshPivot"]
+transform = Transform3D(-0.700787, 0.0406622, 0.712211, 0.0520763, -0.992794, 0.107923, 0.711467, 0.11272, 0.69362, 0, 0.379039, 0)
+skeleton = NodePath("../..")
+
+[node name="Hitbox" type="Area3D" parent="MeshPivot/WeaponMesh"]
+transform = Transform3D(1, -1.19209e-07, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+monitoring = false
+script = ExtResource("2_40lw5")
+knockback = 15.0
+
+[node name="blockbench_export" parent="MeshPivot/WeaponMesh/Hitbox" instance=ExtResource("3_3gl0k")]
+transform = Transform3D(-0.700787, 0.052076202, 0.7114674, 0.040662505, -0.99279475, 0.112720385, 0.7122104, 0.10792255, 0.6936198, -0.049976513, 0.9527658, -0.10357116)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshPivot/WeaponMesh/Hitbox"]
+transform = Transform3D(0.99793553, -0.064156815, 0.0016355217, 0.06392759, 0.99593455, 0.063134015, -0.0056777, -0.06289396, 0.9980037, 0.0052676275, -0.022658497, -0.048329245)
+shape = SubResource("CapsuleShape3D_4aqmg")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_tsogf")
+}
